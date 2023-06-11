@@ -3,7 +3,7 @@ import { Image } from "@unpic/qwik";
 
 export default component$(() => {
   return (
-    <div class="flex justify-between items-center w-full h-20">
+    <div class="flex justify-between items-center w-full h-20 p-5">
       <Image 
         src="/assets/logo.png"
         layout="constrained"
