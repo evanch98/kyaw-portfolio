@@ -4,14 +4,14 @@ import { Image } from "@unpic/qwik";
 export default component$(() => {
   return (
     <div class="flex justify-between items-center w-full h-20 p-5">
-      <Image 
+      <Image
         src="/assets/logo.png"
         layout="constrained"
         width={64}
         height={64}
         alt="A logo image"
       />
-      <p>evanch98@gmail.com</p>
+      <p class="text-[#E3DCD2]">evanch98@gmail.com</p>
     </div>
   );
 });
