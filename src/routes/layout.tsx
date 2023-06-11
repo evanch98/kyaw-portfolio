@@ -1,6 +1,7 @@
 import { component$, Slot } from '@builder.io/qwik';
 import { routeLoader$ } from '@builder.io/qwik-city';
 import type { RequestHandler } from '@builder.io/qwik-city';
+import Footer from '~/components/footer/footer';
 import Header from '~/components/header/header';
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
@@ -27,6 +28,7 @@ export default component$(() => {
         <Header />
         <Slot />
       </main>
+      <Footer />
     </>
   );
 });
