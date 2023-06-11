@@ -10,8 +10,8 @@ import {
 
 export default component$(() => {
   return (
-    <div class="flex-1 w-full h-full flex flex-col bg-[#013329] rounded-md overflow-hidden">
-      <section class="flex-1 flex flex-col p-5 items-center justify-center">
+    <div class="h-full flex flex-col bg-[#013329] rounded-md overflow-hidden">
+      <section class="flex flex-col p-5 items-center justify-center">
         <Image
           src="/assets/avatar.png"
           layout="constrained"
@@ -53,7 +53,7 @@ export default component$(() => {
           </a>
         </div>
       </section>
-      <section class="flex items-center justify-between p-5 bg-[#E3DCD2]">
+      <section class="flex-1 flex items-center justify-between p-5 bg-[#E3DCD2]">
         <div class="flex items-center justify-center w-full space-x-5 text-[#100C0D] cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
           <p>My Resume</p>
           <BsDownload />
