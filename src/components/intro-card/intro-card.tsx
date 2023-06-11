@@ -23,6 +23,9 @@ export default component$(() => {
         <p class="text-lg text-[#E3DCD2] mt-5">
           I am an aspiring front-end web developer.
         </p>
+        <p class="text-sm text-[#E3DCD2] mt-3">
+          Let's build something legendary together.
+        </p>
         <div class="flex items-center space-x-5 mt-5">
           <a
             class="cursor-pointer"
