@@ -1,11 +1,12 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import Body from '~/components/body/body';
 
 export default component$(() => {
   return (
-    <>
-      
-    </>
+    <div class="flex-1">
+      <Body />
+    </div>
   );
 });
 
