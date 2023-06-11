@@ -3,8 +3,8 @@ import { BsPerson, BsPersonWorkspace, BsList, BsEye, BsEnvelope } from "@qwikest
 
 export default component$(() => {
   return (
-    <div class="flex-1 w-full h-full flex bg-[#013329] rounded-md overflow-hidden">
-      <div class="flex flex-col items-center justify-evenly py-5 px-2 bg-[#E3DCD2] space-y-5">
+    <div class="flex-1 w-full h-[550px] flex bg-[#013329] rounded-md overflow-auto">
+      <div class="flex flex-col items-center justify-evenly py-5 px-2 bg-[#E3DCD2] space-y-5 rounded-tl-md rounded-bl-md">
         <div class="flex flex-col items-center justify-center text-[#100C0D] hover:text-[#CC8B65] ease-in duration-300 cursor-pointer">
           <BsPerson class="w-[32px] h-auto" />
           <p class="tracking-widest text-sm">About</p>

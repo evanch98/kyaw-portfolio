@@ -10,7 +10,7 @@ import {
 
 export default component$(() => {
   return (
-    <div class="h-full flex flex-col bg-[#013329] rounded-md overflow-hidden">
+    <div class="h-[550px] flex flex-col bg-[#013329] rounded-md overflow-hidden">
       <section class="flex flex-col p-5 items-center justify-center">
         <Image
           src="/assets/avatar.png"
