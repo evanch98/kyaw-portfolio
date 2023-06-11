@@ -23,8 +23,8 @@ export const useServerTimeLoader = routeLoader$(() => {
 export default component$(() => {
   return (
     <>
-      <Header />
-      <main>
+      <main class="flex-1 flex flex-col">
+        <Header />
         <Slot />
       </main>
     </>
