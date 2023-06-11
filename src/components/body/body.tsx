@@ -3,7 +3,7 @@ import IntroCard from "../intro-card/intro-card";
 
 export default component$(() => {
   return (
-    <div class="text-[#E3DCD2] flex justify-between items-center">
+    <div class="flex justify-between items-center w-full text-white p-5">
       <IntroCard />
     </div>
   );
