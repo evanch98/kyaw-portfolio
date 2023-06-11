@@ -4,7 +4,7 @@ import MainCard from "../main-card/main-card";
 
 export default component$(() => {
   return (
-    <div class="flex justify-between items-center w-full text-white p-5 space-x-5">
+    <div class="flex justify-between items-center w-full text-white p-5 space-x-1">
       <IntroCard />
       <MainCard />
     </div>
