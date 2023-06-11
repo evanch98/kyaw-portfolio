@@ -5,11 +5,12 @@ import {
   BsLinkedin,
   BsDiscord,
   BsEnvelopeFill,
+  BsDownload,
 } from "@qwikest/icons/bootstrap";
 
 export default component$(() => {
   return (
-    <div class="flex-1 w-full h-full flex flex-col bg-[#013329] rounded-md">
+    <div class="flex-1 w-full h-full flex flex-col bg-[#013329] rounded-md overflow-hidden">
       <section class="flex-1 flex flex-col p-5 items-center justify-center">
         <Image
           src="/assets/avatar.png"
@@ -50,6 +51,17 @@ export default component$(() => {
           <a class="cursor-pointer" href="mailto:evanch98@gmail.com">
             <BsEnvelopeFill class="text-[#E3DCD2] w-[30px] h-auto hover:text-[#CC8B65] ease-in duration-300" />
           </a>
+        </div>
+      </section>
+      <section class="flex items-center justify-between p-5 bg-[#E3DCD2]">
+        <div class="flex items-center justify-center w-full space-x-5 text-[#100C0D] cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+          <p>My Resume</p>
+          <BsDownload />
+        </div>
+        <p class="text-[#100C0D]">|</p>
+        <div class="flex items-center justify-center w-full space-x-5 text-[#100C0D] cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+          <p>My LinkedIn</p>
+          <BsLinkedin />
         </div>
       </section>
     </div>
