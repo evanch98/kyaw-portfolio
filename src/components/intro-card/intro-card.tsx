@@ -1,10 +1,16 @@
 import { component$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsDiscord,
+  BsEnvelopeFill,
+} from "@qwikest/icons/bootstrap";
 
 export default component$(() => {
   return (
     <div class="flex-1 w-full h-full flex flex-col bg-[#013329] rounded-md">
-      <section class="flex flex-col p-5 items-center justify-center">
+      <section class="flex-1 flex flex-col p-5 items-center justify-center">
         <Image
           src="/assets/avatar.png"
           layout="constrained"
@@ -16,7 +22,35 @@ export default component$(() => {
         <p class="text-lg text-[#E3DCD2] mt-5">
           I am an aspiring front-end web developer.
         </p>
-        <div class="flex items-center justify-evenly"></div>
+        <div class="flex items-center space-x-5 mt-5">
+          <a
+            class="cursor-pointer"
+            href="https://github.com/evanch98"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGithub class="text-[#E3DCD2] w-[30px] h-auto hover:text-[#CC8B65] ease-in duration-300" />
+          </a>
+          <a
+            class="cursor-pointer"
+            href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsLinkedin class="text-[#E3DCD2] w-[30px] h-auto hover:text-[#CC8B65] ease-in duration-300" />
+          </a>
+          <a
+            class="cursor-pointer "
+            href="https://www.discordapp.com/users/442602474067722241"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsDiscord class="text-[#E3DCD2] w-[30px] h-auto hover:text-[#CC8B65] ease-in duration-300" />
+          </a>
+          <a class="cursor-pointer" href="mailto:evanch98@gmail.com">
+            <BsEnvelopeFill class="text-[#E3DCD2] w-[30px] h-auto hover:text-[#CC8B65] ease-in duration-300" />
+          </a>
+        </div>
       </section>
     </div>
   );
