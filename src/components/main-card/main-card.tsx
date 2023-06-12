@@ -10,6 +10,7 @@ import About from "../about/about";
 import Resume from "../resume/resume";
 import Project from "../project/project";
 import Contact from "../contact/contact";
+import Link from "../link/link";
 
 export default component$(() => {
   const tab = useSignal("about");
@@ -30,7 +31,7 @@ export default component$(() => {
     );
   } else if (tab.value === "links") {
     bodyContent = (
-      <div>Links</div>
+      <Link />
     );
   } else if (tab.value === "contact") {
     bodyContent = (
