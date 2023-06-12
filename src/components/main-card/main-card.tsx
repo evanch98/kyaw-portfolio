@@ -9,6 +9,7 @@ import {
 import About from "../about/about";
 import Resume from "../resume/resume";
 import Project from "../project/project";
+import Contact from "../contact/contact";
 
 export default component$(() => {
   const tab = useSignal("about");
@@ -33,7 +34,7 @@ export default component$(() => {
     );
   } else if (tab.value === "contact") {
     bodyContent = (
-      <div>Contact</div>
+      <Contact />
     );
   }
 
