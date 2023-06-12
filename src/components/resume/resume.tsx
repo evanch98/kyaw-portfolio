@@ -3,6 +3,7 @@ import Title from "../common/title/title";
 import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
 import { IoLogoReact } from "@qwikest/icons/ionicons";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
+import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 
 export default component$(() => {
   return (
@@ -43,7 +44,7 @@ export default component$(() => {
           </div>
         </section>
       </div>
-      <hr class="w-full border-solid border-1 border-[#E3DCD2] my-5" />
+      <HorizontalSeparator />
       <Title title="Skills" />
       <div class="flex flex-col mt-5 space-y-5">
         <div class="flex items-start justify-between">

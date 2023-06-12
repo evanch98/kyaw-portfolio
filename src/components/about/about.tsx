@@ -7,6 +7,7 @@ import {
   IoVideocamOutline,
 } from "@qwikest/icons/ionicons";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
+import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 
 export default component$(() => {
   return (
@@ -37,7 +38,7 @@ export default component$(() => {
           occasionally. My favorite NBA team is Golden State Warriors.
         </p>
       </div>
-      <hr class="w-full border-solid border-1 border-[#E3DCD2] my-5" />
+      <HorizontalSeparator />
       <Title title="Fun Facts" />
       <div class="flex items-center justify-between mt-5 pb-2">
         <div class="flex flex-col items-center justify-center">
