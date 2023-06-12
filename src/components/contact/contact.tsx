@@ -5,7 +5,7 @@ import { BsSend } from "@qwikest/icons/bootstrap";
 
 export default component$(() => {
   return (
-    <div class="flex flex-col w-full text-[#E3DCD2]">
+    <div class="flex flex-col w-full ">
       <Title title="Get in Touch" />
       <div class="flex flex-col mt-5 space-y-2 text-lg">
         <p>Name --- Kyaw Thu</p>
