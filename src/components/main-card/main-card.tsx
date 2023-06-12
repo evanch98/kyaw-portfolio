@@ -36,8 +36,8 @@ export default component$(() => {
   }
 
   return (
-    <div class="flex-1 w-full h-[550px] flex space-x-5 bg-[#013329] rounded-md overflow-auto">
-      <div class="flex flex-col items-center justify-evenly py-5 px-2 bg-[#E3DCD2] space-y-5 rounded-tl-md rounded-bl-md">
+    <div class="flex-1 flex items-start">
+      <div class="flex h-[550px] flex-col items-center justify-evenly py-5 px-2 bg-[#E3DCD2] space-y-5 rounded-tl-md rounded-bl-md">
         <div
           onClick$={() => (tab.value = "about")}
           class={`flex flex-col items-center justify-center hover:text-[#CC8B65] ease-in duration-300 cursor-pointer ${
@@ -88,7 +88,9 @@ export default component$(() => {
           <p class="tracking-widest text-sm">Contact</p>
         </div>
       </div>
-      <div class="mt-5">{bodyContent}</div>
+      <div class="w-full h-[550px] flex space-x-5 bg-[#013329] rounded-r-md overflow-auto p-5">
+        {bodyContent}
+      </div>
     </div>
   );
 });
