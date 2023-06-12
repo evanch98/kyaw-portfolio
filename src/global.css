@@ -15,3 +15,24 @@ html {
   font-family: 'Inter', sans-serif;
   background-color: #100C0D;
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #E3DCD2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e3dcd28a;
+}
