@@ -3,6 +3,6 @@ import Title from "../common/title/title";
 
 export default component$(() => {
   return (
-    <div><Title /></div>
+    <div><Title title="About" /></div>
   );
 });
