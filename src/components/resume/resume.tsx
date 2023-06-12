@@ -157,7 +157,20 @@ export default component$(() => {
             </div>
           </section>
         </div>
-        <HorizontalSeparator />
+      </div>
+      <HorizontalSeparator />
+      <Title title="Virtual Experience" />
+      <div class="flex flex-col space-y-2 pb-2">
+        <div class="mt-5">
+          <p>Virtual Experience Program at Accenture Nordics, Developer</p>
+          <p>Accenture Nordics and Forage</p>
+          <p>March 2022</p>
+        </div>
+        <div class="mt-5">
+          <p>Virtual Experience Program at Lyft, Mobile Engineering</p>
+          <p>Lyft and Forage</p>
+          <p>January 2023</p>
+        </div>
       </div>
     </div>
   );
