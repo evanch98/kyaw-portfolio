@@ -6,6 +6,8 @@ interface TitleProps {
 
 export default component$((props: TitleProps) => {
   return (
-    <div>{props.title}</div>
+    <p class="text-3xl first-letter:font-bold first-letter:underline first-letter:text-[#CC8B65]">
+      {props.title}
+    </p>
   );
 });
