@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
-import { IoLogoReact, IoPhonePortraitOutline } from "@qwikest/icons/ionicons";
+import { IoLogoReact, IoPhonePortraitOutline, IoChatboxOutline, IoGlobeOutline } from "@qwikest/icons/ionicons";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 
@@ -46,7 +46,7 @@ export default component$(() => {
       </div>
       <HorizontalSeparator />
       <Title title="Skills" />
-      <div class="flex flex-col mt-5 space-y-5">
+      <div class="flex flex-col mt-5 space-y-6">
         <div class="flex items-start justify-between">
           <section class="w-full flex flex-col items-center justify-center">
             <div class="flex justify-center items-center space-x-2">
@@ -116,12 +116,48 @@ export default component$(() => {
         </div>
         <div class="flex items-start justify-between">
           <section class="w-full flex flex-col items-center justify-center">
-            Front-End
+            <div class="flex justify-center items-center space-x-2">
+              <h1 class="text-xl font-bold">Languages</h1>
+              <IoChatboxOutline class="w-[24px] h-auto" />
+            </div>
+            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
+              <div class="flex flex-col w-full space-y-1">
+                <p>Burmese</p>
+                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full space-y-1">
+                <p>English</p>
+                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full space-y-1">
+                <p>Traditional Chinese</p>
+                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 40%"></div>
+                </div>
+              </div>
+            </div>
           </section>
+          <VerticalSeparator />
           <section class="w-full flex flex-col items-center justify-center">
-            Mobile
+            <div class="flex justify-center items-center space-x-2">
+              <h1 class="text-xl font-bold">Soft Skills</h1>
+              <IoGlobeOutline class="w-[24px] h-auto" />
+            </div>
+            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
+              <ul class="list-disc">
+                <li>Strong problem solving and analytic skills</li>
+                <li>Ability to learn new technologies quickly</li>
+                <li>Good communication skills</li>
+                <li>Willingness to explore and learn</li>
+              </ul>
+            </div>
           </section>
         </div>
+        <HorizontalSeparator />
       </div>
     </div>
   );
