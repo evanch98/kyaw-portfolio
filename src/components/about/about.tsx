@@ -33,7 +33,7 @@ export default component$(() => {
       </div>
       <hr class="w-full border-solid border-1 border-[#E3DCD2] my-5" />
       <Title title="Fun Facts" />
-      <div class="flex items-center justify-between mt-5">
+      <div class="flex items-center justify-between mt-5 pb-2">
         <div class="flex flex-col items-center justify-center">
           <IoFootballOutline class="w-[28px] h-auto mb-2" />
           <h1 class="text-lg font-semibold">Favorite Sport</h1>
