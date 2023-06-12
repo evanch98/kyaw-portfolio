@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
 import { IoLogoReact } from "@qwikest/icons/ionicons";
+import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 
 export default component$(() => {
   return (
@@ -19,7 +20,7 @@ export default component$(() => {
             <p>2021-Present</p>
           </div>
         </section>
-        <div class="h-full bg-[#E3DCD2] w-0.5"></div>
+        <VerticalSeparator />
         <section class="w-full flex flex-col items-center justify-center">
           <div class="flex justify-center items-center space-x-2">
             <h1 class="text-xl font-bold">Certificates</h1>
@@ -78,7 +79,7 @@ export default component$(() => {
               </div>
             </div>
           </section>
-          <div class="h-full bg-[#E3DCD2] w-0.5"></div>
+          <VerticalSeparator />
           <section class="w-full flex flex-col items-center justify-center">
             Mobile
           </section>

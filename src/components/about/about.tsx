@@ -1,6 +1,12 @@
 import { component$ } from "@builder.io/qwik";
 import Title from "../common/title/title";
-import { IoFootballOutline, IoWaterOutline, IoBookOutline, IoVideocamOutline } from "@qwikest/icons/ionicons";
+import {
+  IoFootballOutline,
+  IoWaterOutline,
+  IoBookOutline,
+  IoVideocamOutline,
+} from "@qwikest/icons/ionicons";
+import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 
 export default component$(() => {
   return (
@@ -39,19 +45,19 @@ export default component$(() => {
           <h1 class="text-lg font-semibold">Favorite Sport</h1>
           <p class="text-sm">Soccer</p>
         </div>
-        <div class="h-20 bg-[#E3DCD2] w-0.5"></div>
+        <VerticalSeparator />
         <div class="flex flex-col items-center justify-center">
           <IoWaterOutline class="w-[28px] h-auto mb-2" />
           <h1 class="text-lg font-semibold">Favorite Activity</h1>
           <p class="text-sm">Swimming</p>
         </div>
-        <div class="h-20 bg-[#E3DCD2] w-0.5"></div>
+        <VerticalSeparator />
         <div class="flex flex-col items-center justify-center">
           <IoBookOutline class="w-[28px] h-auto mb-2" />
           <h1 class="text-lg font-semibold">Favorite Book</h1>
           <p class="text-sm">Wonder</p>
         </div>
-        <div class="h-full bg-[#E3DCD2] w-0.5"></div>
+        <VerticalSeparator />
         <div class="flex flex-col items-center justify-center">
           <IoVideocamOutline class="w-[28px] h-auto mb-2" />
           <h1 class="text-lg font-semibold">Favorite TV Show</h1>
