@@ -44,15 +44,41 @@ export default component$(() => {
       </div>
       <hr class="w-full border-solid border-1 border-[#E3DCD2] my-5" />
       <Title title="Skills" />
-      <div class="flex flex-col mt-5">
+      <div class="flex flex-col mt-5 space-y-5">
         <div class="flex items-start justify-between">
           <section class="w-full flex flex-col items-center justify-center">
             <div class="flex justify-center items-center space-x-2">
               <h1 class="text-xl font-bold">Front-End</h1>
               <IoLogoReact class="w-[24px] h-auto" />
             </div>
-            <div></div>
+            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
+              <div class="flex flex-col w-full space-y-1">
+                <p>Next JS</p>
+                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full space-y-1">
+                <p>Qwik</p>
+                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full space-y-1">
+                <p>Tailwind CSS</p>
+                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="flex flex-col w-full space-y-1">
+                <p>TypeScript</p>
+                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
           </section>
+          <div class="h-full bg-[#E3DCD2] w-0.5"></div>
           <section class="w-full flex flex-col items-center justify-center">
             Mobile
           </section>
