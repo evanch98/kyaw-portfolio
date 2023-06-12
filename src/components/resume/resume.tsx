@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
+import { IoLogoReact } from "@qwikest/icons/ionicons";
 
 export default component$(() => {
   return (
@@ -42,6 +43,29 @@ export default component$(() => {
         </section>
       </div>
       <hr class="w-full border-solid border-1 border-[#E3DCD2] my-5" />
+      <Title title="Skills" />
+      <div class="flex flex-col mt-5">
+        <div class="flex items-start justify-between">
+          <section class="w-full flex flex-col items-center justify-center">
+            <div class="flex justify-center items-center space-x-2">
+              <h1 class="text-xl font-bold">Front-End</h1>
+              <IoLogoReact class="w-[24px] h-auto" />
+            </div>
+            <div></div>
+          </section>
+          <section class="w-full flex flex-col items-center justify-center">
+            Mobile
+          </section>
+        </div>
+        <div class="flex items-start justify-between">
+          <section class="w-full flex flex-col items-center justify-center">
+            Front-End
+          </section>
+          <section class="w-full flex flex-col items-center justify-center">
+            Mobile
+          </section>
+        </div>
+      </div>
     </div>
   );
 });
