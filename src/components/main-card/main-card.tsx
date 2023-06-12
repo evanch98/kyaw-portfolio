@@ -87,7 +87,7 @@ export default component$(() => {
           <p class="tracking-widest text-sm">Contact</p>
         </div>
       </div>
-      <div>{bodyContent}</div>
+      <div class="mt-5">{bodyContent}</div>
     </div>
   );
 });
