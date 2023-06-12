@@ -51,7 +51,7 @@ export default component$(() => {
           <h1 class="text-lg font-semibold">Favorite Book</h1>
           <p class="text-sm">Wonder</p>
         </div>
-        <div class="h-20 bg-[#E3DCD2] w-0.5"></div>
+        <div class="h-full bg-[#E3DCD2] w-0.5"></div>
         <div class="flex flex-col items-center justify-center">
           <IoVideocamOutline class="w-[28px] h-auto mb-2" />
           <h1 class="text-lg font-semibold">Favorite TV Show</h1>
