@@ -58,12 +58,20 @@ export default component$(() => {
       </section>
       <section class="flex-1 flex items-center justify-between p-5 bg-[#E3DCD2]">
         <div class="flex items-center justify-center w-full space-x-5 text-[#100C0D] cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
-          <p>My Resume</p>
+          <a href="/resume.pdf" download={true}>
+            My Resume
+          </a>
           <BsDownload />
         </div>
         <p class="text-[#100C0D]">|</p>
         <div class="flex items-center justify-center w-full space-x-5 text-[#100C0D] cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
-          <p>My LinkedIn</p>
+          <a
+            href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            My LinkedIn
+          </a>
           <BsLinkedin />
         </div>
       </section>
