@@ -7,7 +7,7 @@ import HorizontalSeparator from "../common/separators/horizontal-separator/horiz
 
 export default component$(() => {
   return (
-    <div class="flex flex-col w-full pr-5 text-[#E3DCD2]">
+    <div class="flex flex-col w-full text-[#E3DCD2]">
       <Title title="Resume" />
       <div class="flex items-start justify-between mt-5">
         <section class="w-full flex flex-col items-center justify-center">
