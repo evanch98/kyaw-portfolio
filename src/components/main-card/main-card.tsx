@@ -8,6 +8,7 @@ import {
 } from "@qwikest/icons/bootstrap";
 import About from "../about/about";
 import Resume from "../resume/resume";
+import Project from "../project/project";
 
 export default component$(() => {
   const tab = useSignal("about");
@@ -24,7 +25,7 @@ export default component$(() => {
     );
   } else if (tab.value === "projects") {
     bodyContent = (
-      <div>Projects</div>
+      <Project />
     );
   } else if (tab.value === "links") {
     bodyContent = (
