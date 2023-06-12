@@ -1,7 +1,12 @@
 import { component$ } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
-import { IoLogoReact, IoPhonePortraitOutline, IoChatboxOutline, IoGlobeOutline } from "@qwikest/icons/ionicons";
+import {
+  IoLogoReact,
+  IoPhonePortraitOutline,
+  IoChatboxOutline,
+  IoGlobeOutline,
+} from "@qwikest/icons/ionicons";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 
@@ -28,17 +33,23 @@ export default component$(() => {
             <BsPatchCheck class="w-[24px] h-auto" />
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p>Meta Front-End Developer Professional Certificate</p>
+            <p class="cursor-pointer hover:text-[#CC8B65] flex items-center justify-center ease-in duration-300">
+              Meta Front-End Developer Professional Certificate
+            </p>
             <p>Meta and Coursera</p>
             <p>June 2023-Present</p>
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p>Meta Android Developer Professional Certificate</p>
+            <p class="cursor-pointer hover:text-[#CC8B65] flex items-center justify-center ease-in duration-300">
+              Meta Android Developer Professional Certificate
+            </p>
             <p>Meta and Coursera</p>
             <p>September 2022-April 2023</p>
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p>IBM Data Analyst Professional Certificate</p>
+            <p class="cursor-pointer hover:text-[#CC8B65] flex items-center justify-center ease-in duration-300">
+              IBM Data Analyst Professional Certificate
+            </p>
             <p>IBM and Coursera</p>
             <p>July 2021-August 2021</p>
           </div>
