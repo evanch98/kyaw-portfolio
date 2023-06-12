@@ -1,7 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 
-export default component$(() => {
+interface TitleProps {
+  title: string;
+}
+
+export default component$((props: TitleProps) => {
   return (
-    <div>Title</div>
+    <div>{props.title}</div>
   );
 });
