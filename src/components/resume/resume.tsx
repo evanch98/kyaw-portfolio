@@ -33,21 +33,21 @@ export default component$(() => {
             <BsPatchCheck class="w-[24px] h-auto" />
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p class="cursor-pointer hover:text-[#CC8B65] flex items-center justify-center ease-in duration-300">
+            <p class="cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
               Meta Front-End Developer Professional Certificate
             </p>
             <p>Meta and Coursera</p>
             <p>June 2023-Present</p>
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p class="cursor-pointer hover:text-[#CC8B65] flex items-center justify-center ease-in duration-300">
+            <p class="cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
               Meta Android Developer Professional Certificate
             </p>
             <p>Meta and Coursera</p>
             <p>September 2022-April 2023</p>
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p class="cursor-pointer hover:text-[#CC8B65] flex items-center justify-center ease-in duration-300">
+            <p class="cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
               IBM Data Analyst Professional Certificate
             </p>
             <p>IBM and Coursera</p>
@@ -173,12 +173,16 @@ export default component$(() => {
       <Title title="Virtual Experience" />
       <div class="flex flex-col space-y-2 pb-2">
         <div class="mt-5">
-          <p>Virtual Experience Program at Accenture Nordics, Developer</p>
+          <p class="cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+            Virtual Experience Program at Accenture Nordics, Developer
+          </p>
           <p>Accenture Nordics and Forage</p>
           <p>March 2022</p>
         </div>
         <div class="mt-5">
-          <p>Virtual Experience Program at Lyft, Mobile Engineering</p>
+          <p class="cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+            Virtual Experience Program at Lyft, Mobile Engineering
+          </p>
           <p>Lyft and Forage</p>
           <p>January 2023</p>
         </div>
