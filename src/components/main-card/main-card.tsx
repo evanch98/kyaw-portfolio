@@ -6,6 +6,7 @@ import {
   BsEye,
   BsEnvelope,
 } from "@qwikest/icons/bootstrap";
+import About from "../about/about";
 
 export default component$(() => {
   const tab = useSignal("about");
@@ -14,7 +15,7 @@ export default component$(() => {
 
   if (tab.value === "about") {
     bodyContent = (
-      <div>About</div>
+      <About />
     );
   } else if (tab.value === "resume") {
     bodyContent = (
