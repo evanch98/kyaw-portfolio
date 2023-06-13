@@ -11,8 +11,8 @@ interface ModalProps {
 
 export default component$((props: ModalProps) => {
   return (
-    <div onClick$={props.onClose} class="absolute left-0 top-0 w-full h-full bg-black/70  z-50">
-      <div class="absolute w-auto top-20 left-1/2 -translate-x-1/2 p-5 bg-[#1A2930] text-[#C5C1C0] rounded-md shadow-xl overflow-y-auto">
+    <div class="absolute left-0 top-0 w-full h-full bg-black/70  z-50">
+      <div class="absolute w-auto max-h-[600px] top-20 left-1/2 -translate-x-1/2 p-5 bg-[#1A2930] text-[#C5C1C0] rounded-md shadow-xl overflow-y-auto">
         <div class="flex items-center justify-between">
           <Title title={props.title} />
           <BsX
