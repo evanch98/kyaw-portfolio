@@ -48,3 +48,27 @@ export const metaAndroid = {
   ],
   verificationLink: "https://coursera.org/verify/professional-cert/YXRXLU9WYWX8"
 };
+
+export const ibmDataAnalyst = {
+  name: "IBM Data Analyst Professional Certificate",
+  platform: "IBM and Coursera",
+  date: "July 2021 - August 2021",
+  courses: [
+    "Introduction to Data Analytics",
+    "Excel Basics for Data Analysis",
+    "Data Visualizations and Dashboards with Excel and Cognos",
+    "Python for Data Science, AI & Development",
+    "Python Project for Data Science",
+    "Databases and SQL for Data Science with Python",
+    "Data Analysis with Python",
+    "Data Visualization with Python",
+    "IBM Data Analyst Capstone Project",
+  ],
+  desc: [
+    "Demonstrate proficiency in using spreadsheets and utilizing Excel to perform a variety of data analysis tasks like data wrangling and data mining",
+    "Create various charts and plots in Excel & work with IBM Cognos Analytics to build dashboards. Visualize data using Python libraries like Matplotlib",
+    "Develop working knowledge of Python language for analyzing data using Python libraries like Pandas and Numpy, and invoke APIs and Web Services",
+    "Describe data ecosystem and Compose queries to access data in cloud databases using SQL and Python from Jupyter notebooks",
+  ],
+  verificationLink: "coursera.org/verify/professionalcert/RS5G3TUCKZVH"
+};
