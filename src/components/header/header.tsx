@@ -11,7 +11,7 @@ export default component$(() => {
         height={64}
         alt="A logo image"
       />
-      <p class="text-[#E3DCD2]">evanch98@gmail.com</p>
+      <p class="text-[#C5C1C0]">evanch98@gmail.com</p>
     </div>
   );
 });
