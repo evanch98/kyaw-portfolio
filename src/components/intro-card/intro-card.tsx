@@ -1,4 +1,4 @@
-import { component$, useVisibleTask$ } from "@builder.io/qwik";
+import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 import {
   BsGithub,
@@ -12,8 +12,10 @@ import VerticalSeparator from "../common/separators/vertical-separator/vertical-
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 import { animate } from "motion";
 import { easeOutElastic } from "~/utils/easing";
+import Modal from "../common/modal/modal";
 
 export default component$(() => {
+  const modal = useSignal(false);
   useVisibleTask$(() => {
     animate(
       ".icon",
@@ -26,6 +28,7 @@ export default component$(() => {
   });
   return (
     <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5">
+      {modal.value && <Modal />}
       <section class="flex-1 flex flex-col p-5 items-center justify-center">
         <Image
           src="/assets/avatar.png"
@@ -84,15 +87,13 @@ export default component$(() => {
           <BsDownload class="group-hover:text-[#F7CE3E] ease-in duration-300 group-hover:translate-x-1" />
         </div>
         <VerticalSeparator />
-        <div class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group">
-          <a
-            href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
-            target="_blank"
-            rel="noreferrer"
-            class="group-hover:text-[#F7CE3E] ease-in duration-300"
-          >
+        <div
+          onClick$={() => (modal.value = true)}
+          class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group"
+        >
+          <p class="group-hover:text-[#F7CE3E] ease-in duration-300">
             Website's Info
-          </a>
+          </p>
           <BsInfoCircleFill class="group-hover:text-[#F7CE3E] ease-in duration-300 group-hover:translate-x-1" />
         </div>
       </section>
