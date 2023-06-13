@@ -6,6 +6,7 @@ import {
   BsDiscord,
   BsEnvelopeFill,
   BsDownload,
+  BsInfoCircleFill,
 } from "@qwikest/icons/bootstrap";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
@@ -90,9 +91,9 @@ export default component$(() => {
             rel="noreferrer"
             class="group-hover:text-[#F7CE3E] ease-in duration-300"
           >
-            My LinkedIn
+            Website's Info
           </a>
-          <BsLinkedin class="group-hover:text-[#F7CE3E] ease-in duration-300 group-hover:translate-x-1" />
+          <BsInfoCircleFill class="group-hover:text-[#F7CE3E] ease-in duration-300 group-hover:translate-x-1" />
         </div>
       </section>
     </div>
