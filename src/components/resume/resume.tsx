@@ -1,4 +1,4 @@
-import { $, component$, useStore } from "@builder.io/qwik";
+import { $, component$, useStore, useVisibleTask$ } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
 import {
@@ -12,8 +12,12 @@ import HorizontalSeparator from "../common/separators/horizontal-separator/horiz
 import Modal from "../common/modal/modal";
 import CertTemplate from "../cert-template/cert-template";
 import { ibmDataAnalyst, metaAndroid, metaFrontEnd } from "~/utils/certificates";
+import { animate } from "motion";
 
 export default component$(() => {
+  useVisibleTask$(() => {
+    animate("#resume", { opacity: [0, 1] }, { easing: "ease-in", duration: 1 });
+  });
   const certModal = useStore({
     open: false,
     certData: {
@@ -30,7 +34,7 @@ export default component$(() => {
     certModal.open = false;
   });
   return (
-    <div class="flex flex-col w-full text-[#C5C1C0]">
+    <div id="resume" class="flex flex-col w-full text-[#C5C1C0]">
       {certModal.open && (
         <Modal title="Certificate" onClose={onCertModalClose}>
           <CertTemplate
