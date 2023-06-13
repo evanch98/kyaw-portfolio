@@ -13,7 +13,7 @@ export default component$(() => {
   return (
     <div class="flex flex-col">
       <Title title="About" />
-      <div class="flex flex-col text-[#E3DCD2] text-lg mt-5 space-y-5">
+      <div class="flex flex-col text-[#C5C1C0] text-lg mt-5 space-y-5">
         <p>
           I have spent 7 years studying medicine at the University of Medicine
           1, Yangon. Due to several reasons, including pandemic, I had to drop
