@@ -11,7 +11,7 @@ import VerticalSeparator from "../common/separators/vertical-separator/vertical-
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 import Modal from "../common/modal/modal";
 import CertTemplate from "../cert-template/cert-template";
-import { metaFrontEnd } from "~/utils/certificates";
+import { metaAndroid, metaFrontEnd } from "~/utils/certificates";
 
 export default component$(() => {
   const certModal = useStore({
@@ -32,7 +32,7 @@ export default component$(() => {
   return (
     <div class="flex flex-col w-full text-[#C5C1C0]">
       {certModal.open && (
-        <Modal title="Cert" onClose={onCertModalClose}>
+        <Modal title="Certificate" onClose={onCertModalClose}>
           <CertTemplate
             name={certModal.certData.name}
             platform={certModal.certData.platform}
@@ -66,7 +66,7 @@ export default component$(() => {
             <p
               onClick$={() => {
                 certModal.open = true;
-                certModal.certData = {...metaFrontEnd}
+                certModal.certData = { ...metaFrontEnd };
               }}
               class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
             >
@@ -76,7 +76,13 @@ export default component$(() => {
             <p>June 2023-Present</p>
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
+            <p
+              onClick$={() => {
+                certModal.open = true;
+                certModal.certData = { ...metaAndroid };
+              }}
+              class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
+            >
               Meta Android Developer Professional Certificate
             </p>
             <p>Meta and Coursera</p>
