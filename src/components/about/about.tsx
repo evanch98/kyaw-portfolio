@@ -12,6 +12,7 @@ import { animate, spring, stagger } from "motion";
 
 export default component$(() => {
   useVisibleTask$(() => {
+    animate("#about", { opacity: [0, 1] }, { easing: "ease-in", duration: 1 });
     animate(
       ".para",
       { x: [-1000, 0] },
@@ -19,7 +20,7 @@ export default component$(() => {
     );
   });
   return (
-    <div class="flex flex-col">
+    <div id="about" class="flex flex-col">
       <Title title="About" />
       <div class="flex flex-col text-[#C5C1C0] text-lg mt-5 space-y-5">
         <p class="para">
