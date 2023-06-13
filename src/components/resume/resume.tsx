@@ -12,7 +12,7 @@ import HorizontalSeparator from "../common/separators/horizontal-separator/horiz
 
 export default component$(() => {
   return (
-    <div class="flex flex-col w-full text-[#E3DCD2]">
+    <div class="flex flex-col w-full text-[#C5C1C0]">
       <Title title="Resume" />
       <div class="flex items-start justify-between mt-5">
         <section class="w-full flex flex-col items-center justify-center">
@@ -33,21 +33,21 @@ export default component$(() => {
             <BsPatchCheck class="w-[24px] h-auto" />
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p class="cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+            <p class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
               Meta Front-End Developer Professional Certificate
             </p>
             <p>Meta and Coursera</p>
             <p>June 2023-Present</p>
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p class="cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+            <p class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
               Meta Android Developer Professional Certificate
             </p>
             <p>Meta and Coursera</p>
             <p>September 2022-April 2023</p>
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p class="cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+            <p class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
               IBM Data Analyst Professional Certificate
             </p>
             <p>IBM and Coursera</p>
@@ -67,26 +67,26 @@ export default component$(() => {
             <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
               <div class="flex flex-col w-full space-y-1">
                 <p>Next JS</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 70%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 70%"></div>
                 </div>
               </div>
               <div class="flex flex-col w-full space-y-1">
                 <p>Qwik</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 80%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 80%"></div>
                 </div>
               </div>
               <div class="flex flex-col w-full space-y-1">
                 <p>Tailwind CSS</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 80%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 80%"></div>
                 </div>
               </div>
               <div class="flex flex-col w-full space-y-1">
                 <p>TypeScript</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 75%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 75%"></div>
                 </div>
               </div>
             </div>
@@ -100,26 +100,26 @@ export default component$(() => {
             <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
               <div class="flex flex-col w-full space-y-1">
                 <p>Dart</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 70%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 70%"></div>
                 </div>
               </div>
               <div class="flex flex-col w-full space-y-1">
                 <p>Flutter</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 70%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 70%"></div>
                 </div>
               </div>
               <div class="flex flex-col w-full space-y-1">
                 <p>Kotlin</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 60%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 60%"></div>
                 </div>
               </div>
               <div class="flex flex-col w-full space-y-1">
                 <p>Jetpack Compose</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 50%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 50%"></div>
                 </div>
               </div>
             </div>
@@ -134,20 +134,20 @@ export default component$(() => {
             <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
               <div class="flex flex-col w-full space-y-1">
                 <p>Burmese</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 100%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 100%"></div>
                 </div>
               </div>
               <div class="flex flex-col w-full space-y-1">
                 <p>English</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 90%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 90%"></div>
                 </div>
               </div>
               <div class="flex flex-col w-full space-y-1">
                 <p>Traditional Chinese</p>
-                <div class="h-[5.5px] w-full bg-[#E3DCD2] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#CC8B65]" style="width: 40%"></div>
+                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
+                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 40%"></div>
                 </div>
               </div>
             </div>
@@ -173,14 +173,14 @@ export default component$(() => {
       <Title title="Virtual Experience" />
       <div class="flex flex-col space-y-2 pb-2">
         <div class="mt-5">
-          <p class="cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+          <p class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
             Virtual Experience Program at Accenture Nordics, Developer
           </p>
           <p>Accenture Nordics and Forage</p>
           <p>March 2022</p>
         </div>
         <div class="mt-5">
-          <p class="cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+          <p class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
             Virtual Experience Program at Lyft, Mobile Engineering
           </p>
           <p>Lyft and Forage</p>
