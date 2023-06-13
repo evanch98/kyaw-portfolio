@@ -29,7 +29,7 @@ export default component$(() => {
   });
   return (
     <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5">
-      {modal.value && <Modal><ProjectTemplate /></Modal>}
+      {modal.value && <Modal title="Portfolio Website"><ProjectTemplate /></Modal>}
       <section class="flex-1 flex flex-col p-5 items-center justify-center">
         <Image
           src="/assets/avatar.png"
