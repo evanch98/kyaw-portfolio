@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { $, component$, useStore } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
 import {
@@ -9,10 +9,24 @@ import {
 } from "@qwikest/icons/ionicons";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
+import Modal from "../common/modal/modal";
+import CertTemplate from "../cert-template/cert-template";
 
 export default component$(() => {
+  const certModal = useStore({
+    open: false,
+  });
+
+  const onCertModalClose = $(() => {
+    certModal.open = false;
+  });
   return (
     <div class="flex flex-col w-full text-[#C5C1C0]">
+      {certModal.open && (
+        <Modal title="Cert" onClose={onCertModalClose}>
+          <CertTemplate />
+        </Modal>
+      )}
       <Title title="Resume" />
       <div class="flex items-start justify-between mt-5">
         <section class="w-full flex flex-col items-center justify-center">
@@ -33,7 +47,12 @@ export default component$(() => {
             <BsPatchCheck class="w-[24px] h-auto" />
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
+            <p
+              onClick$={() => {
+                certModal.open = true;
+              }}
+              class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
+            >
               Meta Front-End Developer Professional Certificate
             </p>
             <p>Meta and Coursera</p>
