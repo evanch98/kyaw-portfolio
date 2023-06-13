@@ -93,7 +93,7 @@ export default component$(() => {
           <p class="tracking-widest text-sm">Contact</p>
         </div>
       </div>
-      <div class="w-full h-[550px] flex space-x-5 bg-[#1A2930] rounded-r-md overflow-auto p-5">
+      <div class="w-full h-[550px] flex space-x-5 bg-[#1A2930] rounded-r-md overflow-x-hidden overflow-y-auto p-5">
         {bodyContent}
       </div>
     </div>
