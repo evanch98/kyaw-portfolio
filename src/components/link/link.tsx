@@ -1,7 +1,8 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { Image } from "@unpic/qwik";
 import { BsBoxArrowUpRight } from "@qwikest/icons/bootstrap";
+import { animate, spring, stagger } from "motion";
 
 const links = [
   {
@@ -31,6 +32,13 @@ const links = [
 ];
 
 export default component$(() => {
+  useVisibleTask$(() => {
+    animate(
+      ".links",
+      { x: [-1000, 0] },
+      { easing: spring({velocity: 50, stiffness: 50}), delay: stagger(0.15) }
+    );
+  });
   return (
     <div class="flex flex-col w-full">
       <Title title="Links" />
@@ -38,7 +46,7 @@ export default component$(() => {
         {links.map((link) => (
           <a
             key={link.title}
-            class="w-full border-2 bg-[#C5C1C0] rounded-md pl-2 py-2 flex space-x-5 items-center justify-start group"
+            class="links w-full border-2 bg-[#C5C1C0] rounded-md pl-2 py-2 flex space-x-5 items-center justify-start group"
             href={link.href}
             target="_blank"
             rel="noreferrer"
