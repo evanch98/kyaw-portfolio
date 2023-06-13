@@ -32,13 +32,13 @@ const links = [
 
 export default component$(() => {
   return (
-    <div class="flex flex-col w-full text-[#E3DCD2]">
+    <div class="flex flex-col w-full">
       <Title title="Links" />
       <div class="flex flex-col space-y-2 mt-5 cursor-pointer">
         {links.map((link) => (
           <a
             key={link.title}
-            class="w-full border-2 bg-[#E3DCD2] rounded-md pl-2 py-2 flex space-x-5 items-center justify-start group"
+            class="w-full border-2 bg-[#C5C1C0] rounded-md pl-2 py-2 flex space-x-5 items-center justify-start group"
             href={link.href}
             target="_blank"
             rel="noreferrer"
@@ -46,12 +46,12 @@ export default component$(() => {
             <div class="w-[64px]">
               <Image src={link.imgSrc} alt={link.title} layout="fullWidth" />
             </div>
-            <div class="flex flex-col justify-center items-start text-[#100C0D]">
+            <div class="flex flex-col justify-center items-start text-black">
               <div class="flex items-center">
-                <p class="font-semibold text-xl group-hover:text-[#CC8B65] ease-in duration-300">
+                <p class="font-semibold text-xl group-hover:text-[#1A2930] ease-in duration-300">
                   {link.title}
                 </p>
-                <BsBoxArrowUpRight class="w-[32px] opacity-0 group-hover:opacity-100 text-[#100C0D] ease-in duration-300" />
+                <BsBoxArrowUpRight class="w-[32px] opacity-0 group-hover:opacity-100 text-black ease-in duration-300" />
               </div>
               <p class="font-sm">{link.desc}</p>
             </div>
