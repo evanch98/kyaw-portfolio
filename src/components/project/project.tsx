@@ -59,7 +59,7 @@ export default component$(() => {
                 class="group-hover:opacity-50 cursor-pointer ease-in duration-300"
               />
               <div class="absolute opacity-0 group-hover:opacity-100 ease-in duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black">
-                <BsPlusCircle class="w-[52px] h-auto" />
+                <BsPlusCircle class="w-[52px] h-auto cursor-pointer" />
               </div>
             </div>
             <p class="text-lg font-semibold">Airbnb Clone</p>
@@ -84,7 +84,7 @@ export default component$(() => {
                 class="group-hover:opacity-70 cursor-pointer ease-in duration-300"
               />
               <div class="absolute opacity-0 group-hover:opacity-100 ease-in duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black">
-                <BsPlusCircle class="w-[52px] h-auto" />
+                <BsPlusCircle class="w-[52px] h-auto cursor-pointer" />
               </div>
             </div>
             <p class="text-lg font-semibold">Share Prompts</p>
