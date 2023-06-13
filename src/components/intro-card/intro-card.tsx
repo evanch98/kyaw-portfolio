@@ -14,6 +14,7 @@ import { animate } from "motion";
 import { easeOutElastic } from "~/utils/easing";
 import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
+import { portfolioWebsite } from "~/utils/projects";
 
 export default component$(() => {
   const modal = useSignal(false);
@@ -29,7 +30,18 @@ export default component$(() => {
   });
   return (
     <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5">
-      {modal.value && <Modal title="Portfolio Website"><ProjectTemplate /></Modal>}
+      {modal.value && (
+        <Modal title={portfolioWebsite.title}>
+          <ProjectTemplate
+            sourceSrc={portfolioWebsite.sourceSrc}
+            liveSrc={portfolioWebsite.liveSrc}
+            date={portfolioWebsite.date}
+            category={portfolioWebsite.category}
+            tech={portfolioWebsite.tech}
+            desc={portfolioWebsite.desc}
+          />
+        </Modal>
+      )}
       <section class="flex-1 flex flex-col p-5 items-center justify-center">
         <Image
           src="/assets/avatar.png"
