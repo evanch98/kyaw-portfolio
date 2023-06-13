@@ -21,3 +21,30 @@ export const metaFrontEnd = {
   ],
   verificationLink: "",
 };
+
+export const metaAndroid = {
+  name: "Meta Android Developer Professional Certificate",
+  platform: "Meta and Coursera",
+  date: "September 2022 - April 2023",
+  courses: [
+    "Introduction to Android Mobile Application Development",
+    "Version Control",
+    "Programming Fundamentals in Kotlin",
+    "Principles of UX/UI Design",
+    "Create the User Interface in Android Studio",
+    "Advanced Programming in Kotlin",
+    "Working with Data in Android",
+    "Mobile Development and JavaScript",
+    "React Basics",
+    "React Native",
+    "Android App Capstone",
+    "Coding Interview Preparation",
+  ],
+  desc: [
+    "Gain the skills required for an entry-level career as an Android developer",
+    "Learn how to create applications for Android including how to build and manage the lifecycle of a mobile app using Android Studio",
+    "Learn coding in Kotlin and the programming fundamentals for how to create the user interface (UI) and best practices for design",
+    "Create cross-platform mobile applications using React Native. Demonstrate your new skills by creating a job-ready portfolio you can show during interviews",
+  ],
+  verificationLink: "https://coursera.org/verify/professional-cert/YXRXLU9WYWX8"
+};
