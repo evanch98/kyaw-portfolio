@@ -5,7 +5,7 @@ import { BsSend } from "@qwikest/icons/bootstrap";
 
 export default component$(() => {
   return (
-    <div class="flex flex-col w-full ">
+    <div class="flex flex-col w-full text-[#F7CE3EC5C1C0]">
       <Title title="Get in Touch" />
       <div class="flex flex-col mt-5 space-y-2 text-lg">
         <p>Name --- Kyaw Thu</p>
@@ -27,7 +27,7 @@ export default component$(() => {
               name="name"
               placeholder=" "
               type="text"
-              class="peer w-full p-4 pt-6 font-light bg-transparent border-2 border-[#E3DCD2] rounded-md outline-none transition"
+              class="peer w-full p-4 pt-6 font-light bg-transparent border-2 border-[#C5C1C0] rounded-md outline-none transition"
             />
             <label class="absolute text-base duration-150 transform -translate-y-3 top-5 left-4 z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">
               Full Name
@@ -38,7 +38,7 @@ export default component$(() => {
               name="email"
               placeholder=" "
               type="email"
-              class="peer w-full p-4 pt-6 font-light bg-transparent border-2 border-[#E3DCD2] rounded-md outline-none transition"
+              class="peer w-full p-4 pt-6 font-light bg-transparent border-2 border-[#C5C1C0] rounded-md outline-none transition"
             />
             <label class="absolute text-base duration-150 transform -translate-y-3 top-5 left-4 z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">
               Email
@@ -49,17 +49,17 @@ export default component$(() => {
           <textarea
             name="message"
             rows={5}
-            class="peer w-full p-4 pt-6 font-light bg-transparent border-2 border-[#E3DCD2] rounded-md outline-none transition"
+            class="peer w-full p-4 pt-6 font-light bg-transparent border-2 border-[#C5C1C0] rounded-md outline-none transition"
           ></textarea>
           <label class="absolute text-base duration-150 transform -translate-y-3 top-6 left-4 z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">
             Your Message
           </label>
         </div>
-        <button class="w-52 h-10 bg-transparent border-2 border-[#E3DCD2] rounded-md flex items-center justify-center px-5 hover:border-[#CC8B65] ease-in duration-300 group">
-          <p class="group-hover:text-[#CC8B65] ease-in duration-300">
+        <button class="w-52 h-10 bg-transparent border-2 border-[#C5C1C0] rounded-md flex items-center justify-center px-5 hover:border-[#F7CE3E] ease-in duration-300 group">
+          <p class="group-hover:text-[#F7CE3E] ease-in duration-300">
             Send Message
           </p>
-          <BsSend class="ml-2 group-hover:text-[#CC8B65] group-hover:translate-x-1 ease-in duration-300" />
+          <BsSend class="ml-2 group-hover:text-[#F7CE3E] group-hover:translate-x-1 ease-in duration-300" />
         </button>
       </form>
     </div>
