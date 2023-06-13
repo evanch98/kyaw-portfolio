@@ -7,10 +7,12 @@ import {
   BsEnvelopeFill,
   BsDownload,
 } from "@qwikest/icons/bootstrap";
+import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
+import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 
 export default component$(() => {
   return (
-    <div class="h-[550px] flex flex-col bg-[#013329] rounded-md overflow-hidden">
+    <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5">
       <section class="flex-1 flex flex-col p-5 items-center justify-center">
         <Image
           src="/assets/avatar.png"
@@ -19,11 +21,11 @@ export default component$(() => {
           height={247}
           alt="An avatar image"
         />
-        <h1 class="tracking-widest text-4xl text-[#CC8B65]">Kyaw Thu</h1>
-        <p class="text-lg text-[#E3DCD2] mt-5">
+        <h1 class="tracking-widest text-4xl text-[#F7CE3E]">Kyaw Thu</h1>
+        <p class="text-lg text-[#C5C1C0] mt-5">
           I am an aspiring front-end web developer.
         </p>
-        <p class="text-sm text-[#E3DCD2] mt-3">
+        <p class="text-sm text-[#C5C1C0] mt-3">
           Let's build something legendary together.
         </p>
         <div class="flex items-center space-x-5 mt-5">
@@ -33,7 +35,7 @@ export default component$(() => {
             target="_blank"
             rel="noreferrer"
           >
-            <BsGithub class="text-[#E3DCD2] w-[30px] h-auto hover:text-[#CC8B65] ease-in duration-300" />
+            <BsGithub class="text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
           </a>
           <a
             class="cursor-pointer"
@@ -41,7 +43,7 @@ export default component$(() => {
             target="_blank"
             rel="noreferrer"
           >
-            <BsLinkedin class="text-[#E3DCD2] w-[30px] h-auto hover:text-[#CC8B65] ease-in duration-300" />
+            <BsLinkedin class="text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
           </a>
           <a
             class="cursor-pointer "
@@ -49,22 +51,23 @@ export default component$(() => {
             target="_blank"
             rel="noreferrer"
           >
-            <BsDiscord class="text-[#E3DCD2] w-[30px] h-auto hover:text-[#CC8B65] ease-in duration-300" />
+            <BsDiscord class="text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
           </a>
           <a class="cursor-pointer" href="mailto:evanch98@gmail.com">
-            <BsEnvelopeFill class="text-[#E3DCD2] w-[30px] h-auto hover:text-[#CC8B65] ease-in duration-300" />
+            <BsEnvelopeFill class="text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
           </a>
         </div>
       </section>
-      <section class="flex items-center justify-between p-5 bg-[#E3DCD2]">
-        <div class="flex items-center justify-center w-full space-x-5 text-[#100C0D] cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+      <HorizontalSeparator />
+      <section class="flex items-center justify-between px-5 pb-5 bg-[#1A2930]">
+        <div class="flex items-center justify-center w-full space-x-5 text-[#C5C1C0] cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
           <a href="/resume.pdf" download={true}>
             My Resume
           </a>
           <BsDownload />
         </div>
-        <p class="text-[#100C0D]">|</p>
-        <div class="flex items-center justify-center w-full space-x-5 text-[#100C0D] cursor-pointer hover:text-[#CC8B65] ease-in duration-300">
+        <VerticalSeparator />
+        <div class="flex items-center justify-center w-full space-x-5 text-[#C5C1C0] cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
           <a
             href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
             target="_blank"
