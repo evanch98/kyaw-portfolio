@@ -1,4 +1,10 @@
-import { $, component$, useSignal, useStore, useVisibleTask$ } from "@builder.io/qwik";
+import {
+  $,
+  component$,
+  useSignal,
+  useStore,
+  useVisibleTask$,
+} from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
 import {
@@ -11,7 +17,11 @@ import VerticalSeparator from "../common/separators/vertical-separator/vertical-
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 import Modal from "../common/modal/modal";
 import CertTemplate from "../cert-template/cert-template";
-import { ibmDataAnalyst, metaAndroid, metaFrontEnd } from "~/utils/certificates";
+import {
+  ibmDataAnalyst,
+  metaAndroid,
+  metaFrontEnd,
+} from "~/utils/certificates";
 import { animate } from "motion";
 import Uopeople from "../uopeople/uopeople";
 
@@ -39,7 +49,7 @@ export default component$(() => {
 
   const onUopeopleModalClose = $(() => {
     uopeopleModal.value = false;
-  })
+  });
   return (
     <div id="resume" class="flex flex-col w-full text-[#C5C1C0]">
       {certModal.open && (
@@ -67,7 +77,12 @@ export default component$(() => {
             <BsMortarboard class="w-[24px] h-auto" />
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p>Bachelor of Science in Computer Science</p>
+            <p
+              onClick$={() => (uopeopleModal.value = true)}
+              class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
+            >
+              Bachelor of Science in Computer Science
+            </p>
             <p>University of the People, CA</p>
             <p>2021-Present</p>
           </div>
