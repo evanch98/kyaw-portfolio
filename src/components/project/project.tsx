@@ -9,7 +9,7 @@ import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
 
 export default component$(() => {
-  const modal = useStore({
+  const projectModal = useStore({
     open: false,
     projectData: {
       title: "",
@@ -22,19 +22,19 @@ export default component$(() => {
     },
   });
   const onClose = $(() => {
-    modal.open = false;
+    projectModal.open = false;
   });
   return (
     <div class="flex flex-col w-full text-[#C5C1C0]">
-      {modal.open && (
-        <Modal title={modal.projectData.title} onClose={onClose}>
+      {projectModal.open && (
+        <Modal title={projectModal.projectData.title} onClose={onClose}>
           <ProjectTemplate
-            sourceSrc={modal.projectData.sourceSrc}
-            liveSrc={modal.projectData.liveSrc}
-            date={modal.projectData.date}
-            category={modal.projectData.category}
-            tech={modal.projectData.tech}
-            desc={modal.projectData.desc}
+            sourceSrc={projectModal.projectData.sourceSrc}
+            liveSrc={projectModal.projectData.liveSrc}
+            date={projectModal.projectData.date}
+            category={projectModal.projectData.category}
+            tech={projectModal.projectData.tech}
+            desc={projectModal.projectData.desc}
           />
         </Modal>
       )}
@@ -45,8 +45,8 @@ export default component$(() => {
           <div class="w-full flex flex-col items-center justify-center space-y-2">
             <div
               onClick$={() => {
-                modal.open = true;
-                modal.projectData = { ...project1 };
+                projectModal.open = true;
+                projectModal.projectData = { ...project1 };
               }}
               class="relative group"
             >
@@ -70,8 +70,8 @@ export default component$(() => {
           <div class="w-full flex flex-col items-center justify-center space-y-2">
             <div
               onClick$={() => {
-                modal.open = true;
-                modal.projectData = { ...project2 };
+                projectModal.open = true;
+                projectModal.projectData = { ...project2 };
               }}
               class="relative group"
             >
