@@ -4,7 +4,7 @@ import { Image } from "@unpic/qwik";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import { BsPlusCircle } from "@qwikest/icons/bootstrap";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
-import { project1 } from "~/utils/projects";
+import { project1, project2 } from "~/utils/projects";
 import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
 
@@ -28,7 +28,7 @@ export default component$(() => {
     <div class="flex flex-col w-full text-[#C5C1C0]">
       {modal.open && (
         <Modal title={modal.projectData.title} onClose={onClose}>
-          <ProjectTemplate 
+          <ProjectTemplate
             sourceSrc={modal.projectData.sourceSrc}
             liveSrc={modal.projectData.liveSrc}
             date={modal.projectData.date}
@@ -43,10 +43,13 @@ export default component$(() => {
         <div class="flex items-start justify-between">
           {/* Project 1 */}
           <div class="w-full flex flex-col items-center justify-center space-y-2">
-            <div onClick$={() => {
-              modal.open = true;
-              modal.projectData = {...project1}
-            }} class="relative group">
+            <div
+              onClick$={() => {
+                modal.open = true;
+                modal.projectData = { ...project1 };
+              }}
+              class="relative group"
+            >
               <Image
                 src="/projects/airbnb.png"
                 width={300}
@@ -65,7 +68,13 @@ export default component$(() => {
           <VerticalSeparator />
           {/* Project 2 */}
           <div class="w-full flex flex-col items-center justify-center space-y-2">
-            <div class="relative group">
+            <div
+              onClick$={() => {
+                modal.open = true;
+                modal.projectData = { ...project2 };
+              }}
+              class="relative group"
+            >
               <Image
                 src="/projects/share_prompts.png"
                 width={300}
