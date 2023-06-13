@@ -7,7 +7,7 @@ import HorizontalSeparator from "../common/separators/horizontal-separator/horiz
 
 export default component$(() => {
   return (
-    <div class="flex flex-col w-full text-[#E3DCD2]">
+    <div class="flex flex-col w-full text-[#C5C1C0]">
       <Title title="Projects" />
       <div class="flex flex-col mt-5 space-y-6">
         <div class="flex items-start justify-between">
@@ -21,7 +21,7 @@ export default component$(() => {
                 layout="constrained"
                 class="group-hover:opacity-50 cursor-pointer ease-in duration-300"
               />
-              <div class="absolute opacity-0 group-hover:opacity-100 ease-in duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[#CC8B65]">
+              <div class="absolute opacity-0 group-hover:opacity-100 ease-in duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black">
                 <BsPlusCircle class="w-[52px] h-auto" />
               </div>
             </div>
@@ -39,7 +39,7 @@ export default component$(() => {
                 layout="constrained"
                 class="group-hover:opacity-70 cursor-pointer ease-in duration-300"
               />
-              <div class="absolute opacity-0 group-hover:opacity-100 ease-in duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[#CC8B65]">
+              <div class="absolute opacity-0 group-hover:opacity-100 ease-in duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black">
                 <BsPlusCircle class="w-[52px] h-auto" />
               </div>
             </div>
@@ -58,7 +58,7 @@ export default component$(() => {
                 layout="constrained"
                 class="group-hover:opacity-50 cursor-pointer ease-in duration-300"
               />
-              <div class="absolute opacity-0 group-hover:opacity-100 ease-in duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[#CC8B65]">
+              <div class="absolute opacity-0 group-hover:opacity-100 ease-in duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black">
                 <BsPlusCircle class="w-[52px] h-auto" />
               </div>
             </div>
@@ -76,7 +76,7 @@ export default component$(() => {
                 layout="constrained"
                 class="group-hover:opacity-70 cursor-pointer ease-in duration-300"
               />
-              <div class="absolute opacity-0 group-hover:opacity-100 ease-in duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[#CC8B65]">
+              <div class="absolute opacity-0 group-hover:opacity-100 ease-in duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black">
                 <BsPlusCircle class="w-[52px] h-auto" />
               </div>
             </div>
@@ -86,7 +86,9 @@ export default component$(() => {
         </div>
       </div>
       <HorizontalSeparator />
-      <p class="pb-2 text-lg cursor-pointer hover:text-[#CC8B65] ease-in duration-300">See all projects</p>
+      <p class="pb-2 text-lg cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
+        See all projects
+      </p>
     </div>
   );
 });
