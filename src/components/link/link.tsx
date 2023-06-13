@@ -33,6 +33,7 @@ const links = [
 
 export default component$(() => {
   useVisibleTask$(() => {
+    animate("#link", { opacity: [0, 1] }, { easing: "ease-in", duration: 1 });
     animate(
       ".links",
       { x: [-1000, 0] },
@@ -40,7 +41,7 @@ export default component$(() => {
     );
   });
   return (
-    <div class="flex flex-col w-full">
+    <div id="link" class="flex flex-col w-full">
       <Title title="Links" />
       <div class="flex flex-col space-y-2 mt-5 cursor-pointer">
         {links.map((link) => (
