@@ -100,7 +100,7 @@ export default component$(() => {
           >
             My Resume
           </a>
-          <BsDownload class="group-hover:text-[#F7CE3E] ease-in duration-300 group-hover:translate-x-1" />
+          <BsDownload class="group-hover:text-[#F7CE3E] group-hover:animate-bounce ease-in duration-300" />
         </div>
         <VerticalSeparator />
         <div
@@ -110,7 +110,7 @@ export default component$(() => {
           <p class="group-hover:text-[#F7CE3E] ease-in duration-300">
             Website's Info
           </p>
-          <BsInfoCircleFill class="group-hover:text-[#F7CE3E] ease-in duration-300 group-hover:translate-x-1" />
+          <BsInfoCircleFill class="group-hover:text-[#F7CE3E] group-hover:animate-bounce ease-in duration-300" />
         </div>
       </section>
     </div>
