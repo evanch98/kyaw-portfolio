@@ -20,7 +20,7 @@ export default component$((props: CertTemplateProps) => {
         <p>Date --- {props.date}</p>
       </div>
       <HorizontalSeparator />
-      <div class="flex items-start justify-between h-auto w-full">
+      <div class="flex items-start justify-between h-auto w-full space-x-3">
         <section class="w-full flex flex-col items-start justify-start">
           <div class="flex justify-center items-center space-x-2">
             <h1 class="text-xl font-bold">Courses</h1>

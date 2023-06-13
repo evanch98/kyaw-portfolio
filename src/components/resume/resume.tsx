@@ -11,10 +11,19 @@ import VerticalSeparator from "../common/separators/vertical-separator/vertical-
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 import Modal from "../common/modal/modal";
 import CertTemplate from "../cert-template/cert-template";
+import { metaFrontEnd } from "~/utils/certificates";
 
 export default component$(() => {
   const certModal = useStore({
     open: false,
+    certData: {
+      name: "",
+      platform: "",
+      date: "",
+      courses: [""],
+      desc: [""],
+      verificationLink: "",
+    },
   });
 
   const onCertModalClose = $(() => {
@@ -24,7 +33,14 @@ export default component$(() => {
     <div class="flex flex-col w-full text-[#C5C1C0]">
       {certModal.open && (
         <Modal title="Cert" onClose={onCertModalClose}>
-          <CertTemplate />
+          <CertTemplate
+            name={certModal.certData.name}
+            platform={certModal.certData.platform}
+            date={certModal.certData.date}
+            courses={certModal.certData.courses}
+            desc={certModal.certData.desc}
+            verificationLink={certModal.certData.verificationLink}
+          />
         </Modal>
       )}
       <Title title="Resume" />
@@ -50,6 +66,7 @@ export default component$(() => {
             <p
               onClick$={() => {
                 certModal.open = true;
+                certModal.certData = {...metaFrontEnd}
               }}
               class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
             >
