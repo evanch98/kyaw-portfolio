@@ -60,22 +60,27 @@ export default component$(() => {
       </section>
       <HorizontalSeparator />
       <section class="flex items-center justify-between px-5 pb-5 bg-[#1A2930]">
-        <div class="flex items-center justify-center w-full space-x-5 text-[#C5C1C0] cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
-          <a href="/resume.pdf" download={true}>
+        <div class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group">
+          <a
+            href="/resume.pdf"
+            download={true}
+            class="group-hover:text-[#F7CE3E] ease-in duration-300"
+          >
             My Resume
           </a>
-          <BsDownload />
+          <BsDownload class="group-hover:text-[#F7CE3E] ease-in duration-300 group-hover:translate-x-1" />
         </div>
         <VerticalSeparator />
-        <div class="flex items-center justify-center w-full space-x-5 text-[#C5C1C0] cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
+        <div class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group">
           <a
             href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
             target="_blank"
             rel="noreferrer"
+            class="group-hover:text-[#F7CE3E] ease-in duration-300"
           >
             My LinkedIn
           </a>
-          <BsLinkedin />
+          <BsLinkedin class="group-hover:text-[#F7CE3E] ease-in duration-300 group-hover:translate-x-1" />
         </div>
       </section>
     </div>
