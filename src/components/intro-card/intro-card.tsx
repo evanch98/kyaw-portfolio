@@ -13,6 +13,7 @@ import HorizontalSeparator from "../common/separators/horizontal-separator/horiz
 import { animate } from "motion";
 import { easeOutElastic } from "~/utils/easing";
 import Modal from "../common/modal/modal";
+import ProjectTemplate from "../common/project-template/project-template";
 
 export default component$(() => {
   const modal = useSignal(false);
@@ -28,7 +29,7 @@ export default component$(() => {
   });
   return (
     <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5">
-      {modal.value && <Modal />}
+      {modal.value && <Modal><ProjectTemplate /></Modal>}
       <section class="flex-1 flex flex-col p-5 items-center justify-center">
         <Image
           src="/assets/avatar.png"
