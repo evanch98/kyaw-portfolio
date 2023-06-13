@@ -1,4 +1,4 @@
-import { $, component$, useStore } from "@builder.io/qwik";
+import { $, component$, useSignal, useStore } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { Image } from "@unpic/qwik";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
@@ -7,6 +7,7 @@ import HorizontalSeparator from "../common/separators/horizontal-separator/horiz
 import { project1, project2 } from "~/utils/projects";
 import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
+import AllProjects from "../all-projects/all-projects";
 
 export default component$(() => {
   const projectModal = useStore({
@@ -21,13 +22,20 @@ export default component$(() => {
       desc: [""],
     },
   });
-  const onClose = $(() => {
+  const allProjectsModal = useSignal(false);
+  const onAllProjectsModalClose = $(() => {
+    allProjectsModal.value = false;
+  });
+  const onProjectModalClose = $(() => {
     projectModal.open = false;
   });
   return (
     <div class="flex flex-col w-full text-[#C5C1C0]">
       {projectModal.open && (
-        <Modal title={projectModal.projectData.title} onClose={onClose}>
+        <Modal
+          title={projectModal.projectData.title}
+          onClose={onProjectModalClose}
+        >
           <ProjectTemplate
             sourceSrc={projectModal.projectData.sourceSrc}
             liveSrc={projectModal.projectData.liveSrc}
@@ -36,6 +44,11 @@ export default component$(() => {
             tech={projectModal.projectData.tech}
             desc={projectModal.projectData.desc}
           />
+        </Modal>
+      )}
+      {allProjectsModal.value && (
+        <Modal title="All Projects" onClose={onAllProjectsModalClose}>
+          <AllProjects />
         </Modal>
       )}
       <Title title="Projects" />
@@ -130,7 +143,12 @@ export default component$(() => {
         </div>
       </div>
       <HorizontalSeparator />
-      <p class="pb-2 text-lg cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
+      <p
+        onClick$={() => {
+          allProjectsModal.value = true;
+        }}
+        class="pb-2 text-lg cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
+      >
         See all projects
       </p>
     </div>
