@@ -1,4 +1,4 @@
-import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { $, component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 import {
   BsGithub,
@@ -18,6 +18,9 @@ import { portfolioWebsite } from "~/utils/projects";
 
 export default component$(() => {
   const modal = useSignal(false);
+  const onClose = $(() => {
+    modal.value = false;
+  });
   useVisibleTask$(() => {
     animate(
       ".icon",
@@ -31,7 +34,7 @@ export default component$(() => {
   return (
     <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5">
       {modal.value && (
-        <Modal title={portfolioWebsite.title}>
+        <Modal title={portfolioWebsite.title} onClose={onClose}>
           <ProjectTemplate
             sourceSrc={portfolioWebsite.sourceSrc}
             liveSrc={portfolioWebsite.liveSrc}
