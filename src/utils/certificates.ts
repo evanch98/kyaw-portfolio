@@ -70,5 +70,5 @@ export const ibmDataAnalyst = {
     "Develop working knowledge of Python language for analyzing data using Python libraries like Pandas and Numpy, and invoke APIs and Web Services",
     "Describe data ecosystem and Compose queries to access data in cloud databases using SQL and Python from Jupyter notebooks",
   ],
-  verificationLink: "coursera.org/verify/professionalcert/RS5G3TUCKZVH"
+  verificationLink: "https://coursera.org/verify/professional-cert/RS5G3TUCKZVH"
 };
