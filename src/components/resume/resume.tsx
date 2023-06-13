@@ -11,7 +11,7 @@ import VerticalSeparator from "../common/separators/vertical-separator/vertical-
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 import Modal from "../common/modal/modal";
 import CertTemplate from "../cert-template/cert-template";
-import { metaAndroid, metaFrontEnd } from "~/utils/certificates";
+import { ibmDataAnalyst, metaAndroid, metaFrontEnd } from "~/utils/certificates";
 
 export default component$(() => {
   const certModal = useStore({
@@ -89,7 +89,13 @@ export default component$(() => {
             <p>September 2022-April 2023</p>
           </div>
           <div class="flex flex-col items-center justify-center mt-5">
-            <p class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
+            <p
+              onClick$={() => {
+                certModal.open = true;
+                certModal.certData = { ...ibmDataAnalyst };
+              }}
+              class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
+            >
               IBM Data Analyst Professional Certificate
             </p>
             <p>IBM and Coursera</p>
