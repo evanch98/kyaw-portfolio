@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 import {
   BsGithub,
@@ -9,8 +9,29 @@ import {
 } from "@qwikest/icons/bootstrap";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
+import { animate } from "motion";
 
 export default component$(() => {
+  useVisibleTask$(() => {
+    function easeOutElastic(x: number): number {
+      const c4 = (2 * Math.PI) / 3;
+
+      return x === 0
+        ? 0
+        : x === 1
+        ? 1
+        : Math.pow(2, -10 * x) * Math.sin((x * 10 - 0.75) * c4) + 1;
+    }
+
+    animate(
+      ".icon",
+      { rotate: [0, -90, 90, 0] },
+      {
+        easing: easeOutElastic,
+        duration: 2,
+      }
+    );
+  });
   return (
     <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5">
       <section class="flex-1 flex flex-col p-5 items-center justify-center">
@@ -35,7 +56,7 @@ export default component$(() => {
             target="_blank"
             rel="noreferrer"
           >
-            <BsGithub class="text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
+            <BsGithub class="icon text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
           </a>
           <a
             class="cursor-pointer"
@@ -43,7 +64,7 @@ export default component$(() => {
             target="_blank"
             rel="noreferrer"
           >
-            <BsLinkedin class="text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
+            <BsLinkedin class="icon text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
           </a>
           <a
             class="cursor-pointer "
@@ -51,10 +72,10 @@ export default component$(() => {
             target="_blank"
             rel="noreferrer"
           >
-            <BsDiscord class="text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
+            <BsDiscord class="icon text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
           </a>
           <a class="cursor-pointer" href="mailto:evanch98@gmail.com">
-            <BsEnvelopeFill class="text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
+            <BsEnvelopeFill class="icon text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
           </a>
         </div>
       </section>
