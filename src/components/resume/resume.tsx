@@ -1,4 +1,4 @@
-import { $, component$, useStore, useVisibleTask$ } from "@builder.io/qwik";
+import { $, component$, useSignal, useStore, useVisibleTask$ } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
 import {
@@ -13,6 +13,7 @@ import Modal from "../common/modal/modal";
 import CertTemplate from "../cert-template/cert-template";
 import { ibmDataAnalyst, metaAndroid, metaFrontEnd } from "~/utils/certificates";
 import { animate } from "motion";
+import Uopeople from "../uopeople/uopeople";
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -30,9 +31,15 @@ export default component$(() => {
     },
   });
 
+  const uopeopleModal = useSignal(false);
+
   const onCertModalClose = $(() => {
     certModal.open = false;
   });
+
+  const onUopeopleModalClose = $(() => {
+    uopeopleModal.value = false;
+  })
   return (
     <div id="resume" class="flex flex-col w-full text-[#C5C1C0]">
       {certModal.open && (
@@ -45,6 +52,11 @@ export default component$(() => {
             desc={certModal.certData.desc}
             verificationLink={certModal.certData.verificationLink}
           />
+        </Modal>
+      )}
+      {uopeopleModal.value && (
+        <Modal title="Computer Science" onClose={onUopeopleModalClose}>
+          <Uopeople />
         </Modal>
       )}
       <Title title="Resume" />
