@@ -4,7 +4,7 @@ import Title from "~/components/common/title/title";
 
 export default component$(() => {
   return (
-    <div class="w-full h-[400px] p-2 bg-[#1A2930] rounded-md flex flex-col items-center justify-center overflow-y-auto">
+    <div class="w-full mt-2 h-[450px] p-2 bg-[#1A2930] rounded-md flex flex-col overflow-y-auto">
       <Title title="About" />
       <HorizontalSeparator />
       <div class="flex flex-col text-[#C5C1C0] text-lg mt-5 space-y-5">
