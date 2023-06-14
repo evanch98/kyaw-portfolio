@@ -14,6 +14,7 @@ interface ProjectTemplateProps {
   category: string;
   tech: Array<string>;
   desc: Array<string>;
+  deployedOn?: string;
 }
 
 export default component$((props: ProjectTemplateProps) => {
@@ -76,7 +77,7 @@ export default component$((props: ProjectTemplateProps) => {
         </section>
       </div>
       <HorizontalSeparator />
-      <p class="text-sm text-center">Deployed on Vercel</p>
+      <p class="text-sm text-center">Deployed on {props.deployedOn ? props.deployedOn : "Vercel"}</p>
     </div>
   );
 });
