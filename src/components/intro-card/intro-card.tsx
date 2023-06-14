@@ -32,7 +32,7 @@ export default component$(() => {
     );
   });
   return (
-    <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5">
+    <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5 shadow-xl">
       {modal.value && (
         <Modal title={portfolioWebsite.title} onClose={onClose}>
           <ProjectTemplate
