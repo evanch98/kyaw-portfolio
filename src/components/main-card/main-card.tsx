@@ -41,7 +41,7 @@ export default component$(() => {
   }
 
   return (
-    <div class="flex-1 flex items-start">
+    <div class="flex-1 flex items-start shadow-xl">
       <div class="flex h-[550px] flex-col items-center justify-evenly py-5 px-2 bg-[#1A2930] space-y-5 rounded-tl-md rounded-bl-md drop-shadow-2xl">
         <div
           onClick$={() => (tab.value = "about")}
