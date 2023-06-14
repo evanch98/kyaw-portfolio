@@ -4,10 +4,10 @@ import Title from "~/components/common/title/title";
 
 export default component$(() => {
   return (
-    <div class="w-full mt-2 h-[450px] p-2 bg-[#1A2930] rounded-md flex flex-col overflow-y-auto">
+    <div class="w-full mt-3 h-[440px] p-2 bg-[#1A2930] rounded-md flex flex-col overflow-y-auto">
       <Title title="About" />
       <HorizontalSeparator />
-      <div class="flex flex-col text-[#C5C1C0] text-lg space-y-2">
+      <div class="flex flex-col text-[#C5C1C0] text-base space-y-2">
         <p class="para">
           I have spent 7 years studying medicine at the University of Medicine
           1, Yangon. Due to several reasons, including pandemic, I had to drop
