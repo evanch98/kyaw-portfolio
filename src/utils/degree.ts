@@ -30,6 +30,11 @@ export const uopeopleCourses = [
     gpa: "4.0",
   },
   {
+    code: "CS 1103",
+    course: "Programming 2",
+    gpa: "4.0",
+  },
+  {
     code: "CS 2205",
     course: "Web Programming 1",
     gpa: "4.0",
