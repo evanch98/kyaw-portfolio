@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import IntroCard from "../intro-card/intro-card";
 import MainCard from "../main-card/main-card";
-import MobileIntroCard from "../mobile-intro-card/mobile-intro-card";
+import MobileIntroCard from "../mobile/mobile-intro-card/mobile-intro-card";
 
 export default component$(() => {
   return (
