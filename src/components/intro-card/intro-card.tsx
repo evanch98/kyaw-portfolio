@@ -94,8 +94,9 @@ export default component$(() => {
       <section class="flex items-center justify-between px-5 pb-5 bg-[#1A2930]">
         <div class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group">
           <a
-            href="/resume.pdf"
-            download={true}
+            href="https://drive.google.com/file/d/10mhxA0iDtQLDJPP7a3Ndiyl9RjExcT9o/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
             class="group-hover:text-[#F7CE3E] ease-in duration-300"
           >
             My Resume
