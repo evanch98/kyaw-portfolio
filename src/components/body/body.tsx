@@ -1,15 +1,19 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 import IntroCard from "../intro-card/intro-card";
 import MainCard from "../main-card/main-card";
 import MobileIntroCard from "../mobile/mobile-intro-card/mobile-intro-card";
 import MobileAboutCard from "../mobile/mobile-about-card/mobile-about-card";
-import {BsGrid3X3GapFill } from "@qwikest/icons/bootstrap";
+import { BsGrid3X3GapFill } from "@qwikest/icons/bootstrap";
 
 export default component$(() => {
+  const sideMenu = useSignal(false);
   return (
     <>
       <div class="xl:hidden flex flex-col items-center justify-end text-[#C5C1C0] w-full p-2 h-full">
-        <BsGrid3X3GapFill class="w-[28px] h-auto self-end mb-2" />
+        <BsGrid3X3GapFill
+          onClick$={() => (sideMenu.value = true)}
+          class="w-[28px] h-auto self-end mb-2"
+        />
         <MobileIntroCard />
         <MobileAboutCard />
       </div>
