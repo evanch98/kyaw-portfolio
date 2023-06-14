@@ -1,14 +1,30 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useVisibleTask$ } from "@builder.io/qwik";
+import { animate, spring, stagger } from "motion";
 import HorizontalSeparator from "~/components/common/separators/horizontal-separator/horizontal-separator";
 import Title from "~/components/common/title/title";
 
 export default component$(() => {
+  useVisibleTask$(() => {
+    animate(
+      "#mobile-about",
+      { opacity: [0, 1] },
+      { easing: "ease-in", duration: 1 }
+    );
+    animate(
+      ".mobile-para",
+      { x: [-900, 0] },
+      { easing: spring({ velocity: 50, stiffness: 50 }), delay: stagger(0.15) }
+    );
+  });
   return (
-    <div class="w-full mt-3 h-[440px] p-2 bg-[#1A2930] rounded-md flex flex-col overflow-y-auto">
+    <div
+      id="mobile-about"
+      class="w-full mt-3 h-full p-2 bg-[#1A2930] rounded-md flex flex-col"
+    >
       <Title title="About" />
       <HorizontalSeparator />
       <div class="flex flex-col text-[#C5C1C0] text-base space-y-2">
-        <p class="para">
+        <p class="mobile-para">
           I have spent 7 years studying medicine at the University of Medicine
           1, Yangon. Due to several reasons, including pandemic, I had to drop
           out of the university. For as long as I can remember, I have always
@@ -16,7 +32,7 @@ export default component$(() => {
           learning programming with Python, which made me love programming even
           more.
         </p>
-        <p class="para">
+        <p class="mobile-para">
           After exploring several career options, I was quickly drawn to
           front-end web development. I started learning HTML and CSS to build
           simple websites. Fascinated with how intricate web development can be,
@@ -25,7 +41,7 @@ export default component$(() => {
           spending my time building projects with React JS, Next JS, Tailwind
           CSS, and MongoDB and learning new technologies.
         </p>
-        <p class="para">
+        <p class="mobile-para">
           Apart from coding, I enjoy swimming. My favorite movie and TV show
           genres are Sci-fi and Sitcom. My favorite sport is soccer. My favorite
           team is Liverpool FC based in Liverpool, England. I also watch NBA
