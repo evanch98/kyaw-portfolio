@@ -7,7 +7,7 @@ import { easeOutElastic } from "~/utils/easing";
 export default component$(() => {
   useVisibleTask$(() => {
     animate(
-      ".icon",
+      ".mobile-icon",
       { rotate: [0, -90, 90, 0] },
       {
         easing: easeOutElastic,
@@ -37,7 +37,7 @@ export default component$(() => {
           target="_blank"
           rel="noreferrer"
         >
-          <BsGithub class="icon text-[#C5C1C0] w-[24px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
+          <BsGithub class="mobile-icon text-[#C5C1C0] w-[24px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
         </a>
         <a
           class="cursor-pointer"
@@ -45,7 +45,7 @@ export default component$(() => {
           target="_blank"
           rel="noreferrer"
         >
-          <BsLinkedin class="icon text-[#C5C1C0] w-[24px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
+          <BsLinkedin class="mobile-icon text-[#C5C1C0] w-[24px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
         </a>
         <a
           class="cursor-pointer "
@@ -53,10 +53,10 @@ export default component$(() => {
           target="_blank"
           rel="noreferrer"
         >
-          <BsDiscord class="icon text-[#C5C1C0] w-[24px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
+          <BsDiscord class="mobile-icon text-[#C5C1C0] w-[24px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
         </a>
         <a class="cursor-pointer" href="mailto:evanch98@gmail.com">
-          <BsEnvelopeFill class="icon text-[#C5C1C0] w-[24px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
+          <BsEnvelopeFill class="mobile-icon text-[#C5C1C0] w-[24px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
         </a>
       </div>
     </div>
