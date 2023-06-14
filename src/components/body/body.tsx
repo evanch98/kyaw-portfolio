@@ -8,7 +8,7 @@ import {BsGrid3X3GapFill } from "@qwikest/icons/bootstrap";
 export default component$(() => {
   return (
     <>
-      <div class="xl:hidden flex flex-col items-center justify-end text-[#C5C1C0] w-full p-2 overflow-auto">
+      <div class="xl:hidden flex flex-col items-center justify-end text-[#C5C1C0] w-full p-2 h-full">
         <BsGrid3X3GapFill class="w-[28px] h-auto self-end mb-2" />
         <MobileIntroCard />
         <MobileAboutCard />
