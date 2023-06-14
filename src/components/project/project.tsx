@@ -1,4 +1,4 @@
-import { $, component$, useSignal, useStore } from "@builder.io/qwik";
+import { $, component$, useSignal, useStore, useVisibleTask$ } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { Image } from "@unpic/qwik";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
@@ -8,8 +8,12 @@ import { project1, project2 } from "~/utils/projects";
 import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
 import AllProjects from "../all-projects/all-projects";
+import { animate } from "motion";
 
 export default component$(() => {
+  useVisibleTask$(() => {
+    animate("#project", { opacity: [0, 1] }, { easing: "ease-in", duration: 1 });
+  });
   const projectModal = useStore({
     open: false,
     projectData: {
@@ -30,7 +34,7 @@ export default component$(() => {
     projectModal.open = false;
   });
   return (
-    <div class="flex flex-col w-full text-[#C5C1C0]">
+    <div id="project" class="flex flex-col w-full text-[#C5C1C0]">
       {projectModal.open && (
         <Modal
           title={projectModal.projectData.title}
