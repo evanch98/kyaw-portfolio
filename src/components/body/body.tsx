@@ -4,9 +4,14 @@ import MainCard from "../main-card/main-card";
 
 export default component$(() => {
   return (
-    <div class="flex justify-between items-center w-full text-white py-5 px-20 space-x-1">
-      <IntroCard />
-      <MainCard />
-    </div>
+    <>
+      <div class="xl:hidden flex flex-col text-[#C5C1C0] w-full p-5">
+        <p>Mobile View</p>
+      </div>
+      <div class="hidden xl:flex justify-between items-center w-full text-[#C5C1C0] py-5 px-20 space-x-1">
+        <IntroCard />
+        <MainCard />
+      </div>
+    </>
   );
 });
