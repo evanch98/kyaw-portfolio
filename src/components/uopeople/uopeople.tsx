@@ -9,7 +9,7 @@ export default component$(() => {
       <div class="flex flex-col items-start text-base">
         <p>Degree --- Bachelor of Science in Computer Science</p>
         <p>University --- University of the People, Pasadena, CA</p>
-        <p>Date --- September 2021 - Present</p>
+        <p>Date --- September 2021 - Present (Expected --- March 2025)</p>
         <p>CGPA --- 3.97</p>
       </div>
       <HorizontalSeparator />
@@ -77,7 +77,7 @@ export default component$(() => {
       </section>
       <HorizontalSeparator />
       <a
-        href=""
+        href="https://drive.google.com/file/d/1epANcfPPVCupofHHT2ya1-hLAu6FfXrd/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
         class="text-sm text-center cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
