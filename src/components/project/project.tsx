@@ -9,6 +9,7 @@ import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
 import AllProjects from "../all-projects/all-projects";
 import { animate } from "motion";
+import type { projectObject } from "~/types/types";
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -24,7 +25,7 @@ export default component$(() => {
       category: "",
       tech: [""],
       desc: [""],
-    },
+    } as projectObject ,
   });
   const allProjectsModal = useSignal(false);
   const onAllProjectsModalClose = $(() => {
