@@ -75,6 +75,15 @@ export default component$(() => {
           <p>AY 2022-23 Term 4</p>
         </div>
       </section>
+      <HorizontalSeparator />
+      <a
+        href=""
+        target="_blank"
+        rel="noreferrer"
+        class="text-sm text-center cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
+      >
+        Download transcript
+      </a>
     </div>
   );
 });
