@@ -24,6 +24,7 @@ import {
 } from "~/utils/certificates";
 import { animate } from "motion";
 import Uopeople from "../uopeople/uopeople";
+import FrontEnd from "../front-end/front-end";
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -42,6 +43,7 @@ export default component$(() => {
   });
 
   const uopeopleModal = useSignal(false);
+  const frontEndModal = useSignal(false);
 
   const onCertModalClose = $(() => {
     certModal.open = false;
@@ -49,6 +51,10 @@ export default component$(() => {
 
   const onUopeopleModalClose = $(() => {
     uopeopleModal.value = false;
+  });
+
+  const onFrontEndModalClose = $(() => {
+    frontEndModal.value = false;
   });
   return (
     <div id="resume" class="flex flex-col w-full text-[#C5C1C0]">
@@ -67,6 +73,11 @@ export default component$(() => {
       {uopeopleModal.value && (
         <Modal title="Computer Science" onClose={onUopeopleModalClose}>
           <Uopeople />
+        </Modal>
+      )}
+      {frontEndModal.value && (
+        <Modal title="Front-End Skills" onClose={onFrontEndModalClose}>
+          <FrontEnd />
         </Modal>
       )}
       <Title title="Resume" />
@@ -139,7 +150,10 @@ export default component$(() => {
       <div class="flex flex-col mt-5 space-y-6">
         <div class="flex items-start justify-between">
           <section class="w-full flex flex-col items-center justify-center">
-            <div class="flex justify-center items-center space-x-2 cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
+            <div
+              onClick$={() => (frontEndModal.value = true)}
+              class="flex justify-center items-center space-x-2 cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
+            >
               <h1 class="text-xl font-bold">Front-End</h1>
               <IoLogoReact class="w-[24px] h-auto" />
             </div>
