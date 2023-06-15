@@ -60,3 +60,23 @@ export const project2 = {
     "Users can edit their prompts",
   ],
 };
+
+export const project3 = {
+  title: "Furry Coats",
+  sourceSrc: "https://github.com/evanch98/furry-coats-qwik",
+  liveSrc: "",
+  date: "6/10/2023",
+  category: "Hobby project",
+  tech: [
+    "Qwik",
+    "Qwik City",
+    "TypeScript",
+    "Tailwind CSS",
+  ],
+  desc: [
+    "Qwik and Qwik City framework",
+    "A simple online pet store",
+    "Users can add pets they want to adopt to the shopping cart",
+    "Users can remove pets from their shopping cart"
+  ]
+};
