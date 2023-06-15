@@ -22,25 +22,15 @@ export default component$(() => {
 
   /* Change the contents of the bodyContent based on the current tab */
   if (tab.value === "about") {
-    bodyContent = (
-      <About />
-    );
+    bodyContent = <About />;
   } else if (tab.value === "resume") {
-    bodyContent = (
-      <Resume />
-    );
+    bodyContent = <Resume />;
   } else if (tab.value === "projects") {
-    bodyContent = (
-      <Project />
-    );
+    bodyContent = <Project />;
   } else if (tab.value === "links") {
-    bodyContent = (
-      <Link />
-    );
+    bodyContent = <Link />;
   } else if (tab.value === "contact") {
-    bodyContent = (
-      <Contact />
-    );
+    bodyContent = <Contact />;
   }
 
   return (
@@ -48,6 +38,12 @@ export default component$(() => {
     <div class="flex-1 flex items-start shadow-xl">
       {/* Sidebar START */}
       <div class="flex h-[550px] flex-col items-center justify-evenly py-5 px-2 bg-[#1A2930] space-y-5 rounded-tl-md rounded-bl-md drop-shadow-2xl">
+        {/* 
+          onClick function on each sidebar content will change the value of the tab
+          the main card will render the appropriate content based on the value of the tab 
+          in addition, the color of the sidebar content will change based on the value of the tab
+          in other words, the contents will have a different color from other contents if it is on focus
+        */}
         <div
           onClick$={() => (tab.value = "about")}
           class={`flex flex-col items-center justify-center hover:text-[#F7CE3E] ease-in duration-300 cursor-pointer ${
