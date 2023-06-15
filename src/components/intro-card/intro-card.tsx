@@ -17,11 +17,19 @@ import ProjectTemplate from "../common/project-template/project-template";
 import { portfolioWebsite } from "~/utils/projects";
 
 export default component$(() => {
+  /* to be used to open and close the modal */
   const modal = useSignal(false);
+  /* handle the onClose function for the modal */
   const onClose = $(() => {
     modal.value = false;
   });
+  /* this part is for the animation */
   useVisibleTask$(() => {
+    /* 
+      the following codes rotate the dev icons of the intro card
+      the duration is 4 seconds
+      the easing is easeOutElastic
+     */
     animate(
       ".icon",
       { rotate: [0, -90, 90, 0] },
@@ -33,7 +41,9 @@ export default component$(() => {
   });
   return (
     <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5 shadow-xl">
+      {/* The Modal component will only be rendered if the value of the modal is true */}
       {modal.value && (
+        /* change the info of the website in the ~/utils/projects.ts file */
         <Modal title={portfolioWebsite.title} onClose={onClose}>
           <ProjectTemplate
             sourceSrc={portfolioWebsite.sourceSrc}
@@ -45,6 +55,7 @@ export default component$(() => {
           />
         </Modal>
       )}
+      {/* Main section of the IntroCard */}
       <section class="flex-1 flex flex-col p-5 items-center justify-center">
         <Image
           src="/assets/avatar.png"
@@ -60,6 +71,7 @@ export default component$(() => {
         <p class="text-sm text-[#C5C1C0] mt-3">
           Let's build something legendary together.
         </p>
+        {/* Dev icons START */}
         <div class="flex items-center space-x-5 mt-5">
           <a
             class="cursor-pointer"
@@ -89,8 +101,10 @@ export default component$(() => {
             <BsEnvelopeFill class="icon text-[#C5C1C0] w-[30px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
           </a>
         </div>
+        {/* Dev icons END */}
       </section>
       <HorizontalSeparator />
+      {/* Footer of the IntroCard if you will */}
       <section class="flex items-center justify-between px-5 pb-5 bg-[#1A2930]">
         <div class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group">
           <a
@@ -104,6 +118,7 @@ export default component$(() => {
           <BsDownload class="group-hover:text-[#F7CE3E] group-hover:animate-bounce ease-in duration-300" />
         </div>
         <VerticalSeparator />
+        {/* onClick function will set the value of the modal to true resulting in rendering the Modal component */}
         <div
           onClick$={() => (modal.value = true)}
           class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group"
