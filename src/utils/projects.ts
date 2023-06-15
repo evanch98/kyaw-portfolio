@@ -1,4 +1,6 @@
-export const portfolioWebsite = {
+import type { projectObject } from "~/types/types";
+
+export const portfolioWebsite: projectObject = {
   title: "Portfolio Website",
   sourceSrc: "https://github.com/evanch98/kyaw-portfolio",
   liveSrc: "/",
@@ -8,7 +10,7 @@ export const portfolioWebsite = {
   desc: ["Simple portfolio website"],
 };
 
-export const project1 = {
+export const project1: projectObject = {
   title: "Airbnb Clone",
   sourceSrc: "https://github.com/evanch98/airbnb_clone_react",
   liveSrc: "https://rent-house-react-hopf81d0y-evanch98.vercel.app/",
@@ -36,7 +38,7 @@ export const project1 = {
   ],
 };
 
-export const project2 = {
+export const project2: projectObject = {
   title: "Share Prompts",
   sourceSrc: "https://github.com/evanch98/share-prompts-nextjs",
   liveSrc: "https://share-prompts-taupe.vercel.app/",
@@ -61,7 +63,7 @@ export const project2 = {
   ],
 };
 
-export const project3 = {
+export const project3: projectObject = {
   title: "Furry Coats",
   sourceSrc: "https://github.com/evanch98/furry-coats-qwik",
   liveSrc: "",
