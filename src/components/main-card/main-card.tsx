@@ -14,10 +14,13 @@ import Link from "../link/link";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 
 export default component$(() => {
+  /* to keep track of the current tab */
   const tab = useSignal("about");
 
+  /* the bodyContent of the MainCard */
   let bodyContent = <div>Loading</div>;
 
+  /* Change the contents of the bodyContent based on the current tab */
   if (tab.value === "about") {
     bodyContent = (
       <About />
@@ -41,7 +44,9 @@ export default component$(() => {
   }
 
   return (
+    /* The outermost div that contains the sidebar and the main card */
     <div class="flex-1 flex items-start shadow-xl">
+      {/* Sidebar START */}
       <div class="flex h-[550px] flex-col items-center justify-evenly py-5 px-2 bg-[#1A2930] space-y-5 rounded-tl-md rounded-bl-md drop-shadow-2xl">
         <div
           onClick$={() => (tab.value = "about")}
@@ -93,6 +98,8 @@ export default component$(() => {
           <p class="tracking-widest text-sm">Contact</p>
         </div>
       </div>
+      {/* Sidebar END */}
+      {/* Main card */}
       <div class="w-full h-[550px] flex space-x-5 bg-[#1A2930] rounded-r-md overflow-x-hidden overflow-y-auto p-5">
         {bodyContent}
       </div>
