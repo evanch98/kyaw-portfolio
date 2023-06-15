@@ -79,8 +79,8 @@ export default component$(() => {
                 <BsPlusCircle class="w-[52px] h-auto cursor-pointer" />
               </div>
             </div>
-            <p class="text-lg font-semibold">Airbnb Clone</p>
-            <p class="text-sm">Project</p>
+            <p class="text-lg font-semibold">{project1.title}</p>
+            <p class="text-sm">{project1.tech[0]}</p>
           </div>
           <VerticalSeparator />
           {/* Project 2 */}
@@ -104,8 +104,8 @@ export default component$(() => {
                 <BsPlusCircle class="w-[52px] h-auto cursor-pointer" />
               </div>
             </div>
-            <p class="text-lg font-semibold">Share Prompts</p>
-            <p class="text-sm">Project</p>
+            <p class="text-lg font-semibold">{project2.title}</p>
+            <p class="text-sm">{project2.tech[0]}</p>
           </div>
         </div>
         <div class="flex items-start justify-between">
@@ -123,8 +123,8 @@ export default component$(() => {
                 <BsPlusCircle class="w-[52px] h-auto" />
               </div>
             </div>
-            <p class="text-lg font-semibold">Airbnb Clone</p>
-            <p class="text-sm">Project</p>
+            <p class="text-lg font-semibold">Furry Coats</p>
+            <p class="text-sm">Web Application</p>
           </div>
           <VerticalSeparator />
           <div class="w-full flex flex-col items-center justify-center space-y-2">
@@ -142,7 +142,7 @@ export default component$(() => {
               </div>
             </div>
             <p class="text-lg font-semibold">Share Prompts</p>
-            <p class="text-sm">Project</p>
+            <p class="text-sm">Web Application</p>
           </div>
         </div>
       </div>
