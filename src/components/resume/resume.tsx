@@ -139,7 +139,7 @@ export default component$(() => {
       <div class="flex flex-col mt-5 space-y-6">
         <div class="flex items-start justify-between">
           <section class="w-full flex flex-col items-center justify-center">
-            <div class="flex justify-center items-center space-x-2">
+            <div class="flex justify-center items-center space-x-2 cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
               <h1 class="text-xl font-bold">Front-End</h1>
               <IoLogoReact class="w-[24px] h-auto" />
             </div>
