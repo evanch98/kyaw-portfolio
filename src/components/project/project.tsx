@@ -4,7 +4,7 @@ import { Image } from "@unpic/qwik";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import { BsPlusCircle } from "@qwikest/icons/bootstrap";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
-import { project1, project2 } from "~/utils/projects";
+import { project1, project2, project3 } from "~/utils/projects";
 import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
 import AllProjects from "../all-projects/all-projects";
@@ -110,7 +110,13 @@ export default component$(() => {
         </div>
         <div class="flex items-start justify-between">
           <div class="w-full flex flex-col items-center justify-center space-y-2">
-            <div class="relative group">
+            <div
+              onClick$={() => {
+                projectModal.open = true;
+                projectModal.projectData = { ...project3 };
+              }}
+              class="relative group"
+            >
               <Image
                 src="/projects/airbnb.png"
                 width={300}
@@ -123,8 +129,8 @@ export default component$(() => {
                 <BsPlusCircle class="w-[52px] h-auto" />
               </div>
             </div>
-            <p class="text-lg font-semibold">Furry Coats</p>
-            <p class="text-sm">Web Application</p>
+            <p class="text-lg font-semibold">{project3.title}</p>
+            <p class="text-sm">{project3.tech[0]}</p>
           </div>
           <VerticalSeparator />
           <div class="w-full flex flex-col items-center justify-center space-y-2">
