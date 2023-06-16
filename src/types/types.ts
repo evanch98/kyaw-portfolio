@@ -16,5 +16,5 @@ export type certObject = {
   date: string;
   courses: string[];
   desc: string[];
-  verificationLink: string[];
+  verificationLink: string;
 }
