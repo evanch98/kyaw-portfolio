@@ -96,6 +96,7 @@ export default component$(() => {
             imgAlt="furry coats"
           />
           <VerticalSeparator />
+          {/* Project 4 */}
           <div class="w-full flex flex-col items-center justify-center space-y-2">
             <div class="relative group">
               <Image
