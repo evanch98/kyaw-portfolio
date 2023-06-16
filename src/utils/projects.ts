@@ -76,6 +76,7 @@ export const project3: projectObject = {
     "A chess game built by using vanilla Javascript",
     "Users can interact with chess pieces",
   ],
+  deployedOn: "GitHub",
 };
 
 export const project4: projectObject = {
