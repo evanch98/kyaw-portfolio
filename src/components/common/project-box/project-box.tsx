@@ -4,17 +4,19 @@ import { Image } from "@unpic/qwik";
 import type { projectModalStore, projectObject } from "~/types/types";
 
 interface ProjectBoxProps {
-  projectModal: projectModalStore;
-  project: projectObject;
-  imgSrc: string;
-  imgAlt: string;
+  projectModal: projectModalStore;  // for opening and passing the project data to the Modal component
+  project: projectObject;  // project data
+  imgSrc: string;  // project thumbnail source
+  imgAlt: string;  // image alt
 }
 
+/* represent the project box */
 export default component$((props: ProjectBoxProps) => {
   return (
     <div class="w-full flex flex-col items-center justify-center space-y-2">
       <div
         onClick$={() => {
+          // open the modal and pass the project data to the Modal component
           props.projectModal.open = true;
           props.projectModal.projectData = { ...props.project };
         }}
@@ -33,6 +35,7 @@ export default component$((props: ProjectBoxProps) => {
         </div>
       </div>
       <p class="text-lg font-semibold">{props.project.title}</p>
+      {/* the list of tech stack will always start with the main framework used in the project */}
       <p class="text-sm">{props.project.tech[0]}</p>
     </div>
   );
