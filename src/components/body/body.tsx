@@ -19,7 +19,7 @@ export default component$(() => {
         <div
           class={`${
             sideMenu.value
-              ? "fixed left-0 top-0 w-full h-screen bg-[#1A2930] p-10 ease-in duration-500 z-50 flex flex-col items-center justify-center"
+              ? "fixed left-0 top-0 w-[75%] h-screen bg-[#1A2930] p-10 ease-in duration-500 z-50 flex flex-col items-center justify-center drop-shadow-xl"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }`}
         >
