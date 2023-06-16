@@ -1,4 +1,4 @@
-/* projectObject must be used whenever the new project box is created */
+/* projectObject is for the project Modal */
 export type projectObject = {
   title: string;
   sourceSrc: string;
@@ -8,3 +8,13 @@ export type projectObject = {
   tech: string[];
   desc: string[];
 };
+
+/* certObject is for the certification Modal */
+export type certObject = {
+  name: string;
+  platform: string;
+  date: string;
+  courses: string[];
+  desc: string[];
+  verificationLink: string[];
+}
