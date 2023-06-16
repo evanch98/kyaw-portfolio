@@ -79,3 +79,20 @@ export const project3: projectObject = {
     "Users can remove pets from their shopping cart",
   ],
 };
+
+export const project4: projectObject = {
+  title: "Spotify Clone",
+  sourceSrc: "https://github.com/evanch98/spotify-clone-nextjs",
+  liveSrc: "",
+  date: "5/31/2023",
+  category: "Hobby project",
+  tech: [
+    "Next JS",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Supabase",
+    "Stripe",
+  ],
+  desc: ["Core Spotify features"],
+};
