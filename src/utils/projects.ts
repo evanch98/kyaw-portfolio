@@ -1,5 +1,7 @@
 import type { projectObject } from "~/types/types";
 
+/* Projects's data */
+
 export const portfolioWebsite: projectObject = {
   title: "Portfolio Website",
   sourceSrc: "https://github.com/evanch98/kyaw-portfolio",
