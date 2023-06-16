@@ -1,4 +1,6 @@
-export const metaFrontEnd = {
+import type { certObject } from "~/types/types";
+
+export const metaFrontEnd: certObject = {
   name: "Meta Front-End Professional Certificate",
   platform: "Meta and Coursera",
   date: "June 2023 - Present",
@@ -22,7 +24,7 @@ export const metaFrontEnd = {
   verificationLink: "",
 };
 
-export const metaAndroid = {
+export const metaAndroid: certObject = {
   name: "Meta Android Developer Professional Certificate",
   platform: "Meta and Coursera",
   date: "September 2022 - April 2023",
@@ -49,7 +51,7 @@ export const metaAndroid = {
   verificationLink: "https://coursera.org/verify/professional-cert/YXRXLU9WYWX8"
 };
 
-export const ibmDataAnalyst = {
+export const ibmDataAnalyst: certObject = {
   name: "IBM Data Analyst Professional Certificate",
   platform: "IBM and Coursera",
   date: "July 2021 - August 2021",
