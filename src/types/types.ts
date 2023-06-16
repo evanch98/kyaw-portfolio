@@ -19,6 +19,7 @@ export type certObject = {
   verificationLink: string;
 }
 
+/* projectModalStore is for the project component's useStore hook */
 export type projectModalStore = {
   open: boolean;
   projectData: projectObject;
