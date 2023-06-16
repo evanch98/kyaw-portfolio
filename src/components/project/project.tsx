@@ -46,6 +46,7 @@ export default component$(() => {
             category={projectModal.projectData.category}
             tech={projectModal.projectData.tech}
             desc={projectModal.projectData.desc}
+            deployedOn={projectModal.projectData.deployedOn}
           />
         </Modal>
       )}
