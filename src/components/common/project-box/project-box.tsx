@@ -6,6 +6,8 @@ import type { projectModalStore, projectObject } from "~/types/types";
 interface ProjectBoxProps {
   projectModal: projectModalStore;
   project: projectObject;
+  imgSrc: string;
+  imgAlt: string;
 }
 
 export default component$((props: ProjectBoxProps) => {
@@ -19,10 +21,10 @@ export default component$((props: ProjectBoxProps) => {
         class="relative group"
       >
         <Image
-          src="/projects/airbnb.png"
+          src={props.imgSrc}
           width={300}
           height={148}
-          alt="airbnb"
+          alt={props.imgSrc}
           layout="constrained"
           class="group-hover:opacity-50 cursor-pointer ease-in duration-300"
         />
