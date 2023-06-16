@@ -25,6 +25,7 @@ import {
 import { animate } from "motion";
 import Uopeople from "../uopeople/uopeople";
 import FrontEnd from "../front-end/front-end";
+import type { certObject } from "~/types/types";
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -39,7 +40,7 @@ export default component$(() => {
       courses: [""],
       desc: [""],
       verificationLink: "",
-    },
+    } as certObject,
   });
 
   const uopeopleModal = useSignal(false);
