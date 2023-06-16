@@ -66,17 +66,15 @@ export const project2: projectObject = {
 };
 
 export const project3: projectObject = {
-  title: "Furry Coats",
-  sourceSrc: "https://github.com/evanch98/furry-coats-qwik",
+  title: "Chess",
+  sourceSrc: "https://github.com/evanch98/chess-javascript",
   liveSrc: "",
-  date: "6/10/2023",
+  date: "6/16/2023",
   category: "Hobby project",
-  tech: ["Qwik", "Qwik City", "TypeScript", "Tailwind CSS"],
+  tech: ["JavaScript", "HTML", "CSS"],
   desc: [
-    "Qwik and Qwik City framework",
-    "A simple online pet store",
-    "Users can add pets they want to adopt to the shopping cart",
-    "Users can remove pets from their shopping cart",
+    "A chess game built by using vanilla Javascript",
+    "Users can interact with chess pieces",
   ],
 };
 
