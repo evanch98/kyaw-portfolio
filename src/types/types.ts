@@ -18,3 +18,8 @@ export type certObject = {
   desc: string[];
   verificationLink: string;
 }
+
+export type projectModalStore = {
+  open: boolean;
+  projectData: projectObject;
+}
