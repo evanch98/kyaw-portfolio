@@ -9,13 +9,13 @@ import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
 import AllProjects from "../all-projects/all-projects";
 import { animate } from "motion";
-import type { projectObject } from "~/types/types";
+import type { projectModalStore, projectObject } from "~/types/types";
 
 export default component$(() => {
   useVisibleTask$(() => {
     animate("#project", { opacity: [0, 1] }, { easing: "ease-in", duration: 1 });
   });
-  const projectModal = useStore({
+  const projectModal: projectModalStore = useStore({
     open: false,
     projectData: {
       title: "",
@@ -26,7 +26,7 @@ export default component$(() => {
       tech: [""],
       desc: [""],
     } as projectObject ,
-  });
+  } as projectModalStore);
   const allProjectsModal = useSignal(false);
   const onAllProjectsModalClose = $(() => {
     allProjectsModal.value = false;
