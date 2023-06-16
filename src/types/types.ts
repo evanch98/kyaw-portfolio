@@ -7,6 +7,7 @@ export type projectObject = {
   category: string;
   tech: string[];
   desc: string[];
+  deployedOn?: string;
 };
 
 /* certObject is for the certification Modal */
