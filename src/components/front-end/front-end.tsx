@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { IoLogoReact } from "@qwikest/icons/ionicons";
+import SkillsPercent from "../common/skills-percent/skills-percent";
 
 const skills: { title: string; skills: string }[] = [
   { title: "Qwik", skills: "80%" },
@@ -23,15 +24,7 @@ export default component$(() => {
         </div>
         <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5">
           {skills.map((skill) => (
-            <div key={skill.title} class="flex flex-col w-full space-y-1">
-              <p>{skill.title}</p>
-              <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                <div
-                  class="h-[5.5px] bg-[#F7CE3E]"
-                  style={`width: ${skill.skills}`}
-                ></div>
-              </div>
-            </div>
+            <SkillsPercent key={skill.title} skill={skill.title} percent={skill.skills} />
           ))}
         </div>
       </div>
