@@ -267,25 +267,23 @@ export default component$(() => {
       <HorizontalSeparator />
       <Title title="Virtual Experience" />
       <div class="flex flex-col space-y-2 pb-2">
-        <div class="mt-5">
-          <p class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
-            Virtual Experience Program at Accenture Nordics, Developer
-          </p>
-          <p>Accenture Nordics and Forage</p>
-          <p>March 2022</p>
-        </div>
-        <div class="mt-5">
-          <p class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
-            Virtual Experience Program at Lyft, Mobile Engineering
-          </p>
-          <p>Lyft and Forage</p>
-          <p>January 2023</p>
-        </div>
         <VirtualExperience
           title="Front-End Software Engineering Virtual Experience Programme"
           company="Skyscanner and Forage"
           date="June 18th, 2023"
           url="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Skyscanner/km4rw7dihDr3etqom_Skyscanner_j5vFHRiaXbcY3ndzS_1687106629061_completion_certificate.pdf"
+        />
+        <VirtualExperience
+          title="Mobile Engineering Virtual Experience Program"
+          company="Lyft and Forage"
+          date="January 10th, 2023"
+          url="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Lyft/z5WMH5vehnwDferzi_Lyft_j5vFHRiaXbcY3ndzS_1673407301433_completion_certificate.pdf"
+        />
+        <VirtualExperience
+          title="Developer Program"
+          company="Accenture Nordics and Forage"
+          date="March 22nd, 2022"
+          url="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/PxenP4rHNE6Bh4nQz_Accenture%20Nordics_j5vFHRiaXbcY3ndzS_1673407291869_completion_certificate.pdf"
         />
       </div>
     </div>
