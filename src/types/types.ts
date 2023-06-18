@@ -25,3 +25,9 @@ export type projectModalStore = {
   open: boolean;
   projectData: projectObject;
 }
+
+/* certModalStore is for the resume component's useStore hook */
+export type certModalStore = {
+  open: boolean;
+  certDate: certObject;
+}
