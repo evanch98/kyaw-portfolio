@@ -13,7 +13,7 @@ export default component$((props: SkillsPercentProps) => {
       <p>{props.skill}</p>
       <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
         <div
-          class={`h-[5.5px] bg-[#F7CE3E]" style="width: ${props.percent}`}
+          class="h-[5.5px] bg-[#F7CE3E]" style={`width: ${props.percent}`}
         ></div>
       </div>
     </div>
