@@ -80,7 +80,7 @@ export default component$(() => {
           <ProjectBox
             projectModal={projectModal}
             project={project3}
-            imgSrc="/projects/share_prompts.png"
+            imgSrc="/projects/chess.png"
             imgAlt="furry coats"
           />
           <VerticalSeparator />
