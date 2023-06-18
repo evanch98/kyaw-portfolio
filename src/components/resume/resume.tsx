@@ -27,6 +27,7 @@ import Uopeople from "../uopeople/uopeople";
 import FrontEnd from "../front-end/front-end";
 import type { certModalStore } from "~/types/types";
 import VirtualExperience from "./virtual-experience/virtual-experience";
+import CertificateBox from "../common/certificate-box/certificate-box";
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -96,45 +97,9 @@ export default component$(() => {
             <h1 class="text-xl font-bold">Certificates</h1>
             <BsPatchCheck class="w-[24px] h-auto" />
           </div>
-          <div class="flex flex-col items-center justify-center mt-5">
-            <p
-              onClick$={() => {
-                certModal.open = true;
-                certModal.certData = { ...metaFrontEnd };
-              }}
-              class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
-            >
-              Meta Front-End Developer Professional Certificate
-            </p>
-            <p>Meta and Coursera</p>
-            <p>June 2023-Present</p>
-          </div>
-          <div class="flex flex-col items-center justify-center mt-5">
-            <p
-              onClick$={() => {
-                certModal.open = true;
-                certModal.certData = { ...metaAndroid };
-              }}
-              class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
-            >
-              Meta Android Developer Professional Certificate
-            </p>
-            <p>Meta and Coursera</p>
-            <p>September 2022-April 2023</p>
-          </div>
-          <div class="flex flex-col items-center justify-center mt-5">
-            <p
-              onClick$={() => {
-                certModal.open = true;
-                certModal.certData = { ...ibmDataAnalyst };
-              }}
-              class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
-            >
-              IBM Data Analyst Professional Certificate
-            </p>
-            <p>IBM and Coursera</p>
-            <p>July 2021-August 2021</p>
-          </div>
+          <CertificateBox certModal={certModal} certificate={metaFrontEnd} />
+          <CertificateBox certModal={certModal} certificate={metaAndroid} />
+          <CertificateBox certModal={certModal} certificate={ibmDataAnalyst} />
         </section>
       </div>
       <HorizontalSeparator />
