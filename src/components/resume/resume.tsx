@@ -26,6 +26,7 @@ import { animate } from "motion";
 import Uopeople from "../uopeople/uopeople";
 import FrontEnd from "../front-end/front-end";
 import type { certObject } from "~/types/types";
+import VirtualExperience from "./virtual-experience/virtual-experience";
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -280,6 +281,12 @@ export default component$(() => {
           <p>Lyft and Forage</p>
           <p>January 2023</p>
         </div>
+        <VirtualExperience
+          title="Front-End Software Engineering Virtual Experience Programme"
+          company="Skyscanner and Forage"
+          date="June 18th, 2023"
+          url="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Skyscanner/km4rw7dihDr3etqom_Skyscanner_j5vFHRiaXbcY3ndzS_1687106629061_completion_certificate.pdf"
+        />
       </div>
     </div>
   );
