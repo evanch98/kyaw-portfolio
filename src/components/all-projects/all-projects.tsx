@@ -4,14 +4,14 @@ import { BsGithub } from "@qwikest/icons/bootstrap";
 
 const projects = [
   {
+    title: "Chess",
+    type: "web",
+    sourceUrl: "https://github.com/evanch98/chess-javascript",
+  },
+  {
     title: "Spotify Clone",
     type: "web",
     sourceUrl: "https://github.com/evanch98/spotify-clone-nextjs",
-  },
-  {
-    title: "Furry Coats",
-    type: "web",
-    sourceUrl: "https://github.com/evanch98/furry-coats-qwik",
   },
   {
     title: "My Portfolio Website",
