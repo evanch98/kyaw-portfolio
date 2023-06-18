@@ -1,5 +1,7 @@
 import type { certObject } from "~/types/types";
 
+/* Certificate data */
+
 export const metaFrontEnd: certObject = {
   name: "Meta Front-End Professional Certificate",
   platform: "Meta and Coursera",
