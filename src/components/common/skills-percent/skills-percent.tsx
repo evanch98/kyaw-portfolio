@@ -5,6 +5,8 @@ interface SkillsPercentProps {
   percent: string;
 }
 
+/* to represent the expertise of each skill */
+/* props --- skill: the name of the skill | percent: rating out of 100 */
 export default component$((props: SkillsPercentProps) => {
   return (
     <div class="flex flex-col w-full space-y-1">
