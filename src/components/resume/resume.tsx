@@ -28,6 +28,7 @@ import FrontEnd from "../front-end/front-end";
 import type { certModalStore } from "~/types/types";
 import VirtualExperience from "./virtual-experience/virtual-experience";
 import CertificateBox from "../common/certificate-box/certificate-box";
+import SkillsPercent from "../common/skills-percent/skills-percent";
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -115,30 +116,10 @@ export default component$(() => {
               <IoLogoReact class="w-[24px] h-auto" />
             </div>
             <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
-              <div class="flex flex-col w-full space-y-1">
-                <p>Next JS</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 70%"></div>
-                </div>
-              </div>
-              <div class="flex flex-col w-full space-y-1">
-                <p>Qwik</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 80%"></div>
-                </div>
-              </div>
-              <div class="flex flex-col w-full space-y-1">
-                <p>Tailwind CSS</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 80%"></div>
-                </div>
-              </div>
-              <div class="flex flex-col w-full space-y-1">
-                <p>TypeScript</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 75%"></div>
-                </div>
-              </div>
+              <SkillsPercent skill="Next JS" percent="70%" />
+              <SkillsPercent skill="Qwik" percent="80%" />
+              <SkillsPercent skill="Tailwind CSS" percent="80%" />
+              <SkillsPercent skill="TypeScript" percent="75%" />
             </div>
           </section>
           <VerticalSeparator />
