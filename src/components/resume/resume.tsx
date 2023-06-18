@@ -143,24 +143,9 @@ export default component$(() => {
               <IoChatboxOutline class="w-[24px] h-auto" />
             </div>
             <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
-              <div class="flex flex-col w-full space-y-1">
-                <p>Burmese</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 100%"></div>
-                </div>
-              </div>
-              <div class="flex flex-col w-full space-y-1">
-                <p>English</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="flex flex-col w-full space-y-1">
-                <p>Traditional Chinese</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 40%"></div>
-                </div>
-              </div>
+              <SkillsPercent skill="Burmese" percent="100%" />
+              <SkillsPercent skill="English" percent="85%" />
+              <SkillsPercent skill="Traditional Chinese" percent="35%" />
             </div>
           </section>
           <VerticalSeparator />
