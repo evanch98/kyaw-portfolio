@@ -68,7 +68,7 @@ export const project2: projectObject = {
 export const project3: projectObject = {
   title: "Chess",
   sourceSrc: "https://github.com/evanch98/chess-javascript",
-  liveSrc: "",
+  liveSrc: "https://evanch98.github.io/chess-javascript/",
   date: "6/16/2023",
   category: "Hobby project",
   tech: ["JavaScript", "HTML", "CSS"],
