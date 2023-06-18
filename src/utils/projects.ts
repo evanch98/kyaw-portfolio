@@ -2,6 +2,8 @@ import type { projectObject } from "~/types/types";
 
 /* Projects's data */
 
+// if the project is deployed on Vercel, don't include the optional property deployedOn since it is the default value
+
 export const portfolioWebsite: projectObject = {
   title: "Portfolio Website",
   sourceSrc: "https://github.com/evanch98/kyaw-portfolio",
