@@ -10,7 +10,7 @@ interface VirtualExperienceProps {
 export default component$((props: VirtualExperienceProps) => {
   return (
     <div class="mt-5">
-      <a href={props.url} class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
+      <a href={props.url} target="_blank" rel="noreferrer" class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
         {props.title}
       </a>
       <p>{props.company}</p>
