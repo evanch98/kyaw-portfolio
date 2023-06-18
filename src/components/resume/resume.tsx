@@ -129,30 +129,10 @@ export default component$(() => {
               <IoPhonePortraitOutline class="w-[24px] h-auto" />
             </div>
             <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
-              <div class="flex flex-col w-full space-y-1">
-                <p>Dart</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 70%"></div>
-                </div>
-              </div>
-              <div class="flex flex-col w-full space-y-1">
-                <p>Flutter</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 70%"></div>
-                </div>
-              </div>
-              <div class="flex flex-col w-full space-y-1">
-                <p>Kotlin</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 60%"></div>
-                </div>
-              </div>
-              <div class="flex flex-col w-full space-y-1">
-                <p>Jetpack Compose</p>
-                <div class="h-[5.5px] w-full bg-[#C5C1C0] rounded-lg overflow-hidden">
-                  <div class="h-[5.5px] bg-[#F7CE3E]" style="width: 50%"></div>
-                </div>
-              </div>
+              <SkillsPercent skill="Dart" percent="70%" />
+              <SkillsPercent skill="Flutter" percent="70%" />
+              <SkillsPercent skill="Kotlin" percent="60%" />
+              <SkillsPercent skill="Jetpack Compose" percent="50%" />
             </div>
           </section>
         </div>
