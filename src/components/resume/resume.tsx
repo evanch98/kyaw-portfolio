@@ -25,24 +25,14 @@ import {
 import { animate } from "motion";
 import Uopeople from "../uopeople/uopeople";
 import FrontEnd from "../front-end/front-end";
-import type { certObject } from "~/types/types";
+import type { certModalStore } from "~/types/types";
 import VirtualExperience from "./virtual-experience/virtual-experience";
 
 export default component$(() => {
   useVisibleTask$(() => {
     animate("#resume", { opacity: [0, 1] }, { easing: "ease-in", duration: 1 });
   });
-  const certModal = useStore({
-    open: false,
-    certData: {
-      name: "",
-      platform: "",
-      date: "",
-      courses: [""],
-      desc: [""],
-      verificationLink: "",
-    } as certObject,
-  });
+  const certModal: certModalStore = useStore({} as certModalStore);
 
   const uopeopleModal = useSignal(false);
   const frontEndModal = useSignal(false);
