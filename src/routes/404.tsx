@@ -13,7 +13,7 @@ export default component$(() => {
         </p>
         <a
           href="/"
-          class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group text-base"
+          class="flex items-center justify-center space-x-2 text-[#C5C1C0] cursor-pointer group text-base"
         >
           <p class="group-hover:text-[#F7CE3E] ease-in duration-300">Home</p>
           <BsHouseFill class="group-hover:text-[#F7CE3E] group-hover:animate-bounce ease-in duration-300" />
