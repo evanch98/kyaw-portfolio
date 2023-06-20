@@ -2,7 +2,6 @@ import { component$, useSignal } from "@builder.io/qwik";
 import IntroCard from "../intro-card/intro-card";
 import MainCard from "../main-card/main-card";
 import MobileIntroCard from "../mobile/mobile-intro-card/mobile-intro-card";
-import MobileAboutCard from "../mobile/mobile-main-card/mobile-main-card";
 import {
   BsGrid3X3GapFill,
   BsList,
@@ -11,13 +10,20 @@ import {
   BsEnvelope,
   BsX,
 } from "@qwikest/icons/bootstrap";
+import MobileMainCard from "../mobile/mobile-main-card/mobile-main-card";
 
 export default component$(() => {
   const sideMenu = useSignal(false);
   return (
     <>
       <div class="xl:hidden flex flex-col items-center justify-start text-[#C5C1C0] w-full p-2 h-full relative">
-        <div class={`${sideMenu.value ? "absolute top-0 left-0 w-full h-full bg-black/70 z-50" : ""}`}>
+        <div
+          class={`${
+            sideMenu.value
+              ? "absolute top-0 left-0 w-full h-full bg-black/70 z-50"
+              : ""
+          }`}
+        >
           <div
             class={`${
               sideMenu.value
@@ -56,7 +62,7 @@ export default component$(() => {
           class="w-[28px] h-auto self-start mb-2"
         />
         <MobileIntroCard />
-        <MobileAboutCard />
+        <MobileMainCard />
       </div>
       <div class="hidden xl:flex justify-between items-center w-full text-[#C5C1C0] py-5 px-20 space-x-1">
         <IntroCard />
