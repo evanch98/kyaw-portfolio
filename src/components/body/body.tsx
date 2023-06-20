@@ -9,11 +9,13 @@ import {
   BsEye,
   BsEnvelope,
   BsX,
+  BsPerson,
 } from "@qwikest/icons/bootstrap";
 import MobileMainCard from "../mobile/mobile-main-card/mobile-main-card";
 
 export default component$(() => {
   const sideMenu = useSignal(false);
+  const content = useSignal("");
   return (
     <>
       <div class="xl:hidden flex flex-col items-center justify-start text-[#C5C1C0] w-full p-2 h-full relative">
@@ -32,19 +34,53 @@ export default component$(() => {
             }`}
           >
             <div class="flex flex-col items-center justify-start space-y-5">
-              <div class="text-xl flex items-center w-full justify-start space-x-1">
+              <div
+                onClick$={() => {
+                  sideMenu.value = false;
+                  content.value = "about";
+                }}
+                class="text-xl flex items-center w-full justify-start space-x-1"
+              >
+                <BsPerson />
+                <p>About</p>
+              </div>
+              <div
+                onClick$={() => {
+                  sideMenu.value = false;
+                  content.value = "resume";
+                }}
+                class="text-xl flex items-center w-full justify-start space-x-1"
+              >
                 <BsList />
                 <p>Resume</p>
               </div>
-              <div class="text-xl flex items-center w-full justify-start space-x-1">
+              <div
+                onClick$={() => {
+                  sideMenu.value = false;
+                  content.value = "project";
+                }}
+                class="text-xl flex items-center w-full justify-start space-x-1"
+              >
                 <BsPersonWorkspace />
                 <p>Projects</p>
               </div>
-              <div class="text-xl flex items-center w-full justify-start space-x-1">
+              <div
+                onClick$={() => {
+                  sideMenu.value = false;
+                  content.value = "link";
+                }}
+                class="text-xl flex items-center w-full justify-start space-x-1"
+              >
                 <BsEye />
                 <p>Links</p>
               </div>
-              <div class="text-xl flex items-center w-full justify-start space-x-1">
+              <div
+                onClick$={() => {
+                  sideMenu.value = false;
+                  content.value = "contact";
+                }}
+                class="text-xl flex items-center w-full justify-start space-x-1"
+              >
                 <BsEnvelope />
                 <p>Contact</p>
               </div>
@@ -62,7 +98,7 @@ export default component$(() => {
           class="w-[28px] h-auto self-start mb-2"
         />
         <MobileIntroCard />
-        <MobileMainCard />
+        <MobileMainCard content={content.value} />
       </div>
       <div class="hidden xl:flex justify-between items-center w-full text-[#C5C1C0] py-5 px-20 space-x-1">
         <IntroCard />
