@@ -9,6 +9,7 @@ import {
   BsPersonWorkspace,
   BsEye,
   BsEnvelope,
+  BsX,
 } from "@qwikest/icons/bootstrap";
 
 export default component$(() => {
@@ -16,29 +17,37 @@ export default component$(() => {
   return (
     <>
       <div class="xl:hidden flex flex-col items-center justify-start text-[#C5C1C0] w-full p-2 h-full relative">
-        <div
-          class={`${
-            sideMenu.value
-              ? "fixed left-0 top-0 w-[75%] h-screen bg-[#1A2930] p-10 ease-in duration-500 z-50 flex flex-col items-center justify-center drop-shadow-xl"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
-          }`}
-        >
-          <div class="flex flex-col items-center justify-start space-y-5">
-            <div class="text-xl flex items-center w-full justify-start space-x-1">
-              <BsList />
-              <p>Resume</p>
-            </div>
-            <div class="text-xl flex items-center w-full justify-start space-x-1">
-              <BsPersonWorkspace />
-              <p>Projects</p>
-            </div>
-            <div class="text-xl flex items-center w-full justify-start space-x-1">
-              <BsEye />
-              <p>Links</p>
-            </div>
-            <div class="text-xl flex items-center w-full justify-start space-x-1">
-              <BsEnvelope />
-              <p>Contact</p>
+        <div class={`${sideMenu.value ? "absolute top-0 left-0 w-full h-full bg-black/70 z-50" : ""}`}>
+          <div
+            class={`${
+              sideMenu.value
+                ? "fixed left-0 top-0 w-[75%] h-screen bg-[#1A2930] p-10 ease-in duration-500 z-50 flex flex-col items-center justify-center drop-shadow-xl"
+                : "fixed left-[-100%] h-screen top-0 p-10 ease-in duration-500"
+            }`}
+          >
+            <div class="flex flex-col items-center justify-start space-y-5">
+              <div class="text-xl flex items-center w-full justify-start space-x-1">
+                <BsList />
+                <p>Resume</p>
+              </div>
+              <div class="text-xl flex items-center w-full justify-start space-x-1">
+                <BsPersonWorkspace />
+                <p>Projects</p>
+              </div>
+              <div class="text-xl flex items-center w-full justify-start space-x-1">
+                <BsEye />
+                <p>Links</p>
+              </div>
+              <div class="text-xl flex items-center w-full justify-start space-x-1">
+                <BsEnvelope />
+                <p>Contact</p>
+              </div>
+              <div
+                onClick$={() => (sideMenu.value = false)}
+                class="w-5 h-5 bg-[#C5C1C0] rounded-full text-black flex flex-col items-center justify-center cursor-pointer"
+              >
+                <BsX class="w-[24px] h-[24px]" />
+              </div>
             </div>
           </div>
         </div>
