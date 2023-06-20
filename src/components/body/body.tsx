@@ -2,7 +2,7 @@ import { component$, useSignal } from "@builder.io/qwik";
 import IntroCard from "../intro-card/intro-card";
 import MainCard from "../main-card/main-card";
 import MobileIntroCard from "../mobile/mobile-intro-card/mobile-intro-card";
-import MobileAboutCard from "../mobile/mobile-about-card/mobile-about-card";
+import MobileAboutCard from "../mobile/mobile-main-card/mobile-main-card";
 import {
   BsGrid3X3GapFill,
   BsList,
