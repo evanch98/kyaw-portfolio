@@ -1,53 +1,36 @@
-import { component$, useVisibleTask$ } from "@builder.io/qwik";
-import { animate, spring, stagger } from "motion";
-import HorizontalSeparator from "~/components/common/separators/horizontal-separator/horizontal-separator";
-import Title from "~/components/common/title/title";
+import { component$ } from "@builder.io/qwik";
+import type { JSX } from "@builder.io/qwik/jsx-runtime";
+import About from "~/components/about/about";
+import Contact from "~/components/contact/contact";
+import Link from "~/components/link/link";
+import Project from "~/components/project/project";
+import Resume from "~/components/resume/resume";
 
-export default component$(() => {
-  useVisibleTask$(() => {
-    animate(
-      "#mobile-about",
-      { opacity: [0, 1] },
-      { easing: "ease-in", duration: 1 }
-    );
-    animate(
-      ".mobile-para",
-      { x: [-900, 0] },
-      { easing: spring({ velocity: 50, stiffness: 50 }), delay: stagger(0.15) }
-    );
-  });
+interface MobileMainCardProps {
+  content: string;
+}
+
+export default component$((props: MobileMainCardProps) => {
+  let bodyContent: JSX.Element = <div>Loading</div>;
+
+  if (props.content === "about") {
+    bodyContent = <About />;
+  } else if (props.content === "resume") {
+    bodyContent = <Resume />;
+  } else if (props.content === "projects") {
+    bodyContent = <Project />;
+  } else if (props.content === "link") {
+    bodyContent = <Link />;
+  } else if (props.content === "contact") {
+    bodyContent = <Contact />;
+  }
+
   return (
     <div
       id="mobile-about"
       class="w-full mt-3 h-full p-2 bg-[#1A2930] rounded-md flex flex-col"
     >
-      <Title title="About" />
-      <HorizontalSeparator />
-      <div class="flex flex-col text-[#C5C1C0] text-base space-y-2">
-        <p class="mobile-para">
-          I have spent 7 years studying medicine at the University of Medicine
-          1, Yangon. Due to several reasons, including pandemic, I had to drop
-          out of the university. For as long as I can remember, I have always
-          been into technology and working with computers. In 2021, I started
-          learning programming with Python, which made me love programming even
-          more.
-        </p>
-        <p class="mobile-para">
-          After exploring several career options, I was quickly drawn to
-          front-end web development. I started learning HTML and CSS to build
-          simple websites. Fascinated with how intricate web development can be,
-          I was quickly drawn to learn more. I started learning JavaScript and
-          was even more enthused with making websites interactive. I am now
-          spending my time building projects with React JS, Next JS, Tailwind
-          CSS, and MongoDB and learning new technologies.
-        </p>
-        <p class="mobile-para">
-          Apart from coding, I enjoy swimming. My favorite movie and TV show
-          genres are Sci-fi and Sitcom. My favorite sport is soccer. My favorite
-          team is Liverpool FC based in Liverpool, England. I also watch NBA
-          occasionally. My favorite NBA team is Golden State Warriors.
-        </p>
-      </div>
+      {bodyContent}
     </div>
   );
 });
