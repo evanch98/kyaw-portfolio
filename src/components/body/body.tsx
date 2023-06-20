@@ -67,7 +67,7 @@ export default component$(() => {
               <div
                 onClick$={() => {
                   sideMenu.value = false;
-                  content.value = "link";
+                  content.value = "links";
                 }}
                 class="text-xl flex items-center w-full justify-start space-x-1"
               >

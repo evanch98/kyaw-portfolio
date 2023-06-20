@@ -19,7 +19,7 @@ export default component$((props: MobileMainCardProps) => {
     bodyContent = <Resume />;
   } else if (props.content === "projects") {
     bodyContent = <Project />;
-  } else if (props.content === "link") {
+  } else if (props.content === "links") {
     bodyContent = <Link />;
   } else if (props.content === "contact") {
     bodyContent = <Contact />;
