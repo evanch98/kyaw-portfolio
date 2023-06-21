@@ -42,7 +42,7 @@ const projects = [
 
 export default component$(() => {
   return (
-    <div class="flex flex-col w-[640px] space-y-2">
+    <div class="flex flex-col w-full lg:w-[640px] space-y-2">
       {projects.map((project) => (
         <div
           key={project.title}
