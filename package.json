@@ -42,6 +42,7 @@
   "dependencies": {
     "@qwikest/icons": "^0.0.8",
     "@unpic/qwik": "^0.0.19",
-    "motion": "^10.16.2"
+    "motion": "^10.16.2",
+    "tailwind-merge": "^1.13.2"
   }
 }
