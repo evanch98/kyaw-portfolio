@@ -11,7 +11,11 @@ interface MobileMainCardProps {
 }
 
 export default component$((props: MobileMainCardProps) => {
-  let bodyContent: JSX.Element = <div>Loading</div>;
+  let bodyContent: JSX.Element = (
+    <>
+      <About />
+    </>
+  );
 
   if (props.content === "about") {
     bodyContent = <About />;
