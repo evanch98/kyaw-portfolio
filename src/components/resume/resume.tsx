@@ -74,7 +74,7 @@ export default component$(() => {
           <FrontEnd />
         </Modal>
       )}
-      <Title title="Resume" />
+      <Title title="Education" />
       <div class="flex flex-col lg:flex-row items-start justify-between mt-5">
         <section class="w-full flex flex-col items-center justify-center">
           <div class="flex justify-center items-center space-x-2">
@@ -92,7 +92,7 @@ export default component$(() => {
             <p>2021-Present</p>
           </div>
         </section>
-        <HorizontalSeparator />
+        <HorizontalSeparator class="lg:hidden w-10 self-center" />
         <VerticalSeparator class="hidden lg:flex" />
         <section class="w-full flex flex-col items-center justify-center">
           <div class="flex justify-center items-center space-x-2">
@@ -107,7 +107,7 @@ export default component$(() => {
       <HorizontalSeparator />
       <Title title="Skills" />
       <div class="flex flex-col mt-5 space-y-6">
-        <div class="flex items-start justify-between">
+        <div class="flex flex-col lg:flex-row items-start justify-between">
           <section class="w-full flex flex-col items-center justify-center">
             <div
               onClick$={() => (frontEndModal.value = true)}
@@ -123,7 +123,8 @@ export default component$(() => {
               <SkillsPercent skill="TypeScript" percent="75%" />
             </div>
           </section>
-          <VerticalSeparator />
+          <HorizontalSeparator class="lg:hidden w-10 self-center" />
+          <VerticalSeparator class="hidden lg:flex" />
           <section class="w-full flex flex-col items-center justify-center">
             <div class="flex justify-center items-center space-x-2">
               <h1 class="text-xl font-bold">Mobile</h1>
@@ -137,7 +138,8 @@ export default component$(() => {
             </div>
           </section>
         </div>
-        <div class="flex items-start justify-between">
+        <HorizontalSeparator class="w-10 self-center" />
+        <div class="flex flex-col lg:flex-row items-start justify-between">
           <section class="w-full flex flex-col items-center justify-center">
             <div class="flex justify-center items-center space-x-2">
               <h1 class="text-xl font-bold">Languages</h1>
@@ -149,7 +151,8 @@ export default component$(() => {
               <SkillsPercent skill="Traditional Chinese" percent="35%" />
             </div>
           </section>
-          <VerticalSeparator />
+          <HorizontalSeparator class="lg:hidden w-10 self-center" />
+          <VerticalSeparator class="hidden lg:flex" />
           <section class="w-full flex flex-col items-center justify-center">
             <div class="flex justify-center items-center space-x-2">
               <h1 class="text-xl font-bold">Soft Skills</h1>
