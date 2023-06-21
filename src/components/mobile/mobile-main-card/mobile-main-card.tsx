@@ -32,7 +32,7 @@ export default component$((props: MobileMainCardProps) => {
   return (
     <div
       id="mobile-about"
-      class="w-full mt-3 h-full p-2 bg-[#1A2930] rounded-md flex flex-col"
+      class="w-full mt-3 h-auto p-2 bg-[#1A2930] rounded-md flex flex-col"
     >
       {bodyContent}
     </div>
