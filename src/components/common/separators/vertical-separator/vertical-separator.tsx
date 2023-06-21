@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { twMerge } from "tailwind-merge";
 
 interface VerticalSeparatorProps {
-  className?: string;
+  class?: string;
 }
 
 export default component$((props: VerticalSeparatorProps) => {
@@ -10,7 +10,7 @@ export default component$((props: VerticalSeparatorProps) => {
     <div
       class={twMerge(
         "h-full bg-[#C5C1C0] w-0.5",
-        props.className ? props.className : ""
+        props.class ? props.class : ""
       )}
     ></div>
   );
