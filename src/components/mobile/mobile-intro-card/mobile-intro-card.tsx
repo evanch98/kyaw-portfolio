@@ -1,7 +1,8 @@
 import { component$, useVisibleTask$ } from "@builder.io/qwik";
-import { BsDiscord, BsEnvelopeFill, BsGithub, BsLinkedin } from "@qwikest/icons/bootstrap";
+import { BsDiscord, BsDownload, BsEnvelopeFill, BsGithub, BsLinkedin } from "@qwikest/icons/bootstrap";
 import { Image } from "@unpic/qwik";
 import { animate } from "motion";
+import HorizontalSeparator from "~/components/common/separators/horizontal-separator/horizontal-separator";
 import { easeOutElastic } from "~/utils/easing";
 
 export default component$(() => {
@@ -58,6 +59,18 @@ export default component$(() => {
         <a class="cursor-pointer" href="mailto:evanch98@gmail.com">
           <BsEnvelopeFill class="mobile-icon text-[#C5C1C0] w-[24px] h-auto hover:text-[#F7CE3E] ease-in duration-300" />
         </a>
+      </div>
+      <HorizontalSeparator />
+      <div class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group">
+        <a
+          href="https://drive.google.com/file/d/10mhxA0iDtQLDJPP7a3Ndiyl9RjExcT9o/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+          class="group-hover:text-[#F7CE3E] ease-in duration-300"
+        >
+          My Resume
+        </a>
+        <BsDownload class="group-hover:text-[#F7CE3E] group-hover:animate-bounce ease-in duration-300" />
       </div>
     </div>
   );
