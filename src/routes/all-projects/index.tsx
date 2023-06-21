@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
-  return <div>All Projects</div>
+  return <div>All Projects</div>;
 });
