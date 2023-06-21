@@ -1,6 +1,10 @@
 import { component$ } from "@builder.io/qwik";
-import AllProjects from "./all-projects";
+import AllProjects from "~/components/all-projects/all-projects";
 
 export default component$(() => {
-  return <AllProjects />;
+  return (
+    <div class="w-full p-2 text-[#C5C1C0]">
+      <AllProjects />
+    </div>
+  );
 });
