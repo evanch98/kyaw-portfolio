@@ -47,31 +47,33 @@ export default component$(() => {
           occasionally. My favorite NBA team is Golden State Warriors.
         </p>
       </div>
-      <HorizontalSeparator />
-      <Title title="Fun Facts" />
-      <div class="fun flex items-center justify-between mt-5 pb-2">
-        <div class="flex flex-col items-center justify-center">
-          <IoFootballOutline class="w-[28px] h-auto mb-2" />
-          <h1 class="text-lg font-semibold">Favorite Sport</h1>
-          <p class="text-sm">Soccer</p>
-        </div>
-        <VerticalSeparator />
-        <div class="flex flex-col items-center justify-center">
-          <IoWaterOutline class="w-[28px] h-auto mb-2" />
-          <h1 class="text-lg font-semibold">Favorite Activity</h1>
-          <p class="text-sm">Swimming</p>
-        </div>
-        <VerticalSeparator />
-        <div class="flex flex-col items-center justify-center">
-          <IoBookOutline class="w-[28px] h-auto mb-2" />
-          <h1 class="text-lg font-semibold">Favorite Book</h1>
-          <p class="text-sm">Wonder</p>
-        </div>
-        <VerticalSeparator />
-        <div class="flex flex-col items-center justify-center">
-          <IoVideocamOutline class="w-[28px] h-auto mb-2" />
-          <h1 class="text-lg font-semibold">Favorite TV Show</h1>
-          <p class="text-sm">Breaking Bad</p>
+      <div class="hidden lg:flex flex-col">
+        <HorizontalSeparator />
+        <Title title="Fun Facts" />
+        <div class="fun flex items-center justify-between mt-5 pb-2">
+          <div class="flex flex-col items-center justify-center">
+            <IoFootballOutline class="w-[28px] h-auto mb-2" />
+            <h1 class="text-lg font-semibold">Favorite Sport</h1>
+            <p class="text-sm">Soccer</p>
+          </div>
+          <VerticalSeparator />
+          <div class="flex flex-col items-center justify-center">
+            <IoWaterOutline class="w-[28px] h-auto mb-2" />
+            <h1 class="text-lg font-semibold">Favorite Activity</h1>
+            <p class="text-sm">Swimming</p>
+          </div>
+          <VerticalSeparator />
+          <div class="flex flex-col items-center justify-center">
+            <IoBookOutline class="w-[28px] h-auto mb-2" />
+            <h1 class="text-lg font-semibold">Favorite Book</h1>
+            <p class="text-sm">Wonder</p>
+          </div>
+          <VerticalSeparator />
+          <div class="flex flex-col items-center justify-center">
+            <IoVideocamOutline class="w-[28px] h-auto mb-2" />
+            <h1 class="text-lg font-semibold">Favorite TV Show</h1>
+            <p class="text-sm">Breaking Bad</p>
+          </div>
         </div>
       </div>
     </div>
