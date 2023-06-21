@@ -75,7 +75,7 @@ export default component$(() => {
         </Modal>
       )}
       <Title title="Resume" />
-      <div class="flex items-start justify-between mt-5">
+      <div class="flex flex-col lg:flex-row items-start justify-between mt-5">
         <section class="w-full flex flex-col items-center justify-center">
           <div class="flex justify-center items-center space-x-2">
             <h1 class="text-xl font-bold">Degree</h1>
@@ -92,6 +92,7 @@ export default component$(() => {
             <p>2021-Present</p>
           </div>
         </section>
+        <HorizontalSeparator />
         <VerticalSeparator class="hidden lg:flex" />
         <section class="w-full flex flex-col items-center justify-center">
           <div class="flex justify-center items-center space-x-2">
