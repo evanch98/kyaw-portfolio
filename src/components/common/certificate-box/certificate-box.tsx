@@ -8,7 +8,7 @@ interface CertificateBoxProps {
 
 export default component$((props: CertificateBoxProps) => {
   return (
-    <div class="flex flex-col items-center justify-center mt-5">
+    <div class="flex flex-col items-center justify-center mt-5 text-center">
       <p
         onClick$={() => {
           props.certModal.open = true;
