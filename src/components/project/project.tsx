@@ -102,10 +102,16 @@ export default component$(() => {
         onClick$={() => {
           allProjectsModal.value = true;
         }}
-        class="pb-2 text-lg cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
+        class="pb-2 hidden lg:flex text-lg cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
       >
         See all projects
       </p>
+      <a
+        href="/all-projects"
+        class="pb-2 lg:hidden text-lg cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
+      >
+        See all projects
+      </a>
     </div>
   );
 });
