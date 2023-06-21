@@ -92,7 +92,7 @@ export default component$(() => {
             <p>2021-Present</p>
           </div>
         </section>
-        <VerticalSeparator />
+        <VerticalSeparator class="hidden lg:flex" />
         <section class="w-full flex flex-col items-center justify-center">
           <div class="flex justify-center items-center space-x-2">
             <h1 class="text-xl font-bold">Certificates</h1>
