@@ -52,6 +52,7 @@
     "@qwikest/icons": "^0.0.8",
     "@unpic/qwik": "^0.0.19",
     "motion": "^10.16.2",
+    "react-spinners": "^0.13.8",
     "tailwind-merge": "^1.13.2"
   }
 }
