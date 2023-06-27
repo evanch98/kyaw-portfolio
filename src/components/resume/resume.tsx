@@ -29,6 +29,7 @@ import type { certModalStore } from "~/types/types";
 import VirtualExperience from "./virtual-experience/virtual-experience";
 import CertificateBox from "../common/certificate-box/certificate-box";
 import SkillsPercent from "../common/skills-percent/skills-percent";
+import AllCertificates from "./all-certificates/all-certificates";
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -41,6 +42,10 @@ export default component$(() => {
 
   const onCertModalClose = $(() => {
     certModal.open = false;
+  });
+
+  const onAllCertificatesModalClose = $(() => {
+    allCertificatesModal.value = false;
   });
 
   const onUopeopleModalClose = $(() => {
@@ -73,6 +78,14 @@ export default component$(() => {
       {frontEndModal.value && (
         <Modal title="Front-End Skills" onClose={onFrontEndModalClose}>
           <FrontEnd />
+        </Modal>
+      )}
+      {allCertificatesModal.value && (
+        <Modal title="All Certificates" onClose={onAllCertificatesModalClose}>
+          <AllCertificates
+            allCertificatesModal={allCertificatesModal}
+            certModal={certModal}
+          />
         </Modal>
       )}
       <Title title="Education" />
