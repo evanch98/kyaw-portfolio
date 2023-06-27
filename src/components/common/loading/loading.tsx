@@ -1,5 +1,7 @@
-import { component$ } from "@builder.io/qwik";
+import { qwikify$ } from "@builder.io/qwik-react";
 
-export default component$(() => {
-  return <div></div>;
-});
+function Loading() {
+  return <div>Loading</div>;
+}
+
+export const QLoading = qwikify$(Loading);
