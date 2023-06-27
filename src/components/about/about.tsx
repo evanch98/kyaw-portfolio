@@ -10,6 +10,8 @@ import VerticalSeparator from "../common/separators/vertical-separator/vertical-
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 import { animate, spring, stagger } from "motion";
 
+// About component
+// It contains the information about me
 export default component$(() => {
   useVisibleTask$(() => {
     animate("#about", { opacity: [0, 1] }, { easing: "ease-in", duration: 1 });
@@ -22,7 +24,7 @@ export default component$(() => {
   return (
     <div id="about" class="flex flex-col">
       <Title title="About" />
-      <div class="flex flex-col text-[#C5C1C0] text-lg mt-5 space-y-5">
+      <article class="flex flex-col text-[#C5C1C0] text-lg mt-5 space-y-5">
         <p class="para">
           I have spent 7 years studying medicine at the University of Medicine
           1, Yangon. Due to several reasons, including pandemic, I had to drop
@@ -46,8 +48,8 @@ export default component$(() => {
           team is Liverpool FC based in Liverpool, England. I also watch NBA
           occasionally. My favorite NBA team is Golden State Warriors.
         </p>
-      </div>
-      <div class="hidden lg:flex flex-col">
+      </article>
+      <section class="hidden lg:flex flex-col">
         <HorizontalSeparator />
         <Title title="Fun Facts" />
         <div class="fun flex items-center justify-between mt-5 pb-2">
@@ -75,7 +77,7 @@ export default component$(() => {
             <p class="text-sm">Breaking Bad</p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 });
