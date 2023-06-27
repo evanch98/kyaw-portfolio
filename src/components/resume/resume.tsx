@@ -35,7 +35,7 @@ export default component$(() => {
     animate("#resume", { opacity: [0, 1] }, { easing: "ease-in", duration: 1 });
   });
   const certModal: certModalStore = useStore({} as certModalStore);
-
+  const allCertificates = useSignal(false);
   const uopeopleModal = useSignal(false);
   const frontEndModal = useSignal(false);
 
@@ -96,8 +96,11 @@ export default component$(() => {
         <HorizontalSeparator class="lg:hidden w-10 self-center" />
         <VerticalSeparator class="hidden lg:flex" />
         <section class="w-full flex flex-col items-center justify-center">
-          <div class="flex justify-center items-center space-x-2">
-            <h1 class="text-xl font-bold">Certificates</h1>
+          <div
+            onClick$={() => (allCertificates.value = true)}
+            class="flex justify-center items-center space-x-2 hover:text-[#F7CE3E] ease-in duration-300"
+          >
+            <h1 class="text-xl font-bold cursor-pointer ">Certificates</h1>
             <BsPatchCheck class="w-[24px] h-auto" />
           </div>
           <CertificateBox certModal={certModal} certificate={metaFrontEnd} />
