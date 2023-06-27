@@ -81,7 +81,11 @@ export default component$(() => {
         </Modal>
       )}
       {allCertificatesModal.value && (
-        <Modal title="All Certificates" onClose={onAllCertificatesModalClose}>
+        <Modal
+          title="All Certificates"
+          onClose={onAllCertificatesModalClose}
+          class="z-40"
+        >
           <AllCertificates
             allCertificatesModal={allCertificatesModal}
             certModal={certModal}
