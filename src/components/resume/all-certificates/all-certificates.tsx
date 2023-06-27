@@ -1,5 +1,7 @@
 import { component$ } from "@builder.io/qwik";
-import type { certModalStore, certObject } from "~/types/types";
+import CertificateBox from "~/components/common/certificate-box/certificate-box";
+import type { certModalStore } from "~/types/types";
+import certificatesList from "~/utils/certificates";
 
 interface allCertificatesProps {
   allCertificatesModal: any;
@@ -7,5 +9,16 @@ interface allCertificatesProps {
 }
 
 export default component$((props: allCertificatesProps) => {
-  return <div>All Certificates</div>;
+  return (
+    <div>
+      {certificatesList.map((certificate) => (
+        <div key={certificate.name}>
+          <CertificateBox
+            certModal={props.certModal}
+            certificate={certificate}
+          />
+        </div>
+      ))}
+    </div>
+  );
 });
