@@ -14,7 +14,7 @@ export const portfolioWebsite: projectObject = {
   desc: ["Simple portfolio website"],
 };
 
-export const project1: projectObject = {
+export const project4: projectObject = {
   title: "Airbnb Clone",
   sourceSrc: "https://github.com/evanch98/airbnb_clone_react",
   liveSrc: "https://rent-house-react-hopf81d0y-evanch98.vercel.app/",
@@ -42,7 +42,7 @@ export const project1: projectObject = {
   ],
 };
 
-export const project2: projectObject = {
+export const project3: projectObject = {
   title: "Share Prompts",
   sourceSrc: "https://github.com/evanch98/share-prompts-nextjs",
   liveSrc: "https://share-prompts-taupe.vercel.app/",
@@ -67,7 +67,7 @@ export const project2: projectObject = {
   ],
 };
 
-export const project3: projectObject = {
+export const project2: projectObject = {
   title: "Chess",
   sourceSrc: "https://github.com/evanch98/chess-javascript",
   liveSrc: "https://evanch98.github.io/chess-javascript/",
@@ -81,7 +81,7 @@ export const project3: projectObject = {
   deployedOn: "GitHub",
 };
 
-export const project4: projectObject = {
+export const project1: projectObject = {
   title: "Spotify Clone",
   sourceSrc: "https://github.com/evanch98/spotify-clone-nextjs",
   liveSrc: "",
