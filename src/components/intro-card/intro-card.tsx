@@ -103,7 +103,7 @@ export default component$(() => {
         </div>
         {/* Dev icons END */}
       </section>
-      <HorizontalSeparator />
+      <HorizontalSeparator class="mt-0 mb-5" />
       {/* Footer of the IntroCard if you will */}
       <section class="flex items-center justify-between px-5 pb-5 bg-[#1A2930]">
         <div class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group">
