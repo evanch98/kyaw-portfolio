@@ -24,6 +24,7 @@ export const metaFrontEnd: certObject = {
     "Prepare for a coding interview, learn best approaches to problem-solving, and build portfolio-ready projects you can share during job interviews",
   ],
   verificationLink: "",
+  capstoneLink: "",
 };
 
 export const metaAndroid: certObject = {
@@ -50,7 +51,9 @@ export const metaAndroid: certObject = {
     "Learn coding in Kotlin and the programming fundamentals for how to create the user interface (UI) and best practices for design",
     "Create cross-platform mobile applications using React Native. Demonstrate your new skills by creating a job-ready portfolio you can show during interviews",
   ],
-  verificationLink: "https://coursera.org/verify/professional-cert/YXRXLU9WYWX8"
+  verificationLink:
+    "https://coursera.org/verify/professional-cert/YXRXLU9WYWX8",
+  capstoneLink: "https://github.com/evanch98/little-lemon",
 };
 
 export const ibmDataAnalyst: certObject = {
@@ -74,5 +77,6 @@ export const ibmDataAnalyst: certObject = {
     "Develop working knowledge of Python language for analyzing data using Python libraries like Pandas and Numpy, and invoke APIs and Web Services",
     "Describe data ecosystem and Compose queries to access data in cloud databases using SQL and Python from Jupyter notebooks",
   ],
-  verificationLink: "https://coursera.org/verify/professional-cert/RS5G3TUCKZVH"
+  verificationLink:
+    "https://coursera.org/verify/professional-cert/RS5G3TUCKZVH",
 };
