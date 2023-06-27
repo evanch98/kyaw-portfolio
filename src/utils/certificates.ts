@@ -80,3 +80,11 @@ export const ibmDataAnalyst: certObject = {
   verificationLink:
     "https://coursera.org/verify/professional-cert/RS5G3TUCKZVH",
 };
+
+const certificateLists: certObject[] = [
+  metaFrontEnd,
+  metaAndroid,
+  ibmDataAnalyst,
+];
+
+export default certificateLists;
