@@ -27,7 +27,7 @@ export const head: DocumentHead = {
   title: "Kyaw | Page Not Found",
   meta: [
     {
-      name: "Kyaw Thu's Portfolio Website",
+      name: "description",
       content:
         "This website is designed and built by Kyaw Thu. It is built by using Qwik, Qwik City, TypeScript, Motion One, and Tailwind CSS.",
     },
