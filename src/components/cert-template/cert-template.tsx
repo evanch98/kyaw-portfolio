@@ -10,6 +10,16 @@ export default component$((props: certObject) => {
         <p>Course name --- {props.name}</p>
         <p>Offered by --- {props.platform}</p>
         <p>Date --- {props.date}</p>
+        {props.capstoneLink && (
+          <a
+            class="hover:text-[#F7CE3E] ease-in duration-300"
+            href={props.capstoneLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Capstone Project
+          </a>
+        )}
       </div>
       <HorizontalSeparator />
       <div class="flex items-start justify-between h-auto w-full space-x-3">
