@@ -44,7 +44,7 @@ export default component$(() => {
       {/* The Modal component will only be rendered if the value of the modal is true */}
       {modal.value && (
         /* change the info of the website in the ~/utils/projects.ts file */
-        <Modal title={portfolioWebsite.title} onClose={onClose}>
+        <Modal title={portfolioWebsite.title || ""} onClose={onClose}>
           <ProjectTemplate
             sourceSrc={portfolioWebsite.sourceSrc}
             liveSrc={portfolioWebsite.liveSrc}

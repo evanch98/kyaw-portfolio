@@ -36,7 +36,7 @@ export default component$(() => {
     <div id="project" class="flex flex-col w-full text-[#C5C1C0]">
       {projectModal.open && (
         <Modal
-          title={projectModal.projectData.title}
+          title={projectModal.projectData.title || ""}
           onClose={onProjectModalClose}
         >
           <ProjectTemplate

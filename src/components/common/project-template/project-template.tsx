@@ -6,18 +6,9 @@ import {
   BsPostcard,
   BsReceipt,
 } from "@qwikest/icons/bootstrap";
+import type { projectObject } from "~/types/types";
 
-interface ProjectTemplateProps {
-  sourceSrc: string;
-  liveSrc: string;
-  date: string;
-  category: string;
-  tech: Array<string>;
-  desc: Array<string>;
-  deployedOn?: string;
-}
-
-export default component$((props: ProjectTemplateProps) => {
+export default component$((props: projectObject) => {
   return (
     <div class="flex flex-col w-[640px]">
       <div class="flex flex-col items-start space-y-5">

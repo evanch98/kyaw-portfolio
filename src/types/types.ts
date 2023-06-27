@@ -1,6 +1,6 @@
 /* projectObject is for the project Modal */
 export type projectObject = {
-  title: string;
+  title?: string;
   sourceSrc: string;
   liveSrc: string;
   date: string;
