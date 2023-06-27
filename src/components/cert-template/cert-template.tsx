@@ -1,18 +1,9 @@
 import { component$ } from "@builder.io/qwik";
 import { BsBook, BsReceipt } from "@qwikest/icons/bootstrap";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
+import type { certObject } from "~/types/types";
 
-interface CertTemplateProps {
-  name: string;
-  platform: string;
-  date: string;
-  courses: Array<string>;
-  desc: Array<string>;
-  verificationLink: string;
-  capstoneLink?: string;
-}
-
-export default component$((props: CertTemplateProps) => {
+export default component$((props: certObject) => {
   return (
     <div class="flex flex-col w-[640px]">
       <div class="flex flex-col items-start text-base">
