@@ -9,6 +9,7 @@ interface CertTemplateProps {
   courses: Array<string>;
   desc: Array<string>;
   verificationLink: string;
+  capstoneLink?: string;
 }
 
 export default component$((props: CertTemplateProps) => {
