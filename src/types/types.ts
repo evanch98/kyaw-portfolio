@@ -18,16 +18,17 @@ export type certObject = {
   courses: string[];
   desc: string[];
   verificationLink: string;
-}
+  capstoneLink?: string;
+};
 
 /* projectModalStore is for the project component's useStore hook */
 export type projectModalStore = {
   open: boolean;
   projectData: projectObject;
-}
+};
 
 /* certModalStore is for the resume component's useStore hook */
 export type certModalStore = {
   open: boolean;
   certData: certObject;
-}
+};
