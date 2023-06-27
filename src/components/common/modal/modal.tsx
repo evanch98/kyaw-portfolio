@@ -4,10 +4,12 @@ import Title from "../title/title";
 import HorizontalSeparator from "../separators/horizontal-separator/horizontal-separator";
 import { BsX } from "@qwikest/icons/bootstrap";
 import { animate } from "motion";
+import { twMerge } from "tailwind-merge";
 
 interface ModalProps {
   title: string;
   onClose: QRL<() => void>;
+  class?: string;
 }
 
 export default component$((props: ModalProps) => {
@@ -15,7 +17,12 @@ export default component$((props: ModalProps) => {
     animate("#modal", { opacity: [0, 1] }, { easing: "ease-in", duration: 1 });
   });
   return (
-    <div class="absolute hidden lg:flex left-0 top-0 w-full h-full bg-black/70  z-50">
+    <div
+      class={twMerge(
+        "absolute hidden lg:flex left-0 top-0 w-full h-full bg-black/70 z-50",
+        props.class
+      )}
+    >
       <div
         id="modal"
         class="absolute hidden lg:flex flex-col w-auto max-h-[600px] top-20 left-1/2 -translate-x-1/2 p-5 bg-[#1A2930] text-[#C5C1C0] rounded-md shadow-xl overflow-y-auto"
