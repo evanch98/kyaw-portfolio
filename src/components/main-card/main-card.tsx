@@ -37,7 +37,7 @@ export default component$(() => {
     /* The outermost div that contains the sidebar and the main card */
     <div class="flex-1 flex items-start shadow-xl">
       {/* Sidebar START */}
-      <div class="flex h-[550px] flex-col items-center justify-evenly py-5 px-2 bg-[#1A2930] space-y-5 rounded-tl-md rounded-bl-md drop-shadow-2xl">
+      <div class="flex h-[550px] flex-col items-center justify-evenly py-5 px-2 bg-gradient-to-b from-[#121b1f] to-[#1A2930] space-y-5 rounded-tl-md rounded-bl-md drop-shadow-2xl">
         {/* 
           onClick function on each sidebar content will change the value of the tab
           the main card will render the appropriate content based on the value of the tab 
@@ -96,7 +96,7 @@ export default component$(() => {
       </div>
       {/* Sidebar END */}
       {/* Main card */}
-      <div class="w-full h-[550px] flex space-x-5 bg-[#1A2930] rounded-r-md overflow-x-hidden overflow-y-auto p-5">
+      <div class="w-full h-[550px] flex space-x-5 bg-gradient-to-b from-[#121b1f] to-[#1A2930] rounded-r-md overflow-x-hidden overflow-y-auto p-5">
         {bodyContent}
       </div>
     </div>
