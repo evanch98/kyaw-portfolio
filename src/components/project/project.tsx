@@ -72,7 +72,7 @@ export default component$(() => {
           <ProjectBox
             projectModal={projectModal}
             project={project2}
-            imgSrc="/projects/share_prompts.png"
+            imgSrc="/projects/chess.png"
             imgAlt="share prompts"
           />
         </div>
@@ -82,7 +82,7 @@ export default component$(() => {
           <ProjectBox
             projectModal={projectModal}
             project={project3}
-            imgSrc="/projects/chess.png"
+            imgSrc="/projects/share_prompts.png"
             imgAlt="furry coats"
           />
           <HorizontalSeparator class="lg:hidden w-10 self-center" />
