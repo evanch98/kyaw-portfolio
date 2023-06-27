@@ -61,6 +61,7 @@ export default component$(() => {
             courses={certModal.certData.courses}
             desc={certModal.certData.desc}
             verificationLink={certModal.certData.verificationLink}
+            capstoneLink={certModal.certData.capstoneLink}
           />
         </Modal>
       )}
