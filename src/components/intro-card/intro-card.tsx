@@ -40,7 +40,7 @@ export default component$(() => {
     );
   });
   return (
-    <div class="h-[550px] flex flex-col bg-[#1A2930] rounded-md overflow-hidden px-5 shadow-xl">
+    <div class="h-[550px] flex flex-col bg-gradient-to-b from-[#121b1f] to-[#1A2930] rounded-md overflow-hidden px-5 shadow-xl">
       {/* The Modal component will only be rendered if the value of the modal is true */}
       {modal.value && (
         /* change the info of the website in the ~/utils/projects.ts file */
@@ -105,7 +105,7 @@ export default component$(() => {
       </section>
       <HorizontalSeparator class="mt-0 mb-5" />
       {/* Footer of the IntroCard if you will */}
-      <section class="flex items-center justify-between px-5 pb-5 bg-[#1A2930]">
+      <section class="flex items-center justify-between px-5 pb-5 bg-transparent">
         <div class="flex items-center justify-center w-full space-x-2 text-[#C5C1C0] cursor-pointer group">
           <a
             href="https://drive.google.com/file/d/10mhxA0iDtQLDJPP7a3Ndiyl9RjExcT9o/view?usp=sharing"
