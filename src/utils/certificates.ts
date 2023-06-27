@@ -81,10 +81,10 @@ export const ibmDataAnalyst: certObject = {
     "https://coursera.org/verify/professional-cert/RS5G3TUCKZVH",
 };
 
-const certificateLists: certObject[] = [
+const certificatesList: certObject[] = [
   metaFrontEnd,
   metaAndroid,
   ibmDataAnalyst,
 ];
 
-export default certificateLists;
+export default certificatesList;
