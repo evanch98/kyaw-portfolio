@@ -63,7 +63,7 @@ export default component$(() => {
           <ProjectBox
             projectModal={projectModal}
             project={project1}
-            imgSrc="/projects/airbnb.png"
+            imgSrc="/projects/spotify.png"
             imgAlt="airbnb"
           />
           <HorizontalSeparator class="lg:hidden w-10 self-center" />
