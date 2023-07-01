@@ -18,5 +18,9 @@ export const head: DocumentHead = {
       content:
         "This website is designed and built by Kyaw Thu. It is built by using Qwik, Qwik City, TypeScript, Motion One, and Tailwind CSS.",
     },
+    {
+      name: "author",
+      content: "Kyaw Thu"
+    },
   ],
 };
