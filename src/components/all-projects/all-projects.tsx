@@ -4,37 +4,42 @@ import { BsGithub } from "@qwikest/icons/bootstrap";
 
 const projects = [
   {
-    title: "Chess",
-    type: "web",
-    sourceUrl: "https://github.com/evanch98/chess-javascript",
+    title: "BMI Calculator (Android/Kotlin)",
+    type: "mobile",
+    sourceUrl: "https://github.com/evanch98/bmi-android-kotlin",
   },
   {
-    title: "Spotify Clone",
+    title: "Spotify Clone (NextJS)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/spotify-clone-nextjs",
   },
   {
-    title: "My Portfolio Website",
+    title: "Chess (JavaScript)",
+    type: "web",
+    sourceUrl: "https://github.com/evanch98/chess-javascript",
+  },
+  {
+    title: "My Portfolio Website (Qwik)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/kyaw-portfolio",
   },
   {
-    title: "Share Prompts",
+    title: "Share Prompts (NextJS)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/share-prompts-nextjs",
   },
   {
-    title: "Airbnb Clone",
+    title: "Airbnb Clone (NextJS)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/airbnb_clone_react",
   },
   {
-    title: "Twitter Clone",
+    title: "Twitter Clone (Flutter)",
     type: "mobile",
     sourceUrl: "https://github.com/evanch98/twitter_clone",
   },
   {
-    title: "Little Lemon",
+    title: "Little Lemon (Android/Kotlin)",
     type: "mobile",
     sourceUrl: "https://github.com/evanch98/little-lemon",
   },
