@@ -7,57 +7,69 @@ const projects = [
     title: "Simple Calculator (Android/Kotlin)",
     type: "mobile",
     sourceUrl: "https://github.com/evanch98/calculator-android-kotlin",
+    category: "Undergraduate Project",
   },
   {
     title: "BMI Calculator (Android/Kotlin)",
     type: "mobile",
     sourceUrl: "https://github.com/evanch98/bmi-android-kotlin",
+    category: "Undergraduate Project",
   },
   {
     title: "Spotify Clone (NextJS)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/spotify-clone-nextjs",
+    category: "Hobby Project",
   },
   {
     title: "Chess (JavaScript)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/chess-javascript",
+    category: "Hobby Project",
   },
   {
     title: "My Portfolio Website (Qwik)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/kyaw-portfolio",
+    category: "Hobby Project",
   },
   {
     title: "Share Prompts (NextJS)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/share-prompts-nextjs",
+    category: "Hobby Project",
   },
   {
     title: "Airbnb Clone (NextJS)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/airbnb_clone_react",
+    category: "Hobby Project",
   },
   {
     title: "Twitter Clone (Flutter)",
     type: "mobile",
     sourceUrl: "https://github.com/evanch98/twitter_clone",
+    category: "Hobby Project",
   },
   {
     title: "Little Lemon (Android/Kotlin)",
     type: "mobile",
     sourceUrl: "https://github.com/evanch98/little-lemon",
+    category: "Capstone Project",
   },
 ];
 
 export default component$(() => {
   return (
     <div class="flex flex-col w-full lg:w-[640px] space-y-2">
-      <div class="w-full bg-green-200 rounded-md text-black">
+      <div class="w-full bg-[#C5C1C0] rounded-md text-black">
         <h3 class="font-bold text-lg text-center">
           Check out my projects on GitHub
         </h3>
-        <p class="text-center">The details of each project can be found on the README file</p>
+        <p class="text-center">
+          The details of each project can be found in the{" "}
+          <span class="italic">README.md</span>
+        </p>
       </div>
       {projects.map((project) => (
         <div
@@ -70,7 +82,8 @@ export default component$(() => {
             <IoPhonePortraitOutline class="w-[40px] h-auto" />
           )}
           <div class="flex flex-col justify-center items-start">
-            <p class="text-lg">{project.title}</p>
+            <p class="text-lg font-bold">{project.title}</p>
+            <p class="text-sm">{project.category}</p>
             <a
               href={project.sourceUrl}
               target="_blank"
