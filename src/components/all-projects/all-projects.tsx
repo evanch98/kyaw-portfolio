@@ -4,6 +4,11 @@ import { BsGithub } from "@qwikest/icons/bootstrap";
 
 const projects = [
   {
+    title: "Simple Calculator (Android/Kotlin)",
+    type: "mobile",
+    sourceUrl: "https://github.com/evanch98/calculator-android-kotlin",
+  },
+  {
     title: "BMI Calculator (Android/Kotlin)",
     type: "mobile",
     sourceUrl: "https://github.com/evanch98/bmi-android-kotlin",
@@ -48,6 +53,12 @@ const projects = [
 export default component$(() => {
   return (
     <div class="flex flex-col w-full lg:w-[640px] space-y-2">
+      <div class="w-full bg-green-200 rounded-md text-black">
+        <h3 class="font-bold text-lg text-center">
+          Check out my projects on GitHub
+        </h3>
+        <p class="text-center">The details of each project can be found on the README file</p>
+      </div>
       {projects.map((project) => (
         <div
           key={project.title}
