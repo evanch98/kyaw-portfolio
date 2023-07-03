@@ -10,6 +10,7 @@ const Template = (args: TitleProps) => <Title title={args.title} />;
 
 export const Demo: any = Template.bind({
   title: "",
+  tags: ["autodocs"],
 });
 
 Demo.args = {
