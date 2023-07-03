@@ -18,7 +18,7 @@ export default component$(() => {
   const content = useSignal("");
   return (
     <>
-      <div class="xl:hidden flex flex-col items-center justify-start text-[#C5C1C0] w-full p-2 h-full relative">
+      <div class="lg:hidden flex flex-col items-center justify-start text-[#C5C1C0] w-full p-2 h-full relative">
         <div
           class={`${
             sideMenu.value
