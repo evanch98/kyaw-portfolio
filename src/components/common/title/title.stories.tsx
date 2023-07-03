@@ -3,16 +3,16 @@ import type { TitleProps } from "./title";
 import Title from "./title";
 
 export default {
-  title: "Title Component",
+  title: "Title",
 } as Meta;
 
 const Template = (args: TitleProps) => <Title title={args.title} />;
 
-export const Demo: any = Template.bind({
+export const TitleComponent: any = Template.bind({
   title: "",
   tags: ["autodocs"],
 });
 
-Demo.args = {
+TitleComponent.args = {
   title: "About",
 };
