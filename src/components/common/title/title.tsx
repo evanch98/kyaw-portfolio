@@ -1,7 +1,7 @@
 import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import { animate } from "motion";
 
-interface TitleProps {
+export interface TitleProps {
   title: string;
 }
 
