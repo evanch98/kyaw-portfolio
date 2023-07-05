@@ -8,7 +8,7 @@ import {
 import Title from "../common/title/title";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
-import { project3, project4, project5, project6 } from "~/utils/projects";
+import { project2, project3, project4, project5, project6 } from "~/utils/projects";
 import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
 import AllProjects from "../all-projects/all-projects";
@@ -71,7 +71,7 @@ export default component$(() => {
           {/* Project 2 */}
           <ProjectBox
             projectModal={projectModal}
-            project={project4}
+            project={project2}
             imgSrc="/projects/vue_todos.png"
             imgAlt="share prompts"
           />

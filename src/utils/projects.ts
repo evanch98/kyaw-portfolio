@@ -112,10 +112,15 @@ export const project3: projectObject = {
 
 export const project2: projectObject = {
   title: "Vue Todos",
-  sourceSrc: "",
-  liveSrc: "",
-  date: "",
-  category: "",
-  tech: [],
-  desc: [],
-}
+  sourceSrc: "https://github.com/evanch98/todo-app-vue/tree/main",
+  liveSrc: "https://super-quokka-96f977.netlify.app/",
+  date: "7/29/2023",
+  category: "Hobby Project",
+  tech: ["Vue", "JavaScript", "Sass"],
+  desc: [
+    "Users can add todos",
+    "Users can delete todos",
+    "Users can edit todos",
+    "Users can mark todos as completed",
+  ],
+};
