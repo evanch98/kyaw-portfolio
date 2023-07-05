@@ -72,7 +72,7 @@ export default component$(() => {
           <ProjectBox
             projectModal={projectModal}
             project={project4}
-            imgSrc="/projects/chess.png"
+            imgSrc="/projects/vue_todos.png"
             imgAlt="share prompts"
           />
         </div>
