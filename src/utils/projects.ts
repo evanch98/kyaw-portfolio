@@ -109,3 +109,13 @@ export const project3: projectObject = {
     "Restrict the user from performing some actions if there is no premium subscription",
   ],
 };
+
+export const project2: projectObject = {
+  title: "Vue Todos",
+  sourceSrc: "",
+  liveSrc: "",
+  date: "",
+  category: "",
+  tech: [],
+  desc: [],
+}
