@@ -8,7 +8,7 @@ import {
 import Title from "../common/title/title";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
-import { project1, project2, project3, project4 } from "~/utils/projects";
+import { project3, project4, project5, project6 } from "~/utils/projects";
 import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
 import AllProjects from "../all-projects/all-projects";
@@ -62,7 +62,7 @@ export default component$(() => {
           {/* Project 1 */}
           <ProjectBox
             projectModal={projectModal}
-            project={project1}
+            project={project3}
             imgSrc="/projects/spotify.png"
             imgAlt="airbnb"
           />
@@ -71,7 +71,26 @@ export default component$(() => {
           {/* Project 2 */}
           <ProjectBox
             projectModal={projectModal}
-            project={project2}
+            project={project4}
+            imgSrc="/projects/chess.png"
+            imgAlt="share prompts"
+          />
+        </div>
+        <HorizontalSeparator class="lg:hidden w-10 self-center" />
+        <div class="flex flex-col lg:flex-row items-start justify-between">
+          {/* Project 1 */}
+          <ProjectBox
+            projectModal={projectModal}
+            project={project3}
+            imgSrc="/projects/spotify.png"
+            imgAlt="airbnb"
+          />
+          <HorizontalSeparator class="lg:hidden w-10 self-center" />
+          <VerticalSeparator class="hidden lg:flex" />
+          {/* Project 2 */}
+          <ProjectBox
+            projectModal={projectModal}
+            project={project4}
             imgSrc="/projects/chess.png"
             imgAlt="share prompts"
           />
@@ -81,7 +100,7 @@ export default component$(() => {
           {/* Project 3 */}
           <ProjectBox
             projectModal={projectModal}
-            project={project3}
+            project={project5}
             imgSrc="/projects/share_prompts.png"
             imgAlt="furry coats"
           />
@@ -90,7 +109,7 @@ export default component$(() => {
           {/* Project 4 */}
           <ProjectBox
             projectModal={projectModal}
-            project={project4}
+            project={project6}
             imgSrc="/projects/airbnb.png"
             imgAlt="spotify"
           />
