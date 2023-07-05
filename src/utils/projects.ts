@@ -123,4 +123,5 @@ export const project2: projectObject = {
     "Users can edit todos",
     "Users can mark todos as completed",
   ],
+  deployedOn: "Netlify"
 };
