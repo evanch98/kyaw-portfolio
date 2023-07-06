@@ -8,7 +8,7 @@ import {
 import Title from "../common/title/title";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
-import { project2, project3, project4, project5, project6 } from "~/utils/projects";
+import { project1, project2, project3, project4, project5, project6 } from "~/utils/projects";
 import Modal from "../common/modal/modal";
 import ProjectTemplate from "../common/project-template/project-template";
 import AllProjects from "../all-projects/all-projects";
@@ -62,7 +62,7 @@ export default component$(() => {
           {/* Project 1 */}
           <ProjectBox
             projectModal={projectModal}
-            project={project3}
+            project={project1}
             imgSrc="/projects/spotify.png"
             imgAlt="airbnb"
           />
