@@ -114,7 +114,7 @@ export const project2: projectObject = {
   title: "Vue Todos",
   sourceSrc: "https://github.com/evanch98/todo-app-vue/tree/main",
   liveSrc: "https://super-quokka-96f977.netlify.app/",
-  date: "7/29/2023",
+  date: "6/29/2023",
   category: "Hobby Project",
   tech: ["Vue", "JavaScript", "Sass"],
   desc: [
@@ -123,5 +123,15 @@ export const project2: projectObject = {
     "Users can edit todos",
     "Users can mark todos as completed",
   ],
-  deployedOn: "Netlify"
+  deployedOn: "Netlify",
+};
+
+export const project1: projectObject = {
+  title: "Blog Website",
+  sourceSrc: "https://github.com/evanch98/blog-web-astro",
+  liveSrc: "",
+  date: "7/5/2023",
+  category: "Hobby Project",
+  tech: ["Astro", "TypeScript", "CSS"],
+  desc: ["Blog website"],
 };
