@@ -1,5 +1,11 @@
 export const allProjects = [
   {
+    title: "Blog Website",
+    type: "web",
+    sourceUrl: "https://github.com/evanch98/blog-web-astro",
+    category: "Hobby Project",
+  },
+  {
     title: "Vue Todos (Vue)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/todo-app-vue",
