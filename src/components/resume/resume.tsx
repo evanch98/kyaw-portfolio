@@ -6,24 +6,17 @@ import {
   useVisibleTask$,
 } from "@builder.io/qwik";
 import Title from "../common/title/title";
-import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
-import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 import Modal from "../common/modal/modal";
 import CertTemplate from "../cert-template/cert-template";
-import {
-  ibmDataAnalyst,
-  metaAndroid,
-  metaFrontEnd,
-} from "~/utils/certificates";
 import { animate } from "motion";
 import Uopeople from "../uopeople/uopeople";
 import FrontEnd from "../front-end/front-end";
 import type { certModalStore } from "~/types/types";
 import VirtualExperience from "./virtual-experience/virtual-experience";
-import CertificateBox from "../common/certificate-box/certificate-box";
 import AllCertificates from "./all-certificates/all-certificates";
 import Skills from "./Skills";
+import Education from "./Education";
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -38,8 +31,16 @@ export default component$(() => {
     certModal.open = false;
   });
 
+  const onAllCertificatesModalOpen = $(() => {
+    allCertificatesModal.value = true;
+  });
+
   const onAllCertificatesModalClose = $(() => {
     allCertificatesModal.value = false;
+  });
+
+  const onUopeopleModalOpen = $(() => {
+    uopeopleModal.value = true;
   });
 
   const onUopeopleModalClose = $(() => {
@@ -47,8 +48,8 @@ export default component$(() => {
   });
 
   const onFrontEndModalOpen = $(() => {
-    frontEndModal.value = true
-  })
+    frontEndModal.value = true;
+  });
 
   const onFrontEndModalClose = $(() => {
     frontEndModal.value = false;
@@ -91,38 +92,13 @@ export default component$(() => {
         </Modal>
       )}
       <Title title="Education" />
-      <div class="flex flex-col lg:flex-row items-start justify-between mt-5">
-        <section class="w-full flex flex-col items-center justify-center">
-          <div class="flex justify-center items-center space-x-2">
-            <h1 class="text-xl font-bold">Degree</h1>
-            <BsMortarboard class="w-[24px] h-auto" />
-          </div>
-          <div class="flex flex-col items-center justify-center mt-5">
-            <p
-              onClick$={() => (uopeopleModal.value = true)}
-              class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
-            >
-              Bachelor of Science in Computer Science
-            </p>
-            <p>University of the People, CA</p>
-            <p>2021-Present</p>
-          </div>
-        </section>
-        <HorizontalSeparator class="lg:hidden w-10 self-center" />
-        <VerticalSeparator class="hidden lg:flex" />
-        <section class="w-full flex flex-col items-center justify-center">
-          <div
-            onClick$={() => (allCertificatesModal.value = true)}
-            class="flex justify-center items-center space-x-2 hover:text-[#F7CE3E] ease-in duration-300"
-          >
-            <h1 class="text-xl font-bold cursor-pointer ">Certificates</h1>
-            <BsPatchCheck class="w-[24px] h-auto" />
-          </div>
-          <CertificateBox certModal={certModal} certificate={metaFrontEnd} />
-          <CertificateBox certModal={certModal} certificate={metaAndroid} />
-          <CertificateBox certModal={certModal} certificate={ibmDataAnalyst} />
-        </section>
-      </div>
+      {/* Education section - START */}
+      <Education
+        certModal={certModal}
+        uopeopleOnClick={onUopeopleModalOpen}
+        certificatesOnClick={onAllCertificatesModalOpen}
+      />
+      {/* Education section - END */}
       <HorizontalSeparator />
       {/* Skills section - START */}
       <Title title="Skills" />
