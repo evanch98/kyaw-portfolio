@@ -124,8 +124,10 @@ export default component$(() => {
         </section>
       </div>
       <HorizontalSeparator />
+      {/* Skills section - START */}
       <Title title="Skills" />
       <Skills frontEndOnClick={onFrontEndModalOpen} />
+      {/* Skills section - END */}
       <HorizontalSeparator />
       <Title title="Virtual Experience" />
       <div class="flex flex-col space-y-2 pb-2">
