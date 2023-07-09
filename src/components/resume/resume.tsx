@@ -22,40 +22,51 @@ export default component$(() => {
   useVisibleTask$(() => {
     animate("#resume", { opacity: [0, 1] }, { easing: "ease-in", duration: 1 });
   });
-  const certModal: certModalStore = useStore({} as certModalStore);
-  const allCertificatesModal = useSignal(false);
-  const uopeopleModal = useSignal(false);
-  const frontEndModal = useSignal(false);
+  const certModal: certModalStore = useStore({} as certModalStore); // certModal is to store data to be displayed on the certificate Modal
+  const allCertificatesModal = useSignal(false); // allCertificatesModal is to open and close the all certificates Modal
+  const uopeopleModal = useSignal(false); // uopeopleModal is to open and close the Uopeople Modal
+  const frontEndModal = useSignal(false); // frontEndModal is to open and close the front-end skills Modal
 
+  // close the certificate modal
   const onCertModalClose = $(() => {
     certModal.open = false;
   });
 
+  // open the all certificates modal
   const onAllCertificatesModalOpen = $(() => {
     allCertificatesModal.value = true;
   });
 
+  // close the all certificates modal
   const onAllCertificatesModalClose = $(() => {
     allCertificatesModal.value = false;
   });
 
+  // open the Uopeople modal
   const onUopeopleModalOpen = $(() => {
     uopeopleModal.value = true;
   });
 
+  // close the Uopeople modal
   const onUopeopleModalClose = $(() => {
     uopeopleModal.value = false;
   });
 
+  // open the front-end skills modal
   const onFrontEndModalOpen = $(() => {
     frontEndModal.value = true;
   });
 
+  // close the front-end skills modal
   const onFrontEndModalClose = $(() => {
     frontEndModal.value = false;
   });
   return (
     <div id="resume" class="flex flex-col w-full text-[#C5C1C0]">
+      {/* display the certificate modal if the certModal.open is true */}
+      {/* CertTemplate is a component to display the certificate details */}
+      {/* Refer to the Education and CertificateBox components */}
+      {/* Also, refer to the utils/certificates.ts */}
       {certModal.open && (
         <Modal title="Certificate" onClose={onCertModalClose}>
           <CertTemplate
@@ -69,16 +80,27 @@ export default component$(() => {
           />
         </Modal>
       )}
+
+      {/* display the Uopeople Modal if the uopeopleModal.value is true */}
+      {/* Uopeople component contains the items to be displayed on the Modal */}
       {uopeopleModal.value && (
         <Modal title="Computer Science" onClose={onUopeopleModalClose}>
           <Uopeople />
         </Modal>
       )}
+
+      {/* display the front-end modal if the frontEndModal.value is true */}
+      {/* FrontEnd component contains the items to be displayed on the Modal */}
       {frontEndModal.value && (
         <Modal title="Front-End Skills" onClose={onFrontEndModalClose}>
           <FrontEnd />
         </Modal>
       )}
+
+      {/* display the all certificates modal if the allCertificatesModal.value is true */}
+      {/* AllCertificates component contains the items to be displayed on the Modal */}
+      {/* Refer to the AllCertificates and CertificateBox components */}
+      {/* Also, refer to the utils/certificates.ts */}
       {allCertificatesModal.value && (
         <Modal
           title="All Certificates"
@@ -91,8 +113,9 @@ export default component$(() => {
           />
         </Modal>
       )}
-      <Title title="Education" />
+      
       {/* Education section - START */}
+      <Title title="Education" />
       <Education
         certModal={certModal}
         uopeopleOnClick={onUopeopleModalOpen}
