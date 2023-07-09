@@ -7,12 +7,6 @@ import {
 } from "@builder.io/qwik";
 import Title from "../common/title/title";
 import { BsMortarboard, BsPatchCheck } from "@qwikest/icons/bootstrap";
-import {
-  IoLogoReact,
-  IoPhonePortraitOutline,
-  IoChatboxOutline,
-  IoGlobeOutline,
-} from "@qwikest/icons/ionicons";
 import VerticalSeparator from "../common/separators/vertical-separator/vertical-separator";
 import HorizontalSeparator from "../common/separators/horizontal-separator/horizontal-separator";
 import Modal from "../common/modal/modal";
@@ -28,7 +22,6 @@ import FrontEnd from "../front-end/front-end";
 import type { certModalStore } from "~/types/types";
 import VirtualExperience from "./virtual-experience/virtual-experience";
 import CertificateBox from "../common/certificate-box/certificate-box";
-import SkillsPercent from "../common/skills-percent/skills-percent";
 import AllCertificates from "./all-certificates/all-certificates";
 import Skills from "./Skills";
 
