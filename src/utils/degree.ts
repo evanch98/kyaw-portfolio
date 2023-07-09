@@ -98,4 +98,16 @@ export const transferred = [
     code: "SOPH 0043",
     course: "Introduction to Web Development",
   },
+  {
+    code: "SOPH 0009",
+    course: "Visual Communications",
+  },
+  {
+    code: "SOPH 0023",
+    course: "Introduction to Information Technology",
+  },
+  {
+    code: "SOPH 0011",
+    course: "Microeconomics",
+  },
 ];
