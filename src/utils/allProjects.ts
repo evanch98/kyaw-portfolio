@@ -1,6 +1,12 @@
 export const allProjects = [
   {
-    title: "Blog Website",
+    title: "Biometric Attendance (Jetpack Compose)",
+    type: "mobile",
+    sourceUrl: "https://github.com/evanch98/biometric-attendance-android",
+    category: "Undergraduate Project",
+  },
+  {
+    title: "Blog Website (Astro)",
     type: "web",
     sourceUrl: "https://github.com/evanch98/blog-web-astro",
     category: "Hobby Project",
