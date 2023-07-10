@@ -4,7 +4,7 @@ import VirtualExperienceItem from "./virtual-experience-item";
 
 export default component$(() => {
   return (
-    <div>
+    <div class="flex flex-col space-y-2 pb-2">
       {virtualExperienceList.map((item) => (
         <VirtualExperienceItem
           key={item.title}
