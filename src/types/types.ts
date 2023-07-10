@@ -21,6 +21,14 @@ export type certObject = {
   capstoneLink?: string;
 };
 
+/* virtualExperienceObject is for the virtual experiences */
+export type virtualExperienceObject = {
+  title: string;
+  company: string;
+  date: string;
+  url: string;
+}
+
 /* projectModalStore is for the project component's useStore hook */
 export type projectModalStore = {
   open: boolean;
