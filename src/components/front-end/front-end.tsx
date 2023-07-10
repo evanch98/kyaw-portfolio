@@ -12,6 +12,7 @@ const skills: { title: string; skills: string }[] = [
   { title: "CSS", skills: "70%" },
   { title: "HTML", skills: "70%" },
   { title: "Astro", skills: "30%" },
+  { title: "Vue", skills: "20%" },
 ];
 
 export default component$(() => {
@@ -24,7 +25,11 @@ export default component$(() => {
         </div>
         <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5">
           {skills.map((skill) => (
-            <SkillsPercent key={skill.title} skill={skill.title} percent={skill.skills} />
+            <SkillsPercent
+              key={skill.title}
+              skill={skill.title}
+              percent={skill.skills}
+            />
           ))}
         </div>
       </div>
