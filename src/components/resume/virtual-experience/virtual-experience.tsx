@@ -1,20 +1,19 @@
 import { component$ } from "@builder.io/qwik";
+import virtualExperienceList from "~/utils/virtualExperience";
+import VirtualExperienceItem from "./virtual-experience-item";
 
-interface VirtualExperienceProps {
-  title: string;
-  company: string;
-  date: string;
-  url: string;
-}
-
-export default component$((props: VirtualExperienceProps) => {
+export default component$(() => {
   return (
-    <div class="mt-5">
-      <a href={props.url} target="_blank" rel="noreferrer" class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300">
-        {props.title}
-      </a>
-      <p>{props.company}</p>
-      <p>{props.date}</p>
+    <div>
+      {virtualExperienceList.map((item) => (
+        <VirtualExperienceItem
+          key={item.title}
+          title={item.title}
+          company={item.company}
+          date={item.date}
+          url={item.url}
+        />
+      ))}
     </div>
   );
 });
