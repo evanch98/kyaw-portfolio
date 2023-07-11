@@ -15,7 +15,7 @@ import MobileMainCard from "../mobile/mobile-main-card/mobile-main-card";
 
 export default component$(() => {
   const sideMenu = useSignal(false);
-  const content = useSignal("");
+  const content = useSignal("about");
   return (
     <>
       <div class="lg:hidden flex flex-col items-center justify-start text-[#C5C1C0] w-full h-full relative">
@@ -97,7 +97,7 @@ export default component$(() => {
           onClick$={() => (sideMenu.value = true)}
           class="w-[28px] h-auto self-start mb-2"
         />
-        <MobileIntroCard />
+        {content.value === "about" && <MobileIntroCard />}
         <MobileMainCard content={content.value} />
       </div>
       <div class="hidden lg:flex justify-between items-center w-full text-[#C5C1C0] py-5 px-20 space-x-1">
