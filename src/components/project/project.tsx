@@ -58,7 +58,7 @@ export default component$(() => {
       <Title title="Projects" />
       {/* Projects section START */}
       <div class="flex flex-col mt-5 space-y-6">
-        <div class="flex flex-col lg:flex-row items-start justify-between">
+        <div class="flex flex-col xl:flex-row items-start justify-between">
           {/* Project 1 */}
           <ProjectBox
             projectModal={projectModal}
@@ -66,8 +66,8 @@ export default component$(() => {
             imgSrc="/projects/blogweb.png"
             imgAlt="airbnb"
           />
-          <HorizontalSeparator class="lg:hidden w-10 self-center" />
-          <VerticalSeparator class="hidden lg:flex" />
+          <HorizontalSeparator class="xl:hidden w-10 self-center" />
+          <VerticalSeparator class="hidden xl:flex" />
           {/* Project 2 */}
           <ProjectBox
             projectModal={projectModal}
@@ -76,18 +76,18 @@ export default component$(() => {
             imgAlt="share prompts"
           />
         </div>
-        <HorizontalSeparator class="lg:hidden w-10 self-center" />
-        <div class="flex flex-col lg:flex-row items-start justify-between">
-          {/* Project 1 */}
+        <HorizontalSeparator class="xl:hidden w-10 self-center" />
+        <div class="flex flex-col xl:flex-row items-start justify-between">
+          {/* Project 3 */}
           <ProjectBox
             projectModal={projectModal}
             project={project3}
             imgSrc="/projects/spotify.png"
             imgAlt="airbnb"
           />
-          <HorizontalSeparator class="lg:hidden w-10 self-center" />
-          <VerticalSeparator class="hidden lg:flex" />
-          {/* Project 2 */}
+          <HorizontalSeparator class="xl:hidden w-10 self-center" />
+          <VerticalSeparator class="hidden xl:flex" />
+          {/* Project 4 */}
           <ProjectBox
             projectModal={projectModal}
             project={project4}
@@ -95,18 +95,18 @@ export default component$(() => {
             imgAlt="share prompts"
           />
         </div>
-        <HorizontalSeparator class="lg:hidden w-10 self-center" />
-        <div class="flex flex-col lg:flex-row items-start justify-between">
-          {/* Project 3 */}
+        <HorizontalSeparator class="xl:hidden w-10 self-center" />
+        <div class="flex flex-col xl:flex-row items-start justify-between">
+          {/* Project 5 */}
           <ProjectBox
             projectModal={projectModal}
             project={project5}
             imgSrc="/projects/share_prompts.png"
             imgAlt="furry coats"
           />
-          <HorizontalSeparator class="lg:hidden w-10 self-center" />
-          <VerticalSeparator class="hidden lg:flex" />
-          {/* Project 4 */}
+          <HorizontalSeparator class="xl:hidden w-10 self-center" />
+          <VerticalSeparator class="hidden xl:flex" />
+          {/* Project 6 */}
           <ProjectBox
             projectModal={projectModal}
             project={project6}
