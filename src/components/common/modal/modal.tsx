@@ -19,13 +19,13 @@ export default component$((props: ModalProps) => {
   return (
     <div
       class={twMerge(
-        "absolute hidden lg:flex left-0 top-0 w-full h-full bg-black/70 z-50",
+        "absolute flex left-0 top-0 w-full h-full bg-black/70 z-50",
         props.class
       )}
     >
       <div
         id="modal"
-        class="absolute hidden lg:flex flex-col w-auto max-h-[600px] top-20 left-1/2 -translate-x-1/2 p-5 bg-[#1A2930] text-[#C5C1C0] rounded-md shadow-xl overflow-y-auto"
+        class="absolute flex flex-col w-full mx-2 lg:w-auto max-h-[600px] top-20 left-1/2 -translate-x-1/2 p-5 bg-[#1A2930] text-[#C5C1C0] rounded-md shadow-xl overflow-y-auto"
       >
         <div class="flex items-center justify-between">
           <Title title={props.title} />
