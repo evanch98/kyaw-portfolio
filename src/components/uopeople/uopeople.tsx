@@ -5,7 +5,7 @@ import { transferred, uopeopleCourses } from "~/utils/degree";
 
 export default component$(() => {
   return (
-    <div class="flex flex-col w-[640px]">
+    <div class="flex flex-col w-full lg:w-[640px]">
       <div class="flex flex-col items-start text-base">
         <p>Degree --- Bachelor of Science in Computer Science</p>
         <p>University --- University of the People, Pasadena, CA</p>
@@ -18,7 +18,7 @@ export default component$(() => {
           <h1 class="text-xl font-bold">Courses</h1>
           <BsBook class="w-[24px] h-auto" />
         </div>
-        <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 pl-5">
+        <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 lg:pl-5">
           <div class="w-full">
             <div class="flex items-start justify-between mb-2 text-lg font-semibold">
               <p>Code</p>
@@ -41,7 +41,7 @@ export default component$(() => {
           <h1 class="text-xl font-bold">Transferred Courses</h1>
           <BsBook class="w-[24px] h-auto" />
         </div>
-        <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 pl-5">
+        <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 lg:pl-5">
           <div class="w-full">
             <div class="flex items-start justify-between mb-2 text-lg font-semibold">
               <p class="w-full">Code</p>
@@ -62,7 +62,7 @@ export default component$(() => {
           <h1 class="text-xl font-bold">Achievements</h1>
           <BsStar class="w-[24px] h-auto" />
         </div>
-        <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 pl-5">
+        <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 lg:pl-5">
           <h1 class="mb-2 text-lg font-semibold">
             President's List (CGPA 3.85 - 4.0)
           </h1>

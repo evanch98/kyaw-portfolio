@@ -17,7 +17,7 @@ const skills: { title: string; skills: string }[] = [
 
 export default component$(() => {
   return (
-    <div class="flex flex-col w-[640px]">
+    <div class="flex flex-col w-full lg:w-[640px]">
       <div class="flex flex-col items-start justify-start space-y-5">
         <div class="flex justify-center items-center space-x-2">
           <h1 class="text-xl font-bold">Front-End Skills</h1>
