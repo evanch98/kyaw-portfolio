@@ -70,7 +70,7 @@ export default component$((props: SkillsProps) => {
               <IoGlobeOutline class="w-[24px] h-auto" />
             </div>
             <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px:20 lg:px-5 xl:px-20">
-              <ul class="list-disc">
+              <ul class="lg:list-disc">
                 <li>Strong problem solving and analytic skills</li>
                 <li>Ability to learn new technologies quickly</li>
                 <li>Good communication skills</li>
