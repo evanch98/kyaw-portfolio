@@ -100,7 +100,7 @@ export default component$(() => {
         <MobileIntroCard />
         <MobileMainCard content={content.value} />
       </div>
-      <div class="hidden xl:flex justify-between items-center w-full text-[#C5C1C0] py-5 px-20 space-x-1">
+      <div class="hidden lg:flex justify-between items-center w-full text-[#C5C1C0] py-5 px-20 space-x-1">
         <IntroCard />
         <MainCard />
       </div>
