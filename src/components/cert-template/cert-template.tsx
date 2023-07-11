@@ -5,7 +5,7 @@ import type { certObject } from "~/types/types";
 
 export default component$((props: certObject) => {
   return (
-    <div class="flex flex-col w-[640px]">
+    <div class="flex flex-col w-full lg:w-[640px]">
       <div class="flex flex-col items-start text-base">
         <p>Course name --- {props.name}</p>
         <p>Offered by --- {props.platform}</p>
@@ -22,7 +22,7 @@ export default component$((props: certObject) => {
         )}
       </div>
       <HorizontalSeparator />
-      <div class="flex items-start justify-between h-auto w-full space-x-3">
+      <div class="flex flex-col lg:flex-row items-start justify-between h-auto w-full lg:space-x-3">
         <section class="w-full flex flex-col items-start justify-start">
           <div class="flex justify-center items-center space-x-2">
             <h1 class="text-xl font-bold">Courses</h1>
@@ -36,6 +36,7 @@ export default component$((props: certObject) => {
             </ul>
           </div>
         </section>
+        <HorizontalSeparator class="lg:hidden w-10 self-center" />
         <section class="w-full flex flex-col items-start justify-start">
           <div class="flex justify-center items-center space-x-2">
             <h1 class="text-xl font-bold">Description</h1>
