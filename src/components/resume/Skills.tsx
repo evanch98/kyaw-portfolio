@@ -27,7 +27,7 @@ export default component$((props: SkillsProps) => {
               <h1 class="text-xl font-bold">Front-End</h1>
               <IoLogoReact class="w-[24px] h-auto" />
             </div>
-            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
+            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px:20 lg:px-5 xl:px-20">
               <SkillsPercent skill="Next JS" percent="70%" />
               <SkillsPercent skill="Qwik" percent="80%" />
               <SkillsPercent skill="Tailwind CSS" percent="80%" />
@@ -41,7 +41,7 @@ export default component$((props: SkillsProps) => {
               <h1 class="text-xl font-bold">Mobile</h1>
               <IoPhonePortraitOutline class="w-[24px] h-auto" />
             </div>
-            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
+            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px:20 lg:px-5 xl:px-20">
               <SkillsPercent skill="Dart" percent="70%" />
               <SkillsPercent skill="Flutter" percent="70%" />
               <SkillsPercent skill="Kotlin" percent="60%" />
@@ -56,7 +56,7 @@ export default component$((props: SkillsProps) => {
               <h1 class="text-xl font-bold">Languages</h1>
               <IoChatboxOutline class="w-[24px] h-auto" />
             </div>
-            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
+            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px:20 lg:px-5 xl:px-20">
               <SkillsPercent skill="Burmese" percent="100%" />
               <SkillsPercent skill="English" percent="85%" />
               <SkillsPercent skill="Traditional Chinese" percent="35%" />
@@ -69,7 +69,7 @@ export default component$((props: SkillsProps) => {
               <h1 class="text-xl font-bold">Soft Skills</h1>
               <IoGlobeOutline class="w-[24px] h-auto" />
             </div>
-            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px-20">
+            <div class="flex flex-col items-start justify-start space-y-3 w-full mt-5 px:20 lg:px-5 xl:px-20">
               <ul class="list-disc">
                 <li>Strong problem solving and analytic skills</li>
                 <li>Ability to learn new technologies quickly</li>
