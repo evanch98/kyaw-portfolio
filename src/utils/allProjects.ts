@@ -66,7 +66,7 @@ export const allProjects = [
     category: "Hobby Project",
   },
   {
-    title: "Little Lemon (Android/Kotlin)",
+    title: "Little Lemon (Jetpack Compose)",
     type: "mobile",
     sourceUrl: "https://github.com/evanch98/little-lemon",
     category: "Capstone Project",
