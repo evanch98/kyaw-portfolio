@@ -32,7 +32,7 @@ export default component$((props: MobileMainCardProps) => {
   return (
     <div
       id="mobile-about"
-      class="w-full mt-3 h-screen p-2 bg-[#1A2930] rounded-md flex flex-col overflow-auto overflow-x-hidden"
+      class="w-full mt-3 max-h-[780px] p-2 bg-[#1A2930] rounded-md flex flex-col overflow-auto overflow-x-hidden"
     >
       {bodyContent}
     </div>
