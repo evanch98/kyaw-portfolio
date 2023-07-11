@@ -4,7 +4,7 @@ import Body from "~/components/body/body";
 
 export default component$(() => {
   return (
-    <div class="flex-1">
+    <div class="flex-1 p-2 lg:p-0">
       <Body />
     </div>
   );

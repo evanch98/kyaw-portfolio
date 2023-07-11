@@ -25,7 +25,7 @@ export default component$((props: ModalProps) => {
     >
       <div
         id="modal"
-        class="absolute flex flex-col w-full mx-2 lg:w-auto max-h-[600px] top-20 left-1/2 -translate-x-1/2 p-5 bg-[#1A2930] text-[#C5C1C0] rounded-md shadow-xl overflow-y-auto"
+        class="absolute flex flex-col w-full lg:w-auto max-h-[600px] top-20 left-1/2 -translate-x-1/2 p-5 bg-[#1A2930] text-[#C5C1C0] rounded-md shadow-xl overflow-y-auto"
       >
         <div class="flex items-center justify-between">
           <Title title={props.title} />
