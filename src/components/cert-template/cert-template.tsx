@@ -22,7 +22,7 @@ export default component$((props: certObject) => {
         )}
       </div>
       <HorizontalSeparator />
-      <div class="flex flex-col lg:flex-row items-start justify-between h-auto w-full lg:space-x-3">
+      <div class="flex flex-col lg:flex-row items-start justify-between h-auto w-full">
         <section class="w-full flex flex-col items-start justify-start">
           <div class="flex justify-center items-center space-x-2">
             <h1 class="text-xl font-bold">Courses</h1>

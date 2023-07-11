@@ -10,7 +10,7 @@ import type { projectObject } from "~/types/types";
 
 export default component$((props: projectObject) => {
   return (
-    <div class="flex flex-col w-[640px]">
+    <div class="flex flex-col w-full lg:w-[640px]">
       <div class="flex flex-col items-start space-y-5">
         <div class="flex items-center justify-start space-x-2">
           <a
@@ -39,7 +39,7 @@ export default component$((props: projectObject) => {
         </div>
       </div>
       <HorizontalSeparator />
-      <div class="flex items-start justify-between h-auto w-full">
+      <div class="flex flex-col lg:flex-row items-start justify-between h-auto w-full">
         <section class="w-full flex flex-col items-start justify-start">
           <div class="flex justify-center items-center space-x-2">
             <h1 class="text-xl font-bold">Tech-Stack</h1>
@@ -53,6 +53,7 @@ export default component$((props: projectObject) => {
             </ul>
           </div>
         </section>
+        <HorizontalSeparator class="lg:hidden w-10 self-center" />
         <section class="w-full flex flex-col items-start justify-start">
           <div class="flex justify-center items-center space-x-2">
             <h1 class="text-xl font-bold">Description</h1>
@@ -68,7 +69,9 @@ export default component$((props: projectObject) => {
         </section>
       </div>
       <HorizontalSeparator />
-      <p class="text-sm text-center">Deployed on {props.deployedOn ? props.deployedOn : "Vercel"}</p>
+      <p class="text-sm text-center">
+        Deployed on {props.deployedOn ? props.deployedOn : "Vercel"}
+      </p>
     </div>
   );
 });
