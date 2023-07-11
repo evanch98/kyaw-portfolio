@@ -134,4 +134,5 @@ export const project1: projectObject = {
   category: "Hobby Project",
   tech: ["Astro", "TypeScript", "CSS"],
   desc: ["Blog website"],
+  deployedOn: "Netlify",
 };
