@@ -24,7 +24,7 @@ export default component$((props: EducationProps) => {
         <div class="flex flex-col items-center justify-center mt-5">
           <p
             onClick$={props.uopeopleOnClick}
-            class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300"
+            class="cursor-pointer hover:text-[#F7CE3E] ease-in duration-300 text-center"
           >
             Bachelor of Science in Computer Science
           </p>
