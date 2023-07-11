@@ -129,7 +129,7 @@ export const project2: projectObject = {
 export const project1: projectObject = {
   title: "Blog Website",
   sourceSrc: "https://github.com/evanch98/blog-web-astro",
-  liveSrc: "",
+  liveSrc: "https://glittering-marzipan-5d1c4a.netlify.app/",
   date: "7/5/2023",
   category: "Hobby Project",
   tech: ["Astro", "TypeScript", "CSS"],
